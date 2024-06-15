@@ -1,0 +1,11 @@
+E:\New Course\.NET\NET-Project\Models\bin\Release\net8.0\Models.deps.json
+E:\New Course\.NET\NET-Project\Models\bin\Release\net8.0\Models.dll
+E:\New Course\.NET\NET-Project\Models\bin\Release\net8.0\Models.pdb
+E:\New Course\.NET\NET-Project\Models\obj\Release\net8.0\Models.GeneratedMSBuildEditorConfig.editorconfig
+E:\New Course\.NET\NET-Project\Models\obj\Release\net8.0\Models.AssemblyInfoInputs.cache
+E:\New Course\.NET\NET-Project\Models\obj\Release\net8.0\Models.AssemblyInfo.cs
+E:\New Course\.NET\NET-Project\Models\obj\Release\net8.0\Models.csproj.CoreCompileInputs.cache
+E:\New Course\.NET\NET-Project\Models\obj\Release\net8.0\Models.dll
+E:\New Course\.NET\NET-Project\Models\obj\Release\net8.0\refint\Models.dll
+E:\New Course\.NET\NET-Project\Models\obj\Release\net8.0\Models.pdb
+E:\New Course\.NET\NET-Project\Models\obj\Release\net8.0\ref\Models.dll

@@ -1,0 +1,11 @@
+E:\New Course\.NET\NET-Project\UI_Tier\bin\Models\release\Models.deps.json
+E:\New Course\.NET\NET-Project\UI_Tier\bin\Models\release\Models.dll
+E:\New Course\.NET\NET-Project\UI_Tier\bin\Models\release\Models.pdb
+E:\New Course\.NET\NET-Project\UI_Tier\obj\Models\release\Models.GeneratedMSBuildEditorConfig.editorconfig
+E:\New Course\.NET\NET-Project\UI_Tier\obj\Models\release\Models.AssemblyInfoInputs.cache
+E:\New Course\.NET\NET-Project\UI_Tier\obj\Models\release\Models.AssemblyInfo.cs
+E:\New Course\.NET\NET-Project\UI_Tier\obj\Models\release\Models.csproj.CoreCompileInputs.cache
+E:\New Course\.NET\NET-Project\UI_Tier\obj\Models\release\Models.dll
+E:\New Course\.NET\NET-Project\UI_Tier\obj\Models\release\refint\Models.dll
+E:\New Course\.NET\NET-Project\UI_Tier\obj\Models\release\Models.pdb
+E:\New Course\.NET\NET-Project\UI_Tier\obj\Models\release\ref\Models.dll

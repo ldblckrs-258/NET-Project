@@ -1,0 +1,5 @@
+E:\New Course\.NET\NET-Project\UI_Tier\obj\UI_Tier\release\UI_Tier.csproj.AssemblyReference.cache
+E:\New Course\.NET\NET-Project\UI_Tier\obj\UI_Tier\release\UI_Tier.GeneratedMSBuildEditorConfig.editorconfig
+E:\New Course\.NET\NET-Project\UI_Tier\obj\UI_Tier\release\UI_Tier.AssemblyInfoInputs.cache
+E:\New Course\.NET\NET-Project\UI_Tier\obj\UI_Tier\release\UI_Tier.AssemblyInfo.cs
+E:\New Course\.NET\NET-Project\UI_Tier\obj\UI_Tier\release\UI_Tier.csproj.CoreCompileInputs.cache

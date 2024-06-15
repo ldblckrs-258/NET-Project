@@ -1,0 +1,13 @@
+E:\New Course\.NET\NET-Project\UI_Tier\bin\Bus_Tier\release\Bus_Tier.deps.json
+E:\New Course\.NET\NET-Project\UI_Tier\bin\Bus_Tier\release\Bus_Tier.dll
+E:\New Course\.NET\NET-Project\UI_Tier\bin\Bus_Tier\release\Bus_Tier.pdb
+E:\New Course\.NET\NET-Project\UI_Tier\obj\Bus_Tier\release\Bus_Tier.csproj.AssemblyReference.cache
+E:\New Course\.NET\NET-Project\UI_Tier\obj\Bus_Tier\release\Bus_Tier.GeneratedMSBuildEditorConfig.editorconfig
+E:\New Course\.NET\NET-Project\UI_Tier\obj\Bus_Tier\release\Bus_Tier.AssemblyInfoInputs.cache
+E:\New Course\.NET\NET-Project\UI_Tier\obj\Bus_Tier\release\Bus_Tier.AssemblyInfo.cs
+E:\New Course\.NET\NET-Project\UI_Tier\obj\Bus_Tier\release\Bus_Tier.csproj.CoreCompileInputs.cache
+E:\New Course\.NET\NET-Project\UI_Tier\obj\Bus_Tier\release\Bus_Tier.csproj.Up2Date
+E:\New Course\.NET\NET-Project\UI_Tier\obj\Bus_Tier\release\Bus_Tier.dll
+E:\New Course\.NET\NET-Project\UI_Tier\obj\Bus_Tier\release\refint\Bus_Tier.dll
+E:\New Course\.NET\NET-Project\UI_Tier\obj\Bus_Tier\release\Bus_Tier.pdb
+E:\New Course\.NET\NET-Project\UI_Tier\obj\Bus_Tier\release\ref\Bus_Tier.dll

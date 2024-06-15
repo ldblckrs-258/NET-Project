@@ -1,0 +1,12 @@
+E:\New Course\.NET\NET-Project\UI_Tier\bin\Connector_Tier\release\Connector_Tier.deps.json
+E:\New Course\.NET\NET-Project\UI_Tier\bin\Connector_Tier\release\Connector_Tier.dll
+E:\New Course\.NET\NET-Project\UI_Tier\bin\Connector_Tier\release\Connector_Tier.pdb
+E:\New Course\.NET\NET-Project\UI_Tier\obj\Connector_Tier\release\Connector_Tier.csproj.AssemblyReference.cache
+E:\New Course\.NET\NET-Project\UI_Tier\obj\Connector_Tier\release\Connector_Tier.GeneratedMSBuildEditorConfig.editorconfig
+E:\New Course\.NET\NET-Project\UI_Tier\obj\Connector_Tier\release\Connector_Tier.AssemblyInfoInputs.cache
+E:\New Course\.NET\NET-Project\UI_Tier\obj\Connector_Tier\release\Connector_Tier.AssemblyInfo.cs
+E:\New Course\.NET\NET-Project\UI_Tier\obj\Connector_Tier\release\Connector_Tier.csproj.CoreCompileInputs.cache
+E:\New Course\.NET\NET-Project\UI_Tier\obj\Connector_Tier\release\Connector_Tier.dll
+E:\New Course\.NET\NET-Project\UI_Tier\obj\Connector_Tier\release\refint\Connector_Tier.dll
+E:\New Course\.NET\NET-Project\UI_Tier\obj\Connector_Tier\release\Connector_Tier.pdb
+E:\New Course\.NET\NET-Project\UI_Tier\obj\Connector_Tier\release\ref\Connector_Tier.dll

@@ -1,0 +1,15 @@
+E:\New Course\.NET\NET-Project\UI_Tier\obj\Publish\net8.0-windows\UI_Tier.csproj.AssemblyReference.cache
+E:\New Course\.NET\NET-Project\UI_Tier\obj\Publish\net8.0-windows\UI_Tier.BreedListForm.resources
+E:\New Course\.NET\NET-Project\UI_Tier\obj\Publish\net8.0-windows\UI_Tier.LoginForm.resources
+E:\New Course\.NET\NET-Project\UI_Tier\obj\Publish\net8.0-windows\UI_Tier.MainForm.resources
+E:\New Course\.NET\NET-Project\UI_Tier\obj\Publish\net8.0-windows\UI_Tier.MyAccountForm.resources
+E:\New Course\.NET\NET-Project\UI_Tier\obj\Publish\net8.0-windows\UI_Tier.PetForm.resources
+E:\New Course\.NET\NET-Project\UI_Tier\obj\Publish\net8.0-windows\UI_Tier.PetListForm.resources
+E:\New Course\.NET\NET-Project\UI_Tier\obj\Publish\net8.0-windows\UI_Tier.Properties.Resources.resources
+E:\New Course\.NET\NET-Project\UI_Tier\obj\Publish\net8.0-windows\UI_Tier.SpeciesListForm.resources
+E:\New Course\.NET\NET-Project\UI_Tier\obj\Publish\net8.0-windows\UI_Tier.UsersListForm.resources
+E:\New Course\.NET\NET-Project\UI_Tier\obj\Publish\net8.0-windows\UI_Tier.csproj.GenerateResource.cache
+E:\New Course\.NET\NET-Project\UI_Tier\obj\Publish\net8.0-windows\UI_Tier.GeneratedMSBuildEditorConfig.editorconfig
+E:\New Course\.NET\NET-Project\UI_Tier\obj\Publish\net8.0-windows\UI_Tier.AssemblyInfoInputs.cache
+E:\New Course\.NET\NET-Project\UI_Tier\obj\Publish\net8.0-windows\UI_Tier.AssemblyInfo.cs
+E:\New Course\.NET\NET-Project\UI_Tier\obj\Publish\net8.0-windows\UI_Tier.csproj.CoreCompileInputs.cache

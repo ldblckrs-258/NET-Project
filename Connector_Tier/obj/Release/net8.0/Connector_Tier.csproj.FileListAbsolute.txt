@@ -1,0 +1,12 @@
+E:\New Course\.NET\NET-Project\Connector_Tier\bin\Release\net8.0\Connector_Tier.deps.json
+E:\New Course\.NET\NET-Project\Connector_Tier\bin\Release\net8.0\Connector_Tier.dll
+E:\New Course\.NET\NET-Project\Connector_Tier\bin\Release\net8.0\Connector_Tier.pdb
+E:\New Course\.NET\NET-Project\Connector_Tier\obj\Release\net8.0\Connector_Tier.csproj.AssemblyReference.cache
+E:\New Course\.NET\NET-Project\Connector_Tier\obj\Release\net8.0\Connector_Tier.GeneratedMSBuildEditorConfig.editorconfig
+E:\New Course\.NET\NET-Project\Connector_Tier\obj\Release\net8.0\Connector_Tier.AssemblyInfoInputs.cache
+E:\New Course\.NET\NET-Project\Connector_Tier\obj\Release\net8.0\Connector_Tier.AssemblyInfo.cs
+E:\New Course\.NET\NET-Project\Connector_Tier\obj\Release\net8.0\Connector_Tier.csproj.CoreCompileInputs.cache
+E:\New Course\.NET\NET-Project\Connector_Tier\obj\Release\net8.0\Connector_Tier.dll
+E:\New Course\.NET\NET-Project\Connector_Tier\obj\Release\net8.0\refint\Connector_Tier.dll
+E:\New Course\.NET\NET-Project\Connector_Tier\obj\Release\net8.0\Connector_Tier.pdb
+E:\New Course\.NET\NET-Project\Connector_Tier\obj\Release\net8.0\ref\Connector_Tier.dll

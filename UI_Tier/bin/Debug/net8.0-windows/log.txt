@@ -1,0 +1,1211 @@
+SELECT user.id, user.name, user.birth_date, user.username, role.name AS role FROM user JOIN role ON user.role_id = role.id WHERE user.id = 10001
+SELECT pet.id, pet.name, breed.name AS breed, pet.born_year, pet.weight, pet.price, pet.is_sold FROM pet JOIN breed ON pet.breed_id = breed.id
+SELECT pet.id, pet.name, breed_id, species.name AS species, breed.name AS breed, pet.born_year, pet.weight, pet.description, pet.image, pet.price, pet.is_sold FROM pet JOIN breed ON pet.breed_id = breed.id JOIN species ON breed.species_id = species.id WHERE pet.id = 20001
+SELECT id, name FROM breed
+UPDATE pet SET name = 'Max', is_male = 'False', born_year = '2020', breed_id = '30005', weight = '2.11', description = 'Rất thân thiện và hiền lành. Thích ăn đồ hộp.', image = 'https://res.cloudinary.com/dxhuysuy5/image/upload/v1715619682/netproject/20001.jpg', price = '7000000' WHERE id = 30005
+UPDATE pet SET name = 'Max', is_male = 'False', born_year = '2020', breed_id = '30005', weight = '2.11', description = 'Rất thân thiện và hiền lành. Thích ăn đồ hộp.', image = 'https://res.cloudinary.com/dxhuysuy5/image/upload/v1715619682/netproject/20001.jpg', price = '7000000' WHERE id = 30005
+2024-05-15 21:21:27 | SELECT user.id, user.name, user.birth_date, user.username, role.name AS role FROM user JOIN role ON user.role_id = role.id WHERE user.id = 10001
+2024-05-15 21:21:29 | SELECT pet.id, pet.name, breed.name AS breed, pet.born_year, pet.weight, pet.price, pet.is_sold FROM pet JOIN breed ON pet.breed_id = breed.id
+2024-05-15 21:21:30 | SELECT id, name FROM breed
+2024-05-15 21:21:34 | SELECT pet.id, pet.name, breed_id, species.name AS species, breed.name AS breed, pet.born_year, pet.weight, pet.description, pet.image, pet.price, pet.is_sold FROM pet JOIN breed ON pet.breed_id = breed.id JOIN species ON breed.species_id = species.id WHERE pet.id = 20001
+2024-05-15 21:21:34 | SELECT id, name FROM breed
+2024-05-15 21:21:44 | UPDATE pet SET name = 'Max', is_male = 'False', born_year = '2021', breed_id = '30005', weight = '2.56', description = 'Rất thân thiện và hiền lành. Thích ăn đồ hộp.', image = 'https://res.cloudinary.com/dxhuysuy5/image/upload/v1715619682/netproject/20001.jpg', price = '7000000' WHERE id = 20001
+2024-05-15 21:22:28 | SELECT id, name FROM breed
+2024-05-15 21:23:32 | INSERT INTO pet(name, is_male, born_year, breed_id, weight, description, image, price, is_sold) VALUES('Alexa, False, 2022, 30011, 1.12, Rất thông minh. Biết nói một số câu thông dụng., https://giadinh.mediacdn.vn/2018/11/12/v2-15419983534971995037795.jpg, 32940000, false)
+2024-05-15 21:23:32 | You have an error in your SQL syntax; check the manual that corresponds to your MariaDB server version for the right syntax to use near ''Alexa, False, 2022, 30011, 1.12, Rất thông minh. Biết nói một số c...' at line 1
+2024-05-15 21:26:57 | SELECT user.id, user.name, user.birth_date, user.username, role.name AS role FROM user JOIN role ON user.role_id = role.id WHERE user.id = 10001
+2024-05-15 21:27:00 | SELECT pet.id, pet.name, breed.name AS breed, pet.born_year, pet.weight, pet.price, pet.is_sold FROM pet JOIN breed ON pet.breed_id = breed.id
+2024-05-15 21:27:02 | SELECT id, name FROM breed
+2024-05-15 21:27:42 | INSERT INTO pet(name, is_male, born_year, breed_id, weight, description, image, price, is_sold) VALUES('Alexa', False, 2022, 30011, 1.12, 'Rất thông minh. Có thể nói một số từ cơ bản.', 'https://giadinh.mediacdn.vn/2018/11/12/v2-15419983534971995037795.jpg', 23900000, false)
+2024-05-15 21:27:47 | SELECT pet.id, pet.name, breed.name AS breed, pet.born_year, pet.weight, pet.price, pet.is_sold FROM pet JOIN breed ON pet.breed_id = breed.id
+2024-05-15 21:31:25 | SELECT user.id, user.name, user.birth_date, user.username, role.name AS role FROM user JOIN role ON user.role_id = role.id WHERE user.id = 10001
+2024-05-15 21:31:26 | SELECT pet.id, pet.name, breed.name AS breed, pet.born_year, pet.weight, pet.price, pet.is_sold FROM pet JOIN breed ON pet.breed_id = breed.id
+2024-05-15 21:31:28 | SELECT pet.id, pet.name, breed_id, species.name AS species, breed.name AS breed, pet.born_year, pet.weight, pet.description, pet.image, pet.price, pet.is_sold FROM pet JOIN breed ON pet.breed_id = breed.id JOIN species ON breed.species_id = species.id WHERE pet.id = 20006
+2024-05-15 21:31:28 | SELECT id, name FROM breed
+2024-05-15 21:31:32 | DELETE FROM pet WHERE id = 20006
+2024-05-15 21:31:35 | SELECT pet.id, pet.name, breed.name AS breed, pet.born_year, pet.weight, pet.price, pet.is_sold FROM pet JOIN breed ON pet.breed_id = breed.id
+2024-05-15 21:31:40 | SELECT pet.id, pet.name, breed_id, species.name AS species, breed.name AS breed, pet.born_year, pet.weight, pet.description, pet.image, pet.price, pet.is_sold FROM pet JOIN breed ON pet.breed_id = breed.id JOIN species ON breed.species_id = species.id WHERE pet.id = 20002
+2024-05-15 21:31:40 | SELECT id, name FROM breed
+2024-05-15 21:31:47 | UPDATE pet SET is_sold = true WHERE id = 20002
+2024-05-15 21:31:51 | SELECT pet.id, pet.name, breed.name AS breed, pet.born_year, pet.weight, pet.price, pet.is_sold FROM pet JOIN breed ON pet.breed_id = breed.id
+2024-05-15 21:31:53 | SELECT pet.id, pet.name, breed_id, species.name AS species, breed.name AS breed, pet.born_year, pet.weight, pet.description, pet.image, pet.price, pet.is_sold FROM pet JOIN breed ON pet.breed_id = breed.id JOIN species ON breed.species_id = species.id WHERE pet.id = 20002
+2024-05-15 21:31:53 | SELECT id, name FROM breed
+2024-05-15 21:43:05 | SELECT user.id, user.name, user.birth_date, user.username, role.name AS role FROM user JOIN role ON user.role_id = role.id WHERE user.id = 10001
+2024-05-15 21:43:07 | SELECT pet.id, pet.name, breed.name AS breed, pet.born_year, pet.weight, pet.price, pet.is_sold FROM pet JOIN breed ON pet.breed_id = breed.id
+2024-05-15 21:43:08 | SELECT id, name FROM breed
+2024-05-15 21:44:15 | SELECT user.id, user.name, user.birth_date, user.username, role.name AS role FROM user JOIN role ON user.role_id = role.id WHERE user.id = 10001
+2024-05-15 21:44:17 | SELECT pet.id, pet.name, breed.name AS breed, pet.born_year, pet.weight, pet.price, pet.is_sold FROM pet JOIN breed ON pet.breed_id = breed.id
+2024-05-15 21:44:18 | SELECT id, name FROM breed
+2024-05-15 21:44:27 | SELECT species.name FROM breed JOIN species ON breed.species_id = species.id WHERE breed.id = 30013
+2024-05-15 21:44:40 | SELECT species.name FROM breed JOIN species ON breed.species_id = species.id WHERE breed.id = 30007
+2024-05-15 21:46:35 | SELECT species.name FROM breed JOIN species ON breed.species_id = species.id WHERE breed.id = 30007
+2024-05-15 21:47:53 | SELECT pet.id, pet.name, breed.name AS breed, pet.born_year, pet.weight, pet.price, pet.is_sold FROM pet JOIN breed ON pet.breed_id = breed.id
+2024-05-15 21:47:55 | SELECT pet.id, pet.name, breed_id, species.name AS species, breed.name AS breed, pet.born_year, pet.weight, pet.description, pet.image, pet.price, pet.is_sold FROM pet JOIN breed ON pet.breed_id = breed.id JOIN species ON breed.species_id = species.id WHERE pet.id = 20001
+2024-05-15 21:47:56 | SELECT id, name FROM breed
+2024-05-15 21:47:59 | UPDATE pet SET is_sold = true WHERE id = 20001
+2024-05-15 21:48:02 | SELECT pet.id, pet.name, breed_id, species.name AS species, breed.name AS breed, pet.born_year, pet.weight, pet.description, pet.image, pet.price, pet.is_sold FROM pet JOIN breed ON pet.breed_id = breed.id JOIN species ON breed.species_id = species.id WHERE pet.id = 20003
+2024-05-15 21:48:02 | SELECT id, name FROM breed
+2024-05-15 21:48:04 | UPDATE pet SET is_sold = true WHERE id = 20003
+2024-05-15 21:48:07 | SELECT pet.id, pet.name, breed.name AS breed, pet.born_year, pet.weight, pet.price, pet.is_sold FROM pet JOIN breed ON pet.breed_id = breed.id
+2024-05-15 21:55:13 | SELECT user.id, user.name, user.birth_date, user.username, role.name AS role FROM user JOIN role ON user.role_id = role.id WHERE user.id = 10001
+2024-05-15 21:55:15 | SELECT pet.id, pet.name, breed.name AS breed, pet.born_year, pet.weight, pet.price, pet.is_sold FROM pet JOIN breed ON pet.breed_id = breed.id
+2024-05-15 21:55:16 | SELECT pet.id, pet.name, breed_id, species.name AS species, breed.name AS breed, pet.born_year, pet.weight, pet.description, pet.image, pet.price, pet.is_sold FROM pet JOIN breed ON pet.breed_id = breed.id JOIN species ON breed.species_id = species.id WHERE pet.id = 20002
+2024-05-15 21:55:17 | SELECT id, name FROM breed
+2024-05-15 21:55:45 | SELECT pet.id, pet.name, breed_id, species.name AS species, breed.name AS breed, pet.born_year, pet.weight, pet.description, pet.image, pet.price, pet.is_sold FROM pet JOIN breed ON pet.breed_id = breed.id JOIN species ON breed.species_id = species.id WHERE pet.id = 20002
+2024-05-15 21:55:45 | SELECT id, name FROM breed
+2024-05-15 21:55:53 | UPDATE pet SET name = 'Luna', is_male = 'False', born_year = '2021', breed_id = '30007', weight = '1.23', description = 'Bộ lông bóng mượt. Thích vờn đồ vật và chơi ngoài trời.', image = 'https://res.cloudinary.com/dxhuysuy5/image/upload/v1715619893/netproject/20002.jpg', price = '22499000' WHERE id = 20002
+2024-05-15 21:55:59 | SELECT pet.id, pet.name, breed_id, species.name AS species, breed.name AS breed, pet.born_year, pet.weight, pet.description, pet.image, pet.price, pet.is_sold FROM pet JOIN breed ON pet.breed_id = breed.id JOIN species ON breed.species_id = species.id WHERE pet.id = 20002
+2024-05-15 21:55:59 | SELECT id, name FROM breed
+2024-05-15 21:56:07 | SELECT id, name FROM breed
+2024-05-15 21:57:17 | SELECT species.name FROM breed JOIN species ON breed.species_id = species.id WHERE breed.id = 30003
+2024-05-15 21:57:29 | INSERT INTO pet(name, is_male, born_year, breed_id, weight, description, image, price, is_sold) VALUES('Quill', True, 2021, 30003, 243, 'Thông minh, hoạt bát. Thích ăn xúc xích.', 'https://meonhapkhau.com/wp-content/uploads/2021/09/Cho-Golden-retriever-dac-diem-nguon-goc-noi-mua-va-noi-ban1.jpg', 27400000, false)
+2024-05-15 21:57:40 | SELECT pet.id, pet.name, breed.name AS breed, pet.born_year, pet.weight, pet.price, pet.is_sold FROM pet JOIN breed ON pet.breed_id = breed.id
+2024-05-15 21:57:44 | SELECT pet.id, pet.name, breed_id, species.name AS species, breed.name AS breed, pet.born_year, pet.weight, pet.description, pet.image, pet.price, pet.is_sold FROM pet JOIN breed ON pet.breed_id = breed.id JOIN species ON breed.species_id = species.id WHERE pet.id = 20004
+2024-05-15 21:57:44 | SELECT id, name FROM breed
+2024-05-15 21:57:47 | UPDATE pet SET is_sold = true WHERE id = 20004
+2024-05-15 21:57:52 | SELECT pet.id, pet.name, breed.name AS breed, pet.born_year, pet.weight, pet.price, pet.is_sold FROM pet JOIN breed ON pet.breed_id = breed.id
+2024-05-15 21:57:56 | SELECT pet.id, pet.name, breed_id, species.name AS species, breed.name AS breed, pet.born_year, pet.weight, pet.description, pet.image, pet.price, pet.is_sold FROM pet JOIN breed ON pet.breed_id = breed.id JOIN species ON breed.species_id = species.id WHERE pet.id = 20004
+2024-05-15 21:57:56 | SELECT id, name FROM breed
+2024-05-15 21:58:02 | SELECT pet.id, pet.name, breed_id, species.name AS species, breed.name AS breed, pet.born_year, pet.weight, pet.description, pet.image, pet.price, pet.is_sold FROM pet JOIN breed ON pet.breed_id = breed.id JOIN species ON breed.species_id = species.id WHERE pet.id = 20005
+2024-05-15 21:58:02 | SELECT id, name FROM breed
+2024-05-15 21:58:04 | UPDATE pet SET is_sold = true WHERE id = 20005
+2024-05-15 21:58:07 | SELECT pet.id, pet.name, breed_id, species.name AS species, breed.name AS breed, pet.born_year, pet.weight, pet.description, pet.image, pet.price, pet.is_sold FROM pet JOIN breed ON pet.breed_id = breed.id JOIN species ON breed.species_id = species.id WHERE pet.id = 20005
+2024-05-15 21:58:07 | SELECT id, name FROM breed
+2024-05-15 21:58:09 | SELECT pet.id, pet.name, breed_id, species.name AS species, breed.name AS breed, pet.born_year, pet.weight, pet.description, pet.image, pet.price, pet.is_sold FROM pet JOIN breed ON pet.breed_id = breed.id JOIN species ON breed.species_id = species.id WHERE pet.id = 20005
+2024-05-15 21:58:09 | SELECT id, name FROM breed
+2024-05-15 21:58:11 | SELECT pet.id, pet.name, breed_id, species.name AS species, breed.name AS breed, pet.born_year, pet.weight, pet.description, pet.image, pet.price, pet.is_sold FROM pet JOIN breed ON pet.breed_id = breed.id JOIN species ON breed.species_id = species.id WHERE pet.id = 20005
+2024-05-15 21:58:11 | SELECT id, name FROM breed
+2024-05-15 22:01:10 | SELECT user.id, user.name, user.birth_date, user.username, role.name AS role FROM user JOIN role ON user.role_id = role.id WHERE user.id = 10001
+2024-05-15 22:01:11 | SELECT pet.id, pet.name, breed.name AS breed, pet.born_year, pet.weight, pet.price, pet.is_sold FROM pet JOIN breed ON pet.breed_id = breed.id
+2024-05-15 22:01:13 | SELECT pet.id, pet.name, breed_id, species.name AS species, breed.name AS breed, pet.born_year, pet.weight, pet.description, pet.image, pet.price, pet.is_sold FROM pet JOIN breed ON pet.breed_id = breed.id JOIN species ON breed.species_id = species.id WHERE pet.id = 20001
+2024-05-15 22:01:13 | SELECT id, name FROM breed
+2024-05-15 22:01:19 | SELECT pet.id, pet.name, breed_id, species.name AS species, breed.name AS breed, pet.born_year, pet.weight, pet.description, pet.image, pet.price, pet.is_sold FROM pet JOIN breed ON pet.breed_id = breed.id JOIN species ON breed.species_id = species.id WHERE pet.id = 20002
+2024-05-15 22:01:19 | SELECT id, name FROM breed
+2024-05-15 22:02:31 | SELECT user.id, user.name, user.birth_date, user.username, role.name AS role FROM user JOIN role ON user.role_id = role.id WHERE user.id = 10001
+2024-05-15 22:02:33 | SELECT pet.id, pet.name, breed.name AS breed, pet.born_year, pet.weight, pet.price, pet.is_sold FROM pet JOIN breed ON pet.breed_id = breed.id
+2024-05-15 22:02:35 | SELECT pet.id, pet.name, breed_id, species.name AS species, breed.name AS breed, pet.born_year, pet.weight, pet.description, pet.image, pet.price, pet.is_sold FROM pet JOIN breed ON pet.breed_id = breed.id JOIN species ON breed.species_id = species.id WHERE pet.id = 20001
+2024-05-15 22:02:35 | SELECT id, name FROM breed
+2024-05-15 22:02:46 | SELECT pet.id, pet.name, breed_id, species.name AS species, breed.name AS breed, pet.born_year, pet.weight, pet.description, pet.image, pet.price, pet.is_sold FROM pet JOIN breed ON pet.breed_id = breed.id JOIN species ON breed.species_id = species.id WHERE pet.id = 20001
+2024-05-15 22:02:46 | SELECT id, name FROM breed
+2024-05-15 22:03:29 | SELECT user.id, user.name, user.birth_date, user.username, role.name AS role FROM user JOIN role ON user.role_id = role.id WHERE user.id = 10001
+2024-05-15 22:03:30 | SELECT pet.id, pet.name, breed.name AS breed, pet.born_year, pet.weight, pet.price, pet.is_sold FROM pet JOIN breed ON pet.breed_id = breed.id
+2024-05-15 22:03:32 | SELECT pet.id, pet.name, breed_id, species.name AS species, breed.name AS breed, pet.born_year, pet.weight, pet.description, pet.image, pet.price, pet.is_sold FROM pet JOIN breed ON pet.breed_id = breed.id JOIN species ON breed.species_id = species.id WHERE pet.id = 20001
+2024-05-15 22:03:32 | SELECT id, name FROM breed
+2024-05-15 22:03:40 | SELECT pet.id, pet.name, breed_id, species.name AS species, breed.name AS breed, pet.born_year, pet.weight, pet.description, pet.image, pet.price, pet.is_sold FROM pet JOIN breed ON pet.breed_id = breed.id JOIN species ON breed.species_id = species.id WHERE pet.id = 20002
+2024-05-15 22:03:40 | SELECT id, name FROM breed
+2024-05-15 22:04:15 | SELECT pet.id, pet.name, breed_id, species.name AS species, breed.name AS breed, pet.born_year, pet.weight, pet.description, pet.image, pet.price, pet.is_sold FROM pet JOIN breed ON pet.breed_id = breed.id JOIN species ON breed.species_id = species.id WHERE pet.id = 20001
+2024-05-15 22:04:15 | SELECT id, name FROM breed
+2024-05-15 22:04:18 | UPDATE pet SET name = 'Max', is_male = 'False', born_year = '2020', breed_id = '30005', weight = '2.56', description = 'Rất thân thiện và hiền lành. Thích ăn đồ hộp.', image = 'https://res.cloudinary.com/dxhuysuy5/image/upload/v1715619682/netproject/20001.jpg', price = '7000000' WHERE id = 20001
+2024-05-15 22:04:41 | SELECT pet.id, pet.name, breed.name AS breed, pet.born_year, pet.weight, pet.price, pet.is_sold FROM pet JOIN breed ON pet.breed_id = breed.id
+2024-05-15 22:09:39 | SELECT user.id, user.name, user.birth_date, user.username, role.name AS role FROM user JOIN role ON user.role_id = role.id WHERE user.id = 10001
+2024-05-15 22:09:41 | SELECT pet.id, pet.name, breed.name AS breed, pet.born_year, pet.weight, pet.price, pet.is_sold FROM pet JOIN breed ON pet.breed_id = breed.id
+2024-05-15 22:09:42 | SELECT pet.id, pet.name, breed_id, species.name AS species, breed.name AS breed, pet.born_year, pet.weight, pet.description, pet.image, pet.price, pet.is_sold FROM pet JOIN breed ON pet.breed_id = breed.id JOIN species ON breed.species_id = species.id WHERE pet.id = 20002
+2024-05-15 22:09:42 | SELECT id, name FROM breed
+2024-05-15 22:09:45 | SELECT pet.id, pet.name, breed_id, species.name AS species, breed.name AS breed, pet.born_year, pet.weight, pet.description, pet.image, pet.price, pet.is_sold FROM pet JOIN breed ON pet.breed_id = breed.id JOIN species ON breed.species_id = species.id WHERE pet.id = 20001
+2024-05-15 22:09:45 | SELECT id, name FROM breed
+2024-05-15 22:09:46 | SELECT pet.id, pet.name, breed_id, species.name AS species, breed.name AS breed, pet.born_year, pet.weight, pet.description, pet.image, pet.price, pet.is_sold FROM pet JOIN breed ON pet.breed_id = breed.id JOIN species ON breed.species_id = species.id WHERE pet.id = 20005
+2024-05-15 22:09:46 | SELECT id, name FROM breed
+2024-05-15 22:09:48 | SELECT pet.id, pet.name, breed_id, species.name AS species, breed.name AS breed, pet.born_year, pet.weight, pet.description, pet.image, pet.price, pet.is_sold FROM pet JOIN breed ON pet.breed_id = breed.id JOIN species ON breed.species_id = species.id WHERE pet.id = 20002
+2024-05-15 22:09:48 | SELECT id, name FROM breed
+2024-05-15 22:09:50 | SELECT pet.id, pet.name, breed_id, species.name AS species, breed.name AS breed, pet.born_year, pet.weight, pet.description, pet.image, pet.price, pet.is_sold FROM pet JOIN breed ON pet.breed_id = breed.id JOIN species ON breed.species_id = species.id WHERE pet.id = 20004
+2024-05-15 22:09:50 | SELECT id, name FROM breed
+2024-05-15 22:09:54 | UPDATE pet SET name = 'Bella', is_male = 'False', born_year = '2023', breed_id = '30006', weight = '1.53', description = 'Thích phơi nắng và nằm im. Ghét dưa chuột.', image = 'https://res.cloudinary.com/dxhuysuy5/image/upload/v1715620238/netproject/20004.jpg', price = '3249000' WHERE id = 20004
+2024-05-15 22:10:10 | SELECT pet.id, pet.name, breed.name AS breed, pet.born_year, pet.weight, pet.price, pet.is_sold FROM pet JOIN breed ON pet.breed_id = breed.id
+2024-05-15 22:10:12 | SELECT pet.id, pet.name, breed_id, species.name AS species, breed.name AS breed, pet.born_year, pet.weight, pet.description, pet.image, pet.price, pet.is_sold FROM pet JOIN breed ON pet.breed_id = breed.id JOIN species ON breed.species_id = species.id WHERE pet.id = 20004
+2024-05-15 22:10:12 | SELECT id, name FROM breed
+2024-05-15 22:10:19 | UPDATE pet SET name = 'Bella', is_male = 'False', born_year = '2024', breed_id = '30006', weight = '1.53', description = 'Thích phơi nắng và nằm im. Ghét dưa chuột.', image = 'https://res.cloudinary.com/dxhuysuy5/image/upload/v1715620238/netproject/20004.jpg', price = '3249000' WHERE id = 20004
+2024-05-15 22:10:24 | SELECT pet.id, pet.name, breed.name AS breed, pet.born_year, pet.weight, pet.price, pet.is_sold FROM pet JOIN breed ON pet.breed_id = breed.id
+2024-05-15 22:12:17 | SELECT user.id, user.name, user.birth_date, user.username, role.name AS role FROM user JOIN role ON user.role_id = role.id WHERE user.id = 10001
+2024-05-15 22:12:19 | SELECT pet.id, pet.name, breed.name AS breed, pet.born_year, pet.weight, pet.price, pet.is_sold FROM pet JOIN breed ON pet.breed_id = breed.id
+2024-05-15 22:12:22 | SELECT pet.id, pet.name, breed_id, species.name AS species, breed.name AS breed, pet.born_year, pet.weight, pet.description, pet.image, pet.price, pet.is_sold FROM pet JOIN breed ON pet.breed_id = breed.id JOIN species ON breed.species_id = species.id WHERE pet.id = 20004
+2024-05-15 22:12:22 | SELECT id, name FROM breed
+2024-05-15 22:12:24 | UPDATE pet SET name = 'Bellaa', is_male = 'False', born_year = '2024', breed_id = '30006', weight = '1.53', description = 'Thích phơi nắng và nằm im. Ghét dưa chuột.', image = 'https://res.cloudinary.com/dxhuysuy5/image/upload/v1715620238/netproject/20004.jpg', price = '3249000' WHERE id = 20004
+2024-05-15 22:12:32 | SELECT pet.id, pet.name, breed.name AS breed, pet.born_year, pet.weight, pet.price, pet.is_sold FROM pet JOIN breed ON pet.breed_id = breed.id
+2024-05-15 22:15:29 | SELECT user.id, user.name, user.birth_date, user.username, role.name AS role FROM user JOIN role ON user.role_id = role.id WHERE user.id = 10001
+2024-05-15 22:15:31 | SELECT pet.id, pet.name, breed.name AS breed, pet.born_year, pet.weight, pet.price, pet.is_sold FROM pet JOIN breed ON pet.breed_id = breed.id
+2024-05-15 22:15:35 | SELECT id, name FROM breed
+2024-05-15 22:17:36 | SELECT species.name FROM breed JOIN species ON breed.species_id = species.id WHERE breed.id = 30001
+2024-05-15 22:17:41 | INSERT INTO pet(name, is_male, born_year, breed_id, weight, description, image, price, is_sold) VALUES('Nasus', True, 2022, 30001, 4.25, 'Khỏe mạnh và dũng cảm', 'https://www.thesprucepets.com/thmb/zXkzVVV5P8h2JG0ZUFtXtvIq-lM=/3600x0/filters:no_upscale():strip_icc()/bulldog-4584344-hero-8b60f1e867f046e792ba092eec669256.jpg', 7200000, false)
+2024-05-15 22:17:45 | SELECT pet.id, pet.name, breed.name AS breed, pet.born_year, pet.weight, pet.price, pet.is_sold FROM pet JOIN breed ON pet.breed_id = breed.id
+2024-05-15 22:17:56 | SELECT pet.id, pet.name, breed_id, species.name AS species, breed.name AS breed, pet.born_year, pet.weight, pet.description, pet.image, pet.price, pet.is_sold FROM pet JOIN breed ON pet.breed_id = breed.id JOIN species ON breed.species_id = species.id WHERE pet.id = 20008
+2024-05-15 22:17:56 | SELECT id, name FROM breed
+2024-05-15 22:22:58 | SELECT user.id, user.name, user.birth_date, user.username, role.name AS role FROM user JOIN role ON user.role_id = role.id WHERE user.id = 10001
+2024-05-15 22:23:01 | SELECT pet.id, pet.name, breed.name AS breed, pet.born_year, pet.weight, pet.price, pet.is_sold FROM pet JOIN breed ON pet.breed_id = breed.id
+2024-05-15 22:23:02 | SELECT pet.id, pet.name, breed_id, species.name AS species, breed.name AS breed, pet.born_year, pet.weight, pet.description, pet.image, pet.price, pet.is_sold FROM pet JOIN breed ON pet.breed_id = breed.id JOIN species ON breed.species_id = species.id WHERE pet.id = 20001
+2024-05-15 22:23:02 | SELECT id, name FROM breed
+2024-05-15 22:24:24 | SELECT user.id, user.name, user.birth_date, user.username, role.name AS role FROM user JOIN role ON user.role_id = role.id WHERE user.id = 10001
+2024-05-15 22:24:26 | SELECT pet.id, pet.name, breed.name AS breed, pet.born_year, pet.weight, pet.price, pet.is_sold FROM pet JOIN breed ON pet.breed_id = breed.id
+2024-05-15 22:24:28 | SELECT pet.id, pet.name, breed_id, species.name AS species, breed.name AS breed, pet.born_year, pet.weight, pet.description, pet.image, pet.price, pet.is_sold FROM pet JOIN breed ON pet.breed_id = breed.id JOIN species ON breed.species_id = species.id WHERE pet.id = 20002
+2024-05-15 22:24:29 | SELECT id, name FROM breed
+2024-05-15 22:24:32 | SELECT id, name FROM breed
+2024-05-15 22:25:07 | SELECT user.id, user.name, user.birth_date, user.username, role.name AS role FROM user JOIN role ON user.role_id = role.id WHERE username = 'employee001' AND password = '20e55261c0d9573a4f22dfed406ae6a9d82c0e59926e976b6b0f175187140785'
+2024-05-15 22:25:09 | SELECT pet.id, pet.name, breed.name AS breed, pet.born_year, pet.weight, pet.price, pet.is_sold FROM pet JOIN breed ON pet.breed_id = breed.id
+2024-05-15 22:25:12 | SELECT pet.id, pet.name, breed_id, species.name AS species, breed.name AS breed, pet.born_year, pet.weight, pet.description, pet.image, pet.price, pet.is_sold FROM pet JOIN breed ON pet.breed_id = breed.id JOIN species ON breed.species_id = species.id WHERE pet.id = 20007
+2024-05-15 22:25:12 | SELECT id, name FROM breed
+2024-05-15 22:27:33 | SELECT user.id, user.name, user.birth_date, user.username, role.name AS role FROM user JOIN role ON user.role_id = role.id WHERE username = 'employee001' AND password = '20e55261c0d9573a4f22dfed406ae6a9d82c0e59926e976b6b0f175187140785'
+2024-05-15 22:27:34 | SELECT pet.id, pet.name, breed.name AS breed, pet.born_year, pet.weight, pet.price, pet.is_sold FROM pet JOIN breed ON pet.breed_id = breed.id
+2024-05-15 22:27:36 | SELECT pet.id, pet.name, breed_id, species.name AS species, breed.name AS breed, pet.born_year, pet.weight, pet.description, pet.image, pet.price, pet.is_sold FROM pet JOIN breed ON pet.breed_id = breed.id JOIN species ON breed.species_id = species.id WHERE pet.id = 20001
+2024-05-15 22:27:36 | SELECT id, name FROM breed
+2024-05-15 22:28:06 | SELECT user.id, user.name, user.birth_date, user.username, role.name AS role FROM user JOIN role ON user.role_id = role.id WHERE username = 'manager002' AND password = '02e705f03ca721dc13ef0fe806c268e64a3de5e4c42d846889aca978352b12f9'
+2024-05-15 22:28:08 | SELECT pet.id, pet.name, breed.name AS breed, pet.born_year, pet.weight, pet.price, pet.is_sold FROM pet JOIN breed ON pet.breed_id = breed.id
+2024-05-15 22:28:10 | SELECT pet.id, pet.name, breed_id, species.name AS species, breed.name AS breed, pet.born_year, pet.weight, pet.description, pet.image, pet.price, pet.is_sold FROM pet JOIN breed ON pet.breed_id = breed.id JOIN species ON breed.species_id = species.id WHERE pet.id = 20001
+2024-05-15 22:28:10 | SELECT id, name FROM breed
+2024-05-15 22:28:19 | SELECT pet.id, pet.name, breed_id, species.name AS species, breed.name AS breed, pet.born_year, pet.weight, pet.description, pet.image, pet.price, pet.is_sold FROM pet JOIN breed ON pet.breed_id = breed.id JOIN species ON breed.species_id = species.id WHERE pet.id = 20002
+2024-05-15 22:28:19 | SELECT id, name FROM breed
+2024-05-15 22:28:39 | SELECT user.id, user.name, user.birth_date, user.username, role.name AS role FROM user JOIN role ON user.role_id = role.id WHERE username = 'dev01d' AND password = 'd82494f05d6917ba02f7aaa29689ccb444bb73f20380876cb05d1f37537b7892'
+2024-05-15 22:28:41 | SELECT pet.id, pet.name, breed.name AS breed, pet.born_year, pet.weight, pet.price, pet.is_sold FROM pet JOIN breed ON pet.breed_id = breed.id
+2024-05-15 22:28:42 | SELECT pet.id, pet.name, breed_id, species.name AS species, breed.name AS breed, pet.born_year, pet.weight, pet.description, pet.image, pet.price, pet.is_sold FROM pet JOIN breed ON pet.breed_id = breed.id JOIN species ON breed.species_id = species.id WHERE pet.id = 20002
+2024-05-15 22:28:42 | SELECT id, name FROM breed
+2024-05-15 22:28:45 | SELECT pet.id, pet.name, breed_id, species.name AS species, breed.name AS breed, pet.born_year, pet.weight, pet.description, pet.image, pet.price, pet.is_sold FROM pet JOIN breed ON pet.breed_id = breed.id JOIN species ON breed.species_id = species.id WHERE pet.id = 20007
+2024-05-15 22:28:45 | SELECT id, name FROM breed
+2024-05-15 22:31:38 | SELECT user.id, user.name, user.birth_date, user.username, role.name AS role FROM user JOIN role ON user.role_id = role.id WHERE username = 'employee001' AND password = '20e55261c0d9573a4f22dfed406ae6a9d82c0e59926e976b6b0f175187140785'
+2024-05-15 22:31:40 | SELECT pet.id, pet.name, breed.name AS breed, pet.born_year, pet.weight, pet.price, pet.is_sold FROM pet JOIN breed ON pet.breed_id = breed.id
+2024-05-15 22:31:44 | SELECT pet.id, pet.name, breed_id, species.name AS species, breed.name AS breed, pet.born_year, pet.weight, pet.description, pet.image, pet.price, pet.is_sold FROM pet JOIN breed ON pet.breed_id = breed.id JOIN species ON breed.species_id = species.id WHERE pet.id = 20002
+2024-05-15 22:31:44 | SELECT id, name FROM breed
+2024-05-15 22:53:17 | SELECT user.id, user.name, user.birth_date, user.username, role.name AS role FROM user JOIN role ON user.role_id = role.id WHERE username = 'dev01d' AND password = 'd82494f05d6917ba02f7aaa29689ccb444bb73f20380876cb05d1f37537b7892'
+2024-05-15 22:53:20 | SELECT pet.id, pet.name, breed.name AS breed, pet.born_year, pet.weight, pet.price, pet.is_sold FROM pet JOIN breed ON pet.breed_id = breed.id
+2024-05-15 23:06:18 | SELECT user.id, user.name, user.birth_date, user.username, role.name AS role FROM user JOIN role ON user.role_id = role.id WHERE user.id = 10001
+2024-05-15 23:22:30 | SELECT user.id, user.name, user.birth_date, user.username, role.name AS role FROM user JOIN role ON user.role_id = role.id WHERE user.id = 10001
+2024-05-15 23:22:33 | SELECT * FROM species
+2024-05-15 23:22:33 | SELECT * FROM breed
+2024-05-15 23:35:48 | SELECT user.id, user.name, user.birth_date, user.username, role.name AS role FROM user JOIN role ON user.role_id = role.id WHERE user.id = 10001
+2024-05-15 23:35:50 | SELECT * FROM species
+2024-05-15 23:35:50 | SELECT * FROM breed
+2024-05-15 23:36:02 | SELECT user.id, user.name, user.birth_date, user.username, role.name AS role FROM user JOIN role ON user.role_id = role.id WHERE user.id = 10001
+2024-05-15 23:36:04 | SELECT * FROM species
+2024-05-15 23:36:04 | SELECT * FROM breed
+2024-05-15 23:36:50 | SELECT user.id, user.name, user.birth_date, user.username, role.name AS role FROM user JOIN role ON user.role_id = role.id WHERE user.id = 10001
+2024-05-15 23:36:52 | SELECT * FROM species
+2024-05-15 23:36:52 | SELECT * FROM breed
+2024-05-15 23:37:05 | SELECT user.id, user.name, user.birth_date, user.username, role.name AS role FROM user JOIN role ON user.role_id = role.id WHERE user.id = 10001
+2024-05-15 23:37:07 | SELECT * FROM species
+2024-05-15 23:37:07 | SELECT * FROM breed
+2024-05-15 23:37:23 | SELECT user.id, user.name, user.birth_date, user.username, role.name AS role FROM user JOIN role ON user.role_id = role.id WHERE user.id = 10001
+2024-05-15 23:37:25 | SELECT * FROM species
+2024-05-15 23:37:25 | SELECT * FROM breed
+2024-05-15 23:38:18 | SELECT user.id, user.name, user.birth_date, user.username, role.name AS role FROM user JOIN role ON user.role_id = role.id WHERE user.id = 10001
+2024-05-15 23:38:20 | SELECT * FROM species
+2024-05-15 23:38:20 | SELECT * FROM breed
+2024-05-15 23:39:06 | SELECT user.id, user.name, user.birth_date, user.username, role.name AS role FROM user JOIN role ON user.role_id = role.id WHERE user.id = 10001
+2024-05-15 23:39:07 | SELECT * FROM species
+2024-05-15 23:39:07 | SELECT * FROM breed
+2024-05-16 00:06:50 | SELECT user.id, user.name, user.birth_date, user.username, role.name AS role FROM user JOIN role ON user.role_id = role.id WHERE user.id = 10001
+2024-05-16 00:06:52 | SELECT * FROM species
+2024-05-16 00:06:52 | SELECT * FROM breed
+2024-05-16 00:09:21 | SELECT user.id, user.name, user.birth_date, user.username, role.name AS role FROM user JOIN role ON user.role_id = role.id WHERE user.id = 10001
+2024-05-16 00:09:23 | SELECT * FROM species
+2024-05-16 00:09:23 | SELECT * FROM breed
+2024-05-16 00:12:16 | SELECT user.id, user.name, user.birth_date, user.username, role.name AS role FROM user JOIN role ON user.role_id = role.id WHERE user.id = 10001
+2024-05-16 00:12:18 | SELECT * FROM species
+2024-05-16 00:12:18 | SELECT * FROM breed
+2024-05-16 00:14:24 | SELECT user.id, user.name, user.birth_date, user.username, role.name AS role FROM user JOIN role ON user.role_id = role.id WHERE user.id = 10001
+2024-05-16 00:14:25 | SELECT * FROM species
+2024-05-16 00:14:25 | SELECT * FROM breed
+2024-05-16 00:15:48 | SELECT user.id, user.name, user.birth_date, user.username, role.name AS role FROM user JOIN role ON user.role_id = role.id WHERE user.id = 10001
+2024-05-16 00:15:50 | SELECT * FROM species
+2024-05-16 00:15:50 | SELECT * FROM breed
+2024-05-16 00:17:40 | SELECT user.id, user.name, user.birth_date, user.username, role.name AS role FROM user JOIN role ON user.role_id = role.id WHERE user.id = 10001
+2024-05-16 00:17:42 | SELECT * FROM species
+2024-05-16 00:17:42 | SELECT * FROM breed
+2024-05-16 00:18:37 | SELECT user.id, user.name, user.birth_date, user.username, role.name AS role FROM user JOIN role ON user.role_id = role.id WHERE user.id = 10001
+2024-05-16 00:18:39 | SELECT * FROM species
+2024-05-16 00:18:39 | SELECT * FROM breed
+2024-05-16 00:22:08 | SELECT user.id, user.name, user.birth_date, user.username, role.name AS role FROM user JOIN role ON user.role_id = role.id WHERE user.id = 10001
+2024-05-16 00:22:11 | SELECT * FROM species
+2024-05-16 00:22:11 | SELECT * FROM breed
+2024-05-16 00:23:18 | INSERT INTO breed (name, species_id, description) VALUES ('Bulldog', 40001, 'Bulldog hay còn gọi là chó mặt bò là một giống chó đầu to, khoẻ và dũng cảm của Vương quốc Anh. Chúng có đôi mắt tròn xoe màu tối sẫm, khá cách xa nhau và hơi cụp xuống về phía đuôi mắt, màu mắt chó thường có màu đen. Tai nhỏ và mỏng, luôn ở trạng thái cụp. Đuôi ngắn, thường cụp hoặc buông thõng.')
+2024-05-16 00:25:54 | INSERT INTO breed (name, species_id, description) VALUES ('Bulldog', 40001, 'Bulldog hay còn gọi là chó mặt bò là một giống chó đầu to, khoẻ và dũng cảm của Vương quốc Anh. Chúng có đôi mắt tròn xoe màu tối sẫm, khá cách xa nhau và hơi cụp xuống về phía đuôi mắt, màu mắt chó thường có màu đen. Tai nhỏ và mỏng, luôn ở trạng thái cụp. Đuôi ngắn, thường cụp hoặc buông thõng.')
+2024-05-16 00:27:45 | SELECT user.id, user.name, user.birth_date, user.username, role.name AS role FROM user JOIN role ON user.role_id = role.id WHERE user.id = 10001
+2024-05-16 00:27:46 | SELECT * FROM species
+2024-05-16 00:27:46 | SELECT * FROM breed
+2024-05-16 00:39:19 | SELECT user.id, user.name, user.birth_date, user.username, role.name AS role FROM user JOIN role ON user.role_id = role.id WHERE user.id = 10001
+2024-05-16 00:39:25 | SELECT * FROM species
+2024-05-16 00:39:25 | SELECT * FROM breed
+2024-05-16 00:40:30 | SELECT user.id, user.name, user.birth_date, user.username, role.name AS role FROM user JOIN role ON user.role_id = role.id WHERE user.id = 10001
+2024-05-16 00:40:32 | SELECT * FROM species
+2024-05-16 00:40:32 | SELECT * FROM breed
+2024-05-16 00:41:55 | INSERT INTO breed (name, species_id, description) VALUES ('Chim họa mi', 40003, 'Họa mi là một trong những giống chim cảnh rất được người chơi chim ưa chuộng. Chim họa mi thuộc họ chim sâu, hót hay đá giỏi nhưng lại rất nhát người. Do vậy, người nuôi chim cần đầu tư thời gian, công sức, và kiên trì để thuần hóa được một chú chim họa mi thành thục.')
+2024-05-16 00:42:06 | SELECT * FROM species
+2024-05-16 00:42:06 | SELECT * FROM breed
+2024-05-16 00:42:48 | SELECT user.id, user.name, user.birth_date, user.username, role.name AS role FROM user JOIN role ON user.role_id = role.id WHERE user.id = 10001
+2024-05-16 00:43:00 | SELECT user.id, user.name, user.birth_date, user.username, role.name AS role FROM user JOIN role ON user.role_id = role.id WHERE username = 'employee001' AND password = '20e55261c0d9573a4f22dfed406ae6a9d82c0e59926e976b6b0f175187140785'
+2024-05-16 00:43:02 | SELECT * FROM species
+2024-05-16 00:43:02 | SELECT * FROM breed
+2024-05-16 00:45:56 | SELECT user.id, user.name, user.birth_date, user.username, role.name AS role FROM user JOIN role ON user.role_id = role.id WHERE username = 'employee001' AND password = '20e55261c0d9573a4f22dfed406ae6a9d82c0e59926e976b6b0f175187140785'
+2024-05-16 00:45:57 | SELECT * FROM species
+2024-05-16 00:45:57 | SELECT * FROM breed
+2024-05-16 00:52:28 | SELECT user.id, user.name, user.birth_date, user.username, role.name AS role FROM user JOIN role ON user.role_id = role.id WHERE username = 'employee001' AND password = '896a4ae781bbbf540303e3853b82cb4567c93ae3682932acbe1630d4ffbfa5de'
+2024-05-16 00:52:38 | SELECT user.id, user.name, user.birth_date, user.username, role.name AS role FROM user JOIN role ON user.role_id = role.id WHERE username = 'employee001' AND password = '20e55261c0d9573a4f22dfed406ae6a9d82c0e59926e976b6b0f175187140785'
+2024-05-16 00:52:39 | SELECT * FROM species
+2024-05-16 00:52:39 | SELECT * FROM breed
+2024-05-16 00:53:24 | SELECT * FROM breed
+2024-05-16 00:53:44 | SELECT user.id, user.name, user.birth_date, user.username, role.name AS role FROM user JOIN role ON user.role_id = role.id WHERE username = 'manager002' AND password = '02e705f03ca721dc13ef0fe806c268e64a3de5e4c42d846889aca978352b12f9'
+2024-05-16 00:53:45 | SELECT * FROM species
+2024-05-16 00:53:45 | SELECT * FROM breed
+2024-05-16 00:53:55 | SELECT * FROM breed
+2024-05-16 00:55:28 | SELECT user.id, user.name, user.birth_date, user.username, role.name AS role FROM user JOIN role ON user.role_id = role.id WHERE username = 'dev01d' AND password = 'd82494f05d6917ba02f7aaa29689ccb444bb73f20380876cb05d1f37537b7892'
+2024-05-16 00:55:29 | SELECT * FROM species
+2024-05-16 00:55:29 | SELECT * FROM breed
+2024-05-16 00:56:04 | SELECT pet.id, pet.name, breed.name AS breed, pet.born_year, pet.weight, pet.price, pet.is_sold FROM pet JOIN breed ON pet.breed_id = breed.id
+2024-05-16 00:56:07 | SELECT pet.id, pet.name, breed_id, species.name AS species, breed.name AS breed, pet.born_year, pet.weight, pet.description, pet.image, pet.price, pet.is_sold FROM pet JOIN breed ON pet.breed_id = breed.id JOIN species ON breed.species_id = species.id WHERE pet.id = 20003
+2024-05-16 00:56:07 | SELECT id, name FROM breed
+2024-05-16 00:56:11 | SELECT * FROM species
+2024-05-16 00:56:11 | SELECT * FROM breed
+2024-05-16 00:56:24 | SELECT pet.id, pet.name, breed.name AS breed, pet.born_year, pet.weight, pet.price, pet.is_sold FROM pet JOIN breed ON pet.breed_id = breed.id
+2024-05-16 00:56:26 | SELECT * FROM species
+2024-05-16 00:56:26 | SELECT * FROM breed
+2024-05-16 00:56:28 | SELECT pet.id, pet.name, breed.name AS breed, pet.born_year, pet.weight, pet.price, pet.is_sold FROM pet JOIN breed ON pet.breed_id = breed.id
+2024-05-16 00:56:29 | SELECT * FROM species
+2024-05-16 00:56:29 | SELECT * FROM breed
+2024-05-16 00:56:31 | SELECT pet.id, pet.name, breed.name AS breed, pet.born_year, pet.weight, pet.price, pet.is_sold FROM pet JOIN breed ON pet.breed_id = breed.id
+2024-05-16 00:56:33 | SELECT * FROM species
+2024-05-16 00:56:33 | SELECT * FROM breed
+2024-05-16 01:18:06 | SELECT user.id, user.name, user.birth_date, user.username, role.name AS role FROM user JOIN role ON user.role_id = role.id WHERE username = 'dev01d' AND password = 'd82494f05d6917ba02f7aaa29689ccb444bb73f20380876cb05d1f37537b7892'
+2024-05-16 01:18:07 | SELECT * FROM species
+2024-05-16 01:20:11 | SELECT user.id, user.name, user.birth_date, user.username, role.name AS role FROM user JOIN role ON user.role_id = role.id WHERE username = 'dev01d' AND password = 'd82494f05d6917ba02f7aaa29689ccb444bb73f20380876cb05d1f37537b7892'
+2024-05-16 01:20:12 | SELECT * FROM species
+2024-05-16 01:20:57 | INSERT INTO species (name) VALUES ('Lợn')
+2024-05-16 01:20:58 | SELECT * FROM species
+2024-05-16 01:21:01 | DELETE FROM species WHERE id = 40004
+2024-05-16 01:21:02 | SELECT * FROM species
+2024-05-16 01:24:38 | SELECT user.id, user.name, user.birth_date, user.username, role.name AS role FROM user JOIN role ON user.role_id = role.id WHERE username = 'employee001' AND password = 'ccb6c85dc112a6c37a38096b0e2d627333dccf7a5055829cfec9c8a12faf83f2'
+2024-05-16 01:24:44 | SELECT user.id, user.name, user.birth_date, user.username, role.name AS role FROM user JOIN role ON user.role_id = role.id WHERE username = 'employee001' AND password = '20e55261c0d9573a4f22dfed406ae6a9d82c0e59926e976b6b0f175187140785'
+2024-05-16 01:24:47 | SELECT * FROM species
+2024-05-16 01:24:56 | SELECT * FROM species
+2024-05-16 01:24:57 | SELECT * FROM species
+2024-05-16 01:24:57 | SELECT * FROM breed
+2024-05-16 01:25:00 | SELECT * FROM species
+2024-05-16 01:25:05 | SELECT * FROM species
+2024-05-16 01:25:05 | SELECT * FROM breed
+2024-05-16 01:25:08 | SELECT pet.id, pet.name, breed.name AS breed, pet.born_year, pet.weight, pet.price, pet.is_sold FROM pet JOIN breed ON pet.breed_id = breed.id
+2024-05-16 01:25:10 | SELECT * FROM species
+2024-05-16 01:25:19 | SELECT * FROM species
+2024-05-16 01:25:32 | SELECT user.id, user.name, user.birth_date, user.username, role.name AS role FROM user JOIN role ON user.role_id = role.id WHERE username = 'manager002' AND password = '02e705f03ca721dc13ef0fe806c268e64a3de5e4c42d846889aca978352b12f9'
+2024-05-16 01:25:34 | SELECT * FROM species
+2024-05-16 01:25:42 | INSERT INTO species (name) VALUES ('Lớm')
+2024-05-16 01:25:43 | SELECT * FROM species
+2024-05-16 01:25:44 | SELECT * FROM species
+2024-05-16 01:25:48 | UPDATE species SET name = 'Lợn' WHERE id = 40005
+2024-05-16 01:25:50 | SELECT * FROM species
+2024-05-16 01:25:51 | SELECT * FROM species
+2024-05-16 01:26:03 | UPDATE species SET name = 'Chuột' WHERE id = 40005
+2024-05-16 01:26:04 | SELECT * FROM species
+2024-05-16 01:26:05 | SELECT * FROM species
+2024-05-16 01:26:07 | SELECT * FROM species
+2024-05-16 01:26:07 | SELECT * FROM breed
+2024-05-16 01:26:15 | SELECT * FROM species
+2024-05-16 01:26:18 | SELECT pet.id, pet.name, breed.name AS breed, pet.born_year, pet.weight, pet.price, pet.is_sold FROM pet JOIN breed ON pet.breed_id = breed.id
+2024-05-16 01:26:20 | SELECT * FROM species
+2024-05-16 01:58:55 | SELECT user.id, user.name, user.birth_date, user.username, role.name AS role FROM user JOIN role ON user.role_id = role.id WHERE username = 'employee001' AND password = '20e55261c0d9573a4f22dfed406ae6a9d82c0e59926e976b6b0f175187140785'
+2024-05-16 01:58:57 | SELECT user.id, user.name, user.birth_date, user.username, role.name AS role FROM user JOIN role ON user.role_id = role.id WHERE user.id = 10004
+2024-05-16 02:08:35 | SELECT user.id, user.name, user.birth_date, user.username, role.name AS role FROM user JOIN role ON user.role_id = role.id WHERE user.id = 10004
+2024-05-16 02:08:38 | SELECT user.id, user.name, user.birth_date, user.username, role.name AS role FROM user JOIN role ON user.role_id = role.id WHERE user.id = 10004
+2024-05-16 02:08:54 | UPDATE user SET name = 'Hoàng Văn Nam', birth_date = '2005-04-10' WHERE id = 10004
+2024-05-16 02:08:56 | SELECT user.id, user.name, user.birth_date, user.username, role.name AS role FROM user JOIN role ON user.role_id = role.id WHERE user.id = 10004
+2024-05-16 02:11:22 | SELECT user.id, user.name, user.birth_date, user.username, role.name AS role FROM user JOIN role ON user.role_id = role.id WHERE user.id = 10004
+2024-05-16 02:11:25 | SELECT user.id, user.name, user.birth_date, user.username, role.name AS role FROM user JOIN role ON user.role_id = role.id WHERE user.id = 10004
+2024-05-16 02:11:36 | UPDATE user SET password = '8d969eef6ecad3c29a3a629280e686cf0c3f5d5a86aff3ca12020c923adc6c92' WHERE username = 'employee001' AND password = '3d93895adfe91037812fd9d91ddfd5d785346b43988924af05bf7c9a5035446a'
+2024-05-16 02:12:04 | SELECT user.id, user.name, user.birth_date, user.username, role.name AS role FROM user JOIN role ON user.role_id = role.id WHERE username = 'employe001' AND password = '20e55261c0d9573a4f22dfed406ae6a9d82c0e59926e976b6b0f175187140785'
+2024-05-16 02:12:08 | SELECT user.id, user.name, user.birth_date, user.username, role.name AS role FROM user JOIN role ON user.role_id = role.id WHERE username = 'employee001' AND password = '20e55261c0d9573a4f22dfed406ae6a9d82c0e59926e976b6b0f175187140785'
+2024-05-16 02:12:09 | SELECT user.id, user.name, user.birth_date, user.username, role.name AS role FROM user JOIN role ON user.role_id = role.id WHERE user.id = 10004
+2024-05-16 02:14:02 | SELECT user.id, user.name, user.birth_date, user.username, role.name AS role FROM user JOIN role ON user.role_id = role.id WHERE username = 'employee001' AND password = '20e55261c0d9573a4f22dfed406ae6a9d82c0e59926e976b6b0f175187140785'
+2024-05-16 02:14:03 | SELECT user.id, user.name, user.birth_date, user.username, role.name AS role FROM user JOIN role ON user.role_id = role.id WHERE user.id = 10004
+2024-05-16 02:14:08 | UPDATE user SET password = '8d969eef6ecad3c29a3a629280e686cf0c3f5d5a86aff3ca12020c923adc6c92' WHERE username = 'employee001' AND password = '96cae35ce8a9b0244178bf28e4966c2ce1b8385723a96a6b838858cdd6ca0a1e'
+2024-05-16 02:16:15 | SELECT user.id, user.name, user.birth_date, user.username, role.name AS role FROM user JOIN role ON user.role_id = role.id WHERE username = 'employee001' AND password = '20e55261c0d9573a4f22dfed406ae6a9d82c0e59926e976b6b0f175187140785'
+2024-05-16 02:16:16 | SELECT user.id, user.name, user.birth_date, user.username, role.name AS role FROM user JOIN role ON user.role_id = role.id WHERE user.id = 10004
+2024-05-16 02:16:21 | SELECT id FROM user WHERE username = 'employee001' AND password = '96cae35ce8a9b0244178bf28e4966c2ce1b8385723a96a6b838858cdd6ca0a1e'
+2024-05-16 02:16:35 | SELECT id FROM user WHERE username = 'employee001' AND password = '36cdfcec47d26e934f3b0c0b9ca761bbe09fae6d37581ab2e4bb4a52b66623ab'
+2024-05-16 02:16:47 | SELECT id FROM user WHERE username = 'employee001' AND password = '20e55261c0d9573a4f22dfed406ae6a9d82c0e59926e976b6b0f175187140785'
+2024-05-16 02:16:47 | UPDATE user SET password = '8d969eef6ecad3c29a3a629280e686cf0c3f5d5a86aff3ca12020c923adc6c92' WHERE username = 'employee001'
+2024-05-16 02:16:47 | There is already an open DataReader associated with this Connection which must be closed first.
+2024-05-16 02:16:53 | SELECT id FROM user WHERE username = 'employee001' AND password = '20e55261c0d9573a4f22dfed406ae6a9d82c0e59926e976b6b0f175187140785'
+2024-05-16 02:16:53 | UPDATE user SET password = '8d969eef6ecad3c29a3a629280e686cf0c3f5d5a86aff3ca12020c923adc6c92' WHERE username = 'employee001'
+2024-05-16 02:16:53 | There is already an open DataReader associated with this Connection which must be closed first.
+2024-05-16 02:19:37 | SELECT user.id, user.name, user.birth_date, user.username, role.name AS role FROM user JOIN role ON user.role_id = role.id WHERE username = 'employee001' AND password = '20e55261c0d9573a4f22dfed406ae6a9d82c0e59926e976b6b0f175187140785'
+2024-05-16 02:19:39 | SELECT user.id, user.name, user.birth_date, user.username, role.name AS role FROM user JOIN role ON user.role_id = role.id WHERE user.id = 10004
+2024-05-16 02:19:50 | SELECT id FROM user WHERE username = 'employee001' AND password = 'cd4ea09ddbf7e1d6939c47e703d88f73b418e1b82121f651bf671ed6adbdc12f'
+2024-05-16 02:21:15 | SELECT user.id, user.name, user.birth_date, user.username, role.name AS role FROM user JOIN role ON user.role_id = role.id WHERE username = 'employee001' AND password = '20e55261c0d9573a4f22dfed406ae6a9d82c0e59926e976b6b0f175187140785'
+2024-05-16 02:21:16 | SELECT user.id, user.name, user.birth_date, user.username, role.name AS role FROM user JOIN role ON user.role_id = role.id WHERE user.id = 10004
+2024-05-16 02:21:26 | SELECT id FROM user WHERE username = 'employee001' AND password = 'cd4ea09ddbf7e1d6939c47e703d88f73b418e1b82121f651bf671ed6adbdc12f'
+2024-05-16 02:22:28 | SELECT user.id, user.name, user.birth_date, user.username, role.name AS role FROM user JOIN role ON user.role_id = role.id WHERE username = 'employee001' AND password = '20e55261c0d9573a4f22dfed406ae6a9d82c0e59926e976b6b0f175187140785'
+2024-05-16 02:22:29 | SELECT user.id, user.name, user.birth_date, user.username, role.name AS role FROM user JOIN role ON user.role_id = role.id WHERE user.id = 10004
+2024-05-16 02:22:35 | SELECT id FROM user WHERE username = 'employee001' AND password = 'cd4ea09ddbf7e1d6939c47e703d88f73b418e1b82121f651bf671ed6adbdc12f'
+2024-05-16 02:22:39 | SELECT id FROM user WHERE username = 'employee001' AND password = '20e55261c0d9573a4f22dfed406ae6a9d82c0e59926e976b6b0f175187140785'
+2024-05-16 02:22:39 | UPDATE user SET password = '8d969eef6ecad3c29a3a629280e686cf0c3f5d5a86aff3ca12020c923adc6c92' WHERE username = 'employee001'
+2024-05-16 02:22:52 | SELECT user.id, user.name, user.birth_date, user.username, role.name AS role FROM user JOIN role ON user.role_id = role.id WHERE username = 'employee001' AND password = '20e55261c0d9573a4f22dfed406ae6a9d82c0e59926e976b6b0f175187140785'
+2024-05-16 02:22:56 | SELECT user.id, user.name, user.birth_date, user.username, role.name AS role FROM user JOIN role ON user.role_id = role.id WHERE username = 'employee001' AND password = '8d969eef6ecad3c29a3a629280e686cf0c3f5d5a86aff3ca12020c923adc6c92'
+2024-05-16 02:22:58 | SELECT user.id, user.name, user.birth_date, user.username, role.name AS role FROM user JOIN role ON user.role_id = role.id WHERE user.id = 10004
+2024-05-16 02:25:16 | SELECT user.id, user.name, user.birth_date, user.username, role.name AS role FROM user JOIN role ON user.role_id = role.id WHERE username = 'employee001' AND password = '8d969eef6ecad3c29a3a629280e686cf0c3f5d5a86aff3ca12020c923adc6c92'
+2024-05-16 02:25:18 | SELECT user.id, user.name, user.birth_date, user.username, role.name AS role FROM user JOIN role ON user.role_id = role.id WHERE user.id = 10004
+2024-05-16 02:36:37 | SELECT user.id, user.name, user.birth_date, user.username, role.name AS role FROM user JOIN role ON user.role_id = role.id WHERE username = 'dev01d' AND password = 'd82494f05d6917ba02f7aaa29689ccb444bb73f20380876cb05d1f37537b7892'
+2024-05-16 02:36:39 | SELECT user.id, user.name, user.birth_date, user.username, role.name AS role FROM user JOIN role ON user.role_id = role.id WHERE user.id = 10001
+2024-05-16 02:36:42 | SELECT * FROM species
+2024-05-16 02:36:42 | SELECT * FROM breed
+2024-05-16 02:36:44 | SELECT pet.id, pet.name, breed.name AS breed, pet.born_year, pet.weight, pet.price, pet.is_sold FROM pet JOIN breed ON pet.breed_id = breed.id
+2024-05-16 02:36:45 | SELECT pet.id, pet.name, breed_id, species.name AS species, breed.name AS breed, pet.born_year, pet.weight, pet.description, pet.image, pet.price, pet.is_sold FROM pet JOIN breed ON pet.breed_id = breed.id JOIN species ON breed.species_id = species.id WHERE pet.id = 20003
+2024-05-16 02:36:45 | SELECT id, name FROM breed
+2024-05-16 02:36:49 | SELECT user.id, user.name, user.birth_date, user.username, role.name AS role FROM user JOIN role ON user.role_id = role.id WHERE user.id = 10001
+2024-05-16 02:37:01 | SELECT * FROM species
+2024-05-16 02:37:08 | UPDATE species SET name = 'Gà' WHERE id = 40005
+2024-05-16 02:37:09 | SELECT * FROM species
+2024-05-16 02:37:14 | SELECT user.id, user.name, user.birth_date, user.username, role.name AS role FROM user JOIN role ON user.role_id = role.id WHERE user.id = 10001
+2024-05-16 02:37:29 | SELECT id FROM user WHERE username = 'dev01d' AND password = 'd8bae55e5e0e01865556bb350cd19330b95d547f72434f3943cb1253375b265c'
+2024-05-16 02:37:37 | SELECT id FROM user WHERE username = 'dev01d' AND password = 'd82494f05d6917ba02f7aaa29689ccb444bb73f20380876cb05d1f37537b7892'
+2024-05-16 02:37:37 | UPDATE user SET password = 'de161615655a53e80ebddade12e43b3b5f44229cca48c7a41942cacc2866aae4' WHERE username = 'dev01d'
+2024-05-16 02:37:39 | SELECT user.id, user.name, user.birth_date, user.username, role.name AS role FROM user JOIN role ON user.role_id = role.id WHERE user.id = 10001
+2024-05-16 02:37:47 | SELECT user.id, user.name, user.birth_date, user.username, role.name AS role FROM user JOIN role ON user.role_id = role.id WHERE username = 'dev01d' AND password = 'de161615655a53e80ebddade12e43b3b5f44229cca48c7a41942cacc2866aae4'
+2024-05-16 02:37:50 | SELECT user.id, user.name, user.birth_date, user.username, role.name AS role FROM user JOIN role ON user.role_id = role.id WHERE user.id = 10001
+2024-05-16 02:37:51 | SELECT * FROM species
+2024-05-16 02:37:53 | SELECT * FROM species
+2024-05-16 02:37:53 | SELECT * FROM breed
+2024-05-16 13:30:28 | SELECT user.id, user.name, user.birth_date, user.username, role.name AS role FROM user JOIN role ON user.role_id = role.id WHERE username = 'dev01d' AND password = 'd82494f05d6917ba02f7aaa29689ccb444bb73f20380876cb05d1f37537b7892'
+2024-05-16 13:30:32 | SELECT user.id, user.name, user.birth_date, user.username, role.name AS role FROM user JOIN role ON user.role_id = role.id WHERE username = 'dev01d' AND password = 'de161615655a53e80ebddade12e43b3b5f44229cca48c7a41942cacc2866aae4'
+2024-05-16 13:30:34 | SELECT user.id, user.name, user.birth_date, user.username, role.name AS role FROM user JOIN role ON user.role_id = role.id
+2024-05-16 13:30:34 | SELECT * FROM role
+2024-05-16 13:32:28 | SELECT user.id, user.name, user.birth_date, user.username, role.name AS role FROM user JOIN role ON user.role_id = role.id WHERE username = 'dev01d' AND password = 'de161615655a53e80ebddade12e43b3b5f44229cca48c7a41942cacc2866aae4'
+2024-05-16 13:32:29 | SELECT user.id, user.name, user.birth_date, user.username, role.name AS role FROM user JOIN role ON user.role_id = role.id
+2024-05-16 13:32:29 | SELECT * FROM role
+2024-05-16 13:33:48 | UPDATE user SET name = 'Trần Văn D', birth_date = '1999-12-04', role_id = 90002 WHERE id = 10003
+2024-05-16 13:33:51 | SELECT user.id, user.name, user.birth_date, user.username, role.name AS role FROM user JOIN role ON user.role_id = role.id
+2024-05-16 13:34:44 | UPDATE user SET name = 'Phan Thị E', birth_date = '2004-11-02', role_id = 90002 WHERE id = 10006
+2024-05-16 13:34:46 | SELECT user.id, user.name, user.birth_date, user.username, role.name AS role FROM user JOIN role ON user.role_id = role.id
+2024-05-16 13:35:08 | SELECT user.id, user.name, user.birth_date, user.username, role.name AS role FROM user JOIN role ON user.role_id = role.id
+2024-05-16 13:35:08 | SELECT * FROM role
+2024-05-16 13:41:57 | SELECT user.id, user.name, user.birth_date, user.username, role.name AS role FROM user JOIN role ON user.role_id = role.id WHERE user.id = 10001
+2024-05-16 13:41:59 | SELECT user.id, user.name, user.birth_date, user.username, role.name AS role FROM user JOIN role ON user.role_id = role.id
+2024-05-16 13:41:59 | SELECT * FROM role
+2024-05-16 13:43:01 | INSERT INTO user (name, birth_date, username, password, role_id) VALUES ('Sơn Tùng', '1995-10-21', 'sontung001', 'bfea333816b0c7342739b2f67580da874308e29596b1f36cd81336f46758c5da', 90001)
+2024-05-16 13:43:02 | SELECT user.id, user.name, user.birth_date, user.username, role.name AS role FROM user JOIN role ON user.role_id = role.id
+2024-05-16 13:43:17 | UPDATE user SET name = 'Sơn Tùng', birth_date = '1995-10-10', role_id = 90002 WHERE id = 10007
+2024-05-16 13:43:18 | SELECT user.id, user.name, user.birth_date, user.username, role.name AS role FROM user JOIN role ON user.role_id = role.id
+2024-05-16 13:43:23 | UPDATE user SET name = 'Sơn Tùng', birth_date = '1995-10-10', role_id = 90001 WHERE id = 10007
+2024-05-16 13:43:24 | SELECT user.id, user.name, user.birth_date, user.username, role.name AS role FROM user JOIN role ON user.role_id = role.id
+2024-05-16 13:43:26 | SELECT user.id, user.name, user.birth_date, user.username, role.name AS role FROM user JOIN role ON user.role_id = role.id
+2024-05-16 13:43:26 | SELECT * FROM role
+2024-05-16 13:44:09 | UPDATE user SET name = 'Sơn Tùng MTP', birth_date = '1995-10-10', role_id = 90001 WHERE id = 10007
+2024-05-16 13:44:10 | SELECT user.id, user.name, user.birth_date, user.username, role.name AS role FROM user JOIN role ON user.role_id = role.id
+2024-05-16 13:44:16 | UPDATE user SET name = 'Phan Thị E', birth_date = '2004-11-02', role_id = 90001 WHERE id = 10006
+2024-05-16 13:44:17 | SELECT user.id, user.name, user.birth_date, user.username, role.name AS role FROM user JOIN role ON user.role_id = role.id
+2024-05-16 17:10:19 | SELECT user.id, user.name, user.birth_date, user.username, role.name AS role FROM user JOIN role ON user.role_id = role.id WHERE username = 'dev01d' AND password = 'd82494f05d6917ba02f7aaa29689ccb444bb73f20380876cb05d1f37537b7892'
+2024-05-16 17:10:25 | SELECT user.id, user.name, user.birth_date, user.username, role.name AS role FROM user JOIN role ON user.role_id = role.id WHERE username = 'dev01d' AND password = 'de161615655a53e80ebddade12e43b3b5f44229cca48c7a41942cacc2866aae4'
+2024-05-16 17:10:28 | SELECT pet.id, pet.name, breed.name AS breed, pet.born_year, pet.weight, pet.price, pet.is_sold FROM pet JOIN breed ON pet.breed_id = breed.id
+2024-05-16 17:10:32 | SELECT pet.id, pet.name, breed.name AS breed, pet.born_year, pet.weight, pet.price, pet.is_sold FROM pet JOIN breed ON pet.breed_id = breed.id WHERE pet.name LIKE '%ma%' OR breed.name LIKE '%ma%'
+2024-05-16 17:10:35 | SELECT pet.id, pet.name, breed.name AS breed, pet.born_year, pet.weight, pet.price, pet.is_sold FROM pet JOIN breed ON pet.breed_id = breed.id
+2024-05-16 17:10:36 | SELECT pet.id, pet.name, breed.name AS breed, pet.born_year, pet.weight, pet.price, pet.is_sold FROM pet JOIN breed ON pet.breed_id = breed.id WHERE pet.is_sold = false
+2024-05-16 17:10:37 | SELECT pet.id, pet.name, breed.name AS breed, pet.born_year, pet.weight, pet.price, pet.is_sold FROM pet JOIN breed ON pet.breed_id = breed.id WHERE pet.is_sold = true
+2024-05-16 17:10:39 | SELECT pet.id, pet.name, breed.name AS breed, pet.born_year, pet.weight, pet.price, pet.is_sold FROM pet JOIN breed ON pet.breed_id = breed.id
+2024-05-16 17:10:43 | SELECT id, name FROM breed
+2024-05-16 17:12:21 | SELECT species.name FROM breed JOIN species ON breed.species_id = species.id WHERE breed.id = 30012
+2024-05-16 17:12:31 | INSERT INTO pet(name, is_male, born_year, breed_id, weight, description, image, price, is_sold) VALUES('Peanut', True, 2022, 30012, 1.21, 'Bộ lông trắng mượt. Thông minh, nhanh nhạy.', 'https://bizweb.dktcdn.net/thumb/1024x1024/100/462/524/products/98a0b967-4d0f-405a-a6d5-de7a01540c72-jpeg.jpg', 32000000, false)
+2024-05-16 17:12:34 | SELECT pet.id, pet.name, breed.name AS breed, pet.born_year, pet.weight, pet.price, pet.is_sold FROM pet JOIN breed ON pet.breed_id = breed.id
+2024-05-16 17:12:36 | SELECT pet.id, pet.name, breed_id, species.name AS species, breed.name AS breed, pet.born_year, pet.weight, pet.description, pet.image, pet.price, pet.is_sold FROM pet JOIN breed ON pet.breed_id = breed.id JOIN species ON breed.species_id = species.id WHERE pet.id = 20009
+2024-05-16 17:12:36 | SELECT id, name FROM breed
+2024-05-16 17:12:42 | UPDATE pet SET is_sold = true WHERE id = 20009
+2024-05-16 17:12:45 | SELECT pet.id, pet.name, breed.name AS breed, pet.born_year, pet.weight, pet.price, pet.is_sold FROM pet JOIN breed ON pet.breed_id = breed.id
+2024-05-16 17:12:53 | SELECT pet.id, pet.name, breed_id, species.name AS species, breed.name AS breed, pet.born_year, pet.weight, pet.description, pet.image, pet.price, pet.is_sold FROM pet JOIN breed ON pet.breed_id = breed.id JOIN species ON breed.species_id = species.id WHERE pet.id = 20009
+2024-05-16 17:12:53 | SELECT id, name FROM breed
+2024-05-16 17:13:05 | UPDATE pet SET name = 'Peanut', is_male = 'True', born_year = '2022', breed_id = '30012', weight = '1.17', description = 'Bộ lông trắng mượt. Thông minh, nhanh nhạy.', image = 'https://bizweb.dktcdn.net/thumb/1024x1024/100/462/524/products/98a0b967-4d0f-405a-a6d5-de7a01540c72-jpeg.jpg', price = '32000000' WHERE id = 20009
+2024-05-16 17:13:10 | SELECT pet.id, pet.name, breed.name AS breed, pet.born_year, pet.weight, pet.price, pet.is_sold FROM pet JOIN breed ON pet.breed_id = breed.id
+2024-05-16 17:13:11 | SELECT pet.id, pet.name, breed_id, species.name AS species, breed.name AS breed, pet.born_year, pet.weight, pet.description, pet.image, pet.price, pet.is_sold FROM pet JOIN breed ON pet.breed_id = breed.id JOIN species ON breed.species_id = species.id WHERE pet.id = 20009
+2024-05-16 17:13:11 | SELECT id, name FROM breed
+2024-05-16 17:13:14 | SELECT * FROM species
+2024-05-16 17:13:14 | SELECT * FROM breed
+2024-05-16 17:14:04 | UPDATE breed SET name = 'Golden Retriever', species_id = 40002, description = 'Golden Retriever là giống chó săn mồi có nguồn gốc từ Scotland. Chúng nổi tiếng với bộ lông vàng óng ả, tính cách thân thiện và lòng trung thành. Golden Retriever là một trong những giống chó phổ biến nhất trên thế giới vì chúng là những người bạn đồng hành tuyệt vời cho gia đình.' WHERE id = 30003
+2024-05-16 17:14:07 | SELECT * FROM breed
+2024-05-16 17:14:12 | UPDATE breed SET name = 'Golden Retriever', species_id = 40001, description = 'Golden Retriever là giống chó săn mồi có nguồn gốc từ Scotland. Chúng nổi tiếng với bộ lông vàng óng ả, tính cách thân thiện và lòng trung thành. Golden Retriever là một trong những giống chó phổ biến nhất trên thế giới vì chúng là những người bạn đồng hành tuyệt vời cho gia đình.' WHERE id = 30003
+2024-05-16 17:14:17 | SELECT * FROM breed
+2024-05-16 17:14:23 | SELECT * FROM species
+2024-05-16 17:14:23 | SELECT * FROM breed
+2024-05-16 17:14:35 | SELECT * FROM species
+2024-05-16 17:14:35 | SELECT * FROM breed
+2024-05-16 17:15:23 | INSERT INTO breed (name, species_id, description) VALUES ('Chim Vành Khuyên', 40003, 'Chim Vành Khuyên là loài chim nhỏ bé, xinh xắn và có giọng hót rất hay, tự nhiên.')
+2024-05-16 17:15:34 | SELECT * FROM breed
+2024-05-16 17:15:43 | UPDATE breed SET name = 'Chim Vành Khuyên', species_id = 40002, description = 'Chim Vành Khuyên là loài chim nhỏ bé, xinh xắn và có giọng hót rất hay, tự nhiên.' WHERE id = 30020
+2024-05-16 17:15:44 | SELECT * FROM breed
+2024-05-16 17:15:48 | DELETE FROM breed WHERE id = 30020
+2024-05-16 17:15:48 | SELECT * FROM breed
+2024-05-16 17:15:53 | SELECT * FROM species
+2024-05-16 17:15:59 | UPDATE species SET name = 'Vịt' WHERE id = 40005
+2024-05-16 17:16:00 | SELECT * FROM species
+2024-05-16 17:16:03 | DELETE FROM species WHERE id = 40005
+2024-05-16 17:16:04 | SELECT * FROM species
+2024-05-16 17:16:13 | SELECT * FROM species
+2024-05-16 17:16:27 | INSERT INTO species (name) VALUES ('Cá')
+2024-05-16 17:16:28 | SELECT * FROM species
+2024-05-16 17:16:34 | SELECT user.id, user.name, user.birth_date, user.username, role.name AS role FROM user JOIN role ON user.role_id = role.id WHERE user.id = 10001
+2024-05-16 17:16:48 | UPDATE user SET name = 'Lê Đức Bảoo', birth_date = '2004-08-25' WHERE id = 10001
+2024-05-16 17:16:49 | SELECT user.id, user.name, user.birth_date, user.username, role.name AS role FROM user JOIN role ON user.role_id = role.id WHERE user.id = 10001
+2024-05-16 17:16:50 | SELECT user.id, user.name, user.birth_date, user.username, role.name AS role FROM user JOIN role ON user.role_id = role.id WHERE user.id = 10001
+2024-05-16 17:16:58 | SELECT user.id, user.name, user.birth_date, user.username, role.name AS role FROM user JOIN role ON user.role_id = role.id
+2024-05-16 17:16:58 | SELECT * FROM role
+2024-05-16 17:17:21 | SELECT user.id, user.name, user.birth_date, user.username, role.name AS role FROM user JOIN role ON user.role_id = role.id WHERE username = 'manager002' AND password = '02e705f03ca721dc13ef0fe806c268e64a3de5e4c42d846889aca978352b12f9'
+2024-05-16 17:17:23 | SELECT user.id, user.name, user.birth_date, user.username, role.name AS role FROM user JOIN role ON user.role_id = role.id WHERE role.name = 'Nhân viên'
+2024-05-16 17:17:23 | SELECT * FROM role
+2024-05-16 17:18:17 | INSERT INTO user (name, birth_date, username, password, role_id) VALUES ('Nguyễn Hoàng F', '2002-07-11', 'employee004', '8d969eef6ecad3c29a3a629280e686cf0c3f5d5a86aff3ca12020c923adc6c92', 90001)
+2024-05-16 17:18:19 | SELECT user.id, user.name, user.birth_date, user.username, role.name AS role FROM user JOIN role ON user.role_id = role.id WHERE role.name = 'Nhân viên'
+2024-05-16 17:18:23 | DELETE FROM user WHERE username = 'sontung001' AND id = '10007'
+2024-05-16 17:18:25 | SELECT user.id, user.name, user.birth_date, user.username, role.name AS role FROM user JOIN role ON user.role_id = role.id WHERE role.name = 'Nhân viên'
+2024-05-16 17:18:27 | SELECT user.id, user.name, user.birth_date, user.username, role.name AS role FROM user JOIN role ON user.role_id = role.id WHERE user.id = 10003
+2024-05-16 17:18:38 | SELECT user.id, user.name, user.birth_date, user.username, role.name AS role FROM user JOIN role ON user.role_id = role.id WHERE username = 'employee004' AND password = '8d969eef6ecad3c29a3a629280e686cf0c3f5d5a86aff3ca12020c923adc6c92'
+2024-05-16 17:18:40 | SELECT user.id, user.name, user.birth_date, user.username, role.name AS role FROM user JOIN role ON user.role_id = role.id WHERE user.id = 10008
+2024-05-16 17:18:42 | SELECT * FROM species
+2024-05-16 17:18:42 | SELECT * FROM breed
+2024-05-16 17:18:46 | SELECT pet.id, pet.name, breed.name AS breed, pet.born_year, pet.weight, pet.price, pet.is_sold FROM pet JOIN breed ON pet.breed_id = breed.id
+2024-05-16 17:18:47 | SELECT pet.id, pet.name, breed_id, species.name AS species, breed.name AS breed, pet.born_year, pet.weight, pet.description, pet.image, pet.price, pet.is_sold FROM pet JOIN breed ON pet.breed_id = breed.id JOIN species ON breed.species_id = species.id WHERE pet.id = 20003
+2024-05-16 17:18:47 | SELECT id, name FROM breed
+2024-05-16 17:18:53 | SELECT * FROM species
+2024-05-16 17:18:56 | SELECT user.id, user.name, user.birth_date, user.username, role.name AS role FROM user JOIN role ON user.role_id = role.id WHERE user.id = 10008
+2024-05-16 17:19:04 | SELECT id FROM user WHERE username = 'employee004' AND password = '96cae35ce8a9b0244178bf28e4966c2ce1b8385723a96a6b838858cdd6ca0a1e'
+2024-05-16 17:19:08 | SELECT id FROM user WHERE username = 'employee004' AND password = '8d969eef6ecad3c29a3a629280e686cf0c3f5d5a86aff3ca12020c923adc6c92'
+2024-05-16 17:19:08 | UPDATE user SET password = '96cae35ce8a9b0244178bf28e4966c2ce1b8385723a96a6b838858cdd6ca0a1e' WHERE username = 'employee004'
+2024-05-16 17:19:21 | UPDATE user SET name = 'Nguyễn Hoàng Dũng', birth_date = '2002-07-11' WHERE id = 10008
+2024-05-16 17:19:22 | SELECT user.id, user.name, user.birth_date, user.username, role.name AS role FROM user JOIN role ON user.role_id = role.id WHERE user.id = 10008
+2024-05-16 17:19:24 | SELECT user.id, user.name, user.birth_date, user.username, role.name AS role FROM user JOIN role ON user.role_id = role.id WHERE user.id = 10008
+2024-05-16 17:24:11 | SELECT user.id, user.name, user.birth_date, user.username, role.name AS role FROM user JOIN role ON user.role_id = role.id WHERE username = 'dev01d' AND password = 'de161615655a53e80ebddade12e43b3b5f44229cca48c7a41942cacc2866aae4'
+2024-05-16 17:24:17 | SELECT pet.id, pet.name, breed.name AS breed, pet.born_year, pet.weight, pet.price, pet.is_sold FROM pet JOIN breed ON pet.breed_id = breed.id
+2024-05-16 17:24:19 | SELECT pet.id, pet.name, breed_id, species.name AS species, breed.name AS breed, pet.born_year, pet.weight, pet.description, pet.image, pet.price, pet.is_sold FROM pet JOIN breed ON pet.breed_id = breed.id JOIN species ON breed.species_id = species.id WHERE pet.id = 20004
+2024-05-16 17:24:19 | SELECT id, name FROM breed
+2024-05-16 17:24:23 | SELECT pet.id, pet.name, breed_id, species.name AS species, breed.name AS breed, pet.born_year, pet.weight, pet.description, pet.image, pet.price, pet.is_sold FROM pet JOIN breed ON pet.breed_id = breed.id JOIN species ON breed.species_id = species.id WHERE pet.id = 20005
+2024-05-16 17:24:23 | SELECT id, name FROM breed
+2024-05-16 17:24:25 | SELECT pet.id, pet.name, breed_id, species.name AS species, breed.name AS breed, pet.born_year, pet.weight, pet.description, pet.image, pet.price, pet.is_sold FROM pet JOIN breed ON pet.breed_id = breed.id JOIN species ON breed.species_id = species.id WHERE pet.id = 20002
+2024-05-16 17:24:25 | SELECT id, name FROM breed
+2024-05-16 17:24:30 | SELECT id, name FROM breed
+2024-05-16 17:24:34 | SELECT pet.id, pet.name, breed_id, species.name AS species, breed.name AS breed, pet.born_year, pet.weight, pet.description, pet.image, pet.price, pet.is_sold FROM pet JOIN breed ON pet.breed_id = breed.id JOIN species ON breed.species_id = species.id WHERE pet.id = 20009
+2024-05-16 17:24:34 | SELECT id, name FROM breed
+2024-05-16 17:24:36 | SELECT id, name FROM breed
+2024-05-16 17:26:05 | SELECT user.id, user.name, user.birth_date, user.username, role.name AS role FROM user JOIN role ON user.role_id = role.id WHERE username = 'dev01d' AND password = 'de161615655a53e80ebddade12e43b3b5f44229cca48c7a41942cacc2866aae4'
+2024-05-16 17:26:08 | SELECT * FROM species
+2024-05-16 17:26:08 | SELECT * FROM breed
+2024-05-16 17:26:13 | SELECT * FROM species
+2024-05-16 17:26:13 | SELECT * FROM breed
+2024-05-16 17:30:24 | SELECT user.id, user.name, user.birth_date, user.username, role.name AS role FROM user JOIN role ON user.role_id = role.id WHERE username = 'dev01d' AND password = 'de161615655a53e80ebddade12e43b3b5f44229cca48c7a41942cacc2866aae4'
+2024-05-16 17:30:27 | SELECT * FROM species
+2024-05-16 17:30:27 | SELECT * FROM breed
+2024-05-16 17:30:32 | SELECT * FROM species
+2024-05-16 17:30:32 | SELECT * FROM breed
+2024-05-16 17:33:58 | SELECT * FROM species
+2024-05-16 17:35:09 | SELECT user.id, user.name, user.birth_date, user.username, role.name AS role FROM user JOIN role ON user.role_id = role.id WHERE username = 'dev01d' AND password = 'de161615655a53e80ebddade12e43b3b5f44229cca48c7a41942cacc2866aae4'
+2024-05-16 17:35:11 | SELECT pet.id, pet.name, breed.name AS breed, pet.born_year, pet.weight, pet.price, pet.is_sold FROM pet JOIN breed ON pet.breed_id = breed.id
+2024-05-16 17:35:13 | SELECT pet.id, pet.name, breed_id, species.name AS species, breed.name AS breed, pet.born_year, pet.weight, pet.description, pet.image, pet.price, pet.is_sold FROM pet JOIN breed ON pet.breed_id = breed.id JOIN species ON breed.species_id = species.id WHERE pet.id = 20002
+2024-05-16 17:35:13 | SELECT id, name FROM breed
+2024-05-16 17:35:17 | SELECT pet.id, pet.name, breed_id, species.name AS species, breed.name AS breed, pet.born_year, pet.weight, pet.description, pet.image, pet.price, pet.is_sold FROM pet JOIN breed ON pet.breed_id = breed.id JOIN species ON breed.species_id = species.id WHERE pet.id = 20004
+2024-05-16 17:35:17 | SELECT id, name FROM breed
+2024-05-16 17:35:25 | SELECT id, name FROM breed
+2024-05-16 17:35:29 | SELECT * FROM species
+2024-05-16 17:35:29 | SELECT * FROM breed
+2024-05-16 17:36:12 | SELECT * FROM species
+2024-05-16 17:36:23 | SELECT * FROM species
+2024-05-16 17:36:26 | SELECT * FROM species
+2024-05-16 17:36:32 | SELECT user.id, user.name, user.birth_date, user.username, role.name AS role FROM user JOIN role ON user.role_id = role.id WHERE user.id = 10001
+2024-05-16 17:36:41 | SELECT user.id, user.name, user.birth_date, user.username, role.name AS role FROM user JOIN role ON user.role_id = role.id WHERE user.id = 10001
+2024-05-16 17:36:43 | SELECT user.id, user.name, user.birth_date, user.username, role.name AS role FROM user JOIN role ON user.role_id = role.id
+2024-05-16 17:36:43 | SELECT * FROM role
+2024-05-16 17:38:58 | SELECT user.id, user.name, user.birth_date, user.username, role.name AS role FROM user JOIN role ON user.role_id = role.id WHERE username = 'dev01d' AND password = 'de161615655a53e80ebddade12e43b3b5f44229cca48c7a41942cacc2866aae4'
+2024-05-16 17:38:59 | SELECT pet.id, pet.name, breed.name AS breed, pet.born_year, pet.weight, pet.price, pet.is_sold FROM pet JOIN breed ON pet.breed_id = breed.id
+2024-05-16 17:39:02 | SELECT pet.id, pet.name, breed.name AS breed, pet.born_year, pet.weight, pet.price, pet.is_sold FROM pet JOIN breed ON pet.breed_id = breed.id
+2024-05-16 17:39:02 | SELECT id, name FROM breed
+2024-05-16 17:39:09 | SELECT pet.id, pet.name, breed_id, species.name AS species, breed.name AS breed, pet.born_year, pet.weight, pet.description, pet.image, pet.price, pet.is_sold FROM pet JOIN breed ON pet.breed_id = breed.id JOIN species ON breed.species_id = species.id WHERE pet.id = 20002
+2024-05-16 17:39:09 | SELECT id, name FROM breed
+2024-05-16 17:39:12 | SELECT pet.id, pet.name, breed_id, species.name AS species, breed.name AS breed, pet.born_year, pet.weight, pet.description, pet.image, pet.price, pet.is_sold FROM pet JOIN breed ON pet.breed_id = breed.id JOIN species ON breed.species_id = species.id WHERE pet.id = 20003
+2024-05-16 17:39:12 | SELECT id, name FROM breed
+2024-05-16 17:39:18 | SELECT pet.id, pet.name, breed_id, species.name AS species, breed.name AS breed, pet.born_year, pet.weight, pet.description, pet.image, pet.price, pet.is_sold FROM pet JOIN breed ON pet.breed_id = breed.id JOIN species ON breed.species_id = species.id WHERE pet.id = 20009
+2024-05-16 17:39:18 | SELECT id, name FROM breed
+2024-05-16 17:39:20 | DELETE FROM pet WHERE id = 20009
+2024-05-16 17:39:23 | SELECT pet.id, pet.name, breed.name AS breed, pet.born_year, pet.weight, pet.price, pet.is_sold FROM pet JOIN breed ON pet.breed_id = breed.id
+2024-05-16 17:39:25 | SELECT * FROM species
+2024-05-16 17:39:38 | UPDATE species SET name = 'Cá cảnh' WHERE id = 40006
+2024-05-16 17:39:39 | SELECT * FROM species
+2024-05-16 17:39:47 | SELECT user.id, user.name, user.birth_date, user.username, role.name AS role FROM user JOIN role ON user.role_id = role.id WHERE user.id = 10001
+2024-05-16 17:39:54 | UPDATE user SET name = 'Lê Đức Bảoo', birth_date = '2004-08-25' WHERE id = 10001
+2024-05-16 17:39:55 | SELECT user.id, user.name, user.birth_date, user.username, role.name AS role FROM user JOIN role ON user.role_id = role.id WHERE user.id = 10001
+2024-05-16 17:39:59 | SELECT user.id, user.name, user.birth_date, user.username, role.name AS role FROM user JOIN role ON user.role_id = role.id
+2024-05-16 17:39:59 | SELECT * FROM role
+2024-05-16 17:40:31 | UPDATE user SET password = '5a680cc6ee024456226061d2f0b93244cef5efa4cbed156d19708da888e09bab' WHERE username = 'employee004'
+2024-05-16 17:41:04 | SELECT user.id, user.name, user.birth_date, user.username, role.name AS role FROM user JOIN role ON user.role_id = role.id WHERE username = 'employee004' AND password = '5a680cc6ee024456226061d2f0b93244cef5efa4cbed156d19708da888e09bab'
+2024-05-16 17:41:06 | SELECT user.id, user.name, user.birth_date, user.username, role.name AS role FROM user JOIN role ON user.role_id = role.id WHERE user.id = 10008
+2024-05-16 17:41:22 | SELECT id FROM user WHERE username = 'employee004' AND password = '5a680cc6ee024456226061d2f0b93244cef5efa4cbed156d19708da888e09bab'
+2024-05-16 17:41:22 | UPDATE user SET password = '8d969eef6ecad3c29a3a629280e686cf0c3f5d5a86aff3ca12020c923adc6c92' WHERE username = 'employee004'
+2024-05-16 17:41:31 | UPDATE user SET name = 'Nguyễn Hoàng Dũng', birth_date = '2002-06-12' WHERE id = 10008
+2024-05-16 17:41:32 | SELECT user.id, user.name, user.birth_date, user.username, role.name AS role FROM user JOIN role ON user.role_id = role.id WHERE user.id = 10008
+2024-05-16 17:41:32 | SELECT user.id, user.name, user.birth_date, user.username, role.name AS role FROM user JOIN role ON user.role_id = role.id WHERE user.id = 10008
+2024-05-16 17:41:42 | SELECT * FROM species
+2024-05-16 17:41:45 | SELECT * FROM species
+2024-05-16 17:41:45 | SELECT * FROM breed
+2024-05-16 17:41:48 | SELECT * FROM breed
+2024-05-16 17:41:51 | SELECT pet.id, pet.name, breed.name AS breed, pet.born_year, pet.weight, pet.price, pet.is_sold FROM pet JOIN breed ON pet.breed_id = breed.id
+2024-05-16 17:41:52 | SELECT pet.id, pet.name, breed_id, species.name AS species, breed.name AS breed, pet.born_year, pet.weight, pet.description, pet.image, pet.price, pet.is_sold FROM pet JOIN breed ON pet.breed_id = breed.id JOIN species ON breed.species_id = species.id WHERE pet.id = 20005
+2024-05-16 17:41:52 | SELECT id, name FROM breed
+2024-05-16 17:41:55 | SELECT pet.id, pet.name, breed_id, species.name AS species, breed.name AS breed, pet.born_year, pet.weight, pet.description, pet.image, pet.price, pet.is_sold FROM pet JOIN breed ON pet.breed_id = breed.id JOIN species ON breed.species_id = species.id WHERE pet.id = 20004
+2024-05-16 17:41:55 | SELECT id, name FROM breed
+2024-05-16 17:41:57 | SELECT pet.id, pet.name, breed.name AS breed, pet.born_year, pet.weight, pet.price, pet.is_sold FROM pet JOIN breed ON pet.breed_id = breed.id
+2024-05-16 17:42:06 | SELECT user.id, user.name, user.birth_date, user.username, role.name AS role FROM user JOIN role ON user.role_id = role.id WHERE username = 'manager002' AND password = '02e705f03ca721dc13ef0fe806c268e64a3de5e4c42d846889aca978352b12f9'
+2024-05-16 17:42:07 | SELECT user.id, user.name, user.birth_date, user.username, role.name AS role FROM user JOIN role ON user.role_id = role.id WHERE user.id = 10003
+2024-05-16 17:42:09 | SELECT user.id, user.name, user.birth_date, user.username, role.name AS role FROM user JOIN role ON user.role_id = role.id WHERE role.name = 'Nhân viên'
+2024-05-16 17:42:09 | SELECT * FROM role
+2024-05-16 17:42:16 | SELECT user.id, user.name, user.birth_date, user.username, role.name AS role FROM user JOIN role ON user.role_id = role.id WHERE user.id = 10003
+2024-05-16 17:42:18 | SELECT user.id, user.name, user.birth_date, user.username, role.name AS role FROM user JOIN role ON user.role_id = role.id WHERE role.name = 'Nhân viên'
+2024-05-16 17:42:18 | SELECT * FROM role
+2024-05-16 17:42:21 | SELECT user.id, user.name, user.birth_date, user.username, role.name AS role FROM user JOIN role ON user.role_id = role.id WHERE user.id = 10003
+2024-05-16 17:42:22 | SELECT * FROM species
+2024-05-16 17:42:26 | SELECT * FROM species
+2024-05-16 17:42:26 | SELECT * FROM breed
+2024-05-16 17:42:33 | SELECT pet.id, pet.name, breed.name AS breed, pet.born_year, pet.weight, pet.price, pet.is_sold FROM pet JOIN breed ON pet.breed_id = breed.id
+2024-05-16 17:42:35 | SELECT pet.id, pet.name, breed_id, species.name AS species, breed.name AS breed, pet.born_year, pet.weight, pet.description, pet.image, pet.price, pet.is_sold FROM pet JOIN breed ON pet.breed_id = breed.id JOIN species ON breed.species_id = species.id WHERE pet.id = 20002
+2024-05-16 17:42:35 | SELECT id, name FROM breed
+2024-05-16 17:42:38 | SELECT pet.id, pet.name, breed_id, species.name AS species, breed.name AS breed, pet.born_year, pet.weight, pet.description, pet.image, pet.price, pet.is_sold FROM pet JOIN breed ON pet.breed_id = breed.id JOIN species ON breed.species_id = species.id WHERE pet.id = 20004
+2024-05-16 17:42:39 | SELECT id, name FROM breed
+2024-05-16 17:42:41 | SELECT pet.id, pet.name, breed_id, species.name AS species, breed.name AS breed, pet.born_year, pet.weight, pet.description, pet.image, pet.price, pet.is_sold FROM pet JOIN breed ON pet.breed_id = breed.id JOIN species ON breed.species_id = species.id WHERE pet.id = 20008
+2024-05-16 17:42:41 | SELECT id, name FROM breed
+2024-05-16 17:42:43 | SELECT id, name FROM breed
+2024-05-16 17:42:45 | SELECT pet.id, pet.name, breed_id, species.name AS species, breed.name AS breed, pet.born_year, pet.weight, pet.description, pet.image, pet.price, pet.is_sold FROM pet JOIN breed ON pet.breed_id = breed.id JOIN species ON breed.species_id = species.id WHERE pet.id = 20002
+2024-05-16 17:42:45 | SELECT id, name FROM breed
+2024-05-16 17:42:47 | SELECT pet.id, pet.name, breed_id, species.name AS species, breed.name AS breed, pet.born_year, pet.weight, pet.description, pet.image, pet.price, pet.is_sold FROM pet JOIN breed ON pet.breed_id = breed.id JOIN species ON breed.species_id = species.id WHERE pet.id = 20003
+2024-05-16 17:42:47 | SELECT id, name FROM breed
+2024-05-16 17:42:51 | SELECT user.id, user.name, user.birth_date, user.username, role.name AS role FROM user JOIN role ON user.role_id = role.id WHERE role.name = 'Nhân viên'
+2024-05-16 17:42:51 | SELECT * FROM role
+2024-05-16 17:43:04 | SELECT user.id, user.name, user.birth_date, user.username, role.name AS role FROM user JOIN role ON user.role_id = role.id WHERE user.id = 10003
+2024-05-16 17:44:08 | SELECT user.id, user.name, user.birth_date, user.username, role.name AS role FROM user JOIN role ON user.role_id = role.id WHERE username = 'manager002' AND password = '02e705f03ca721dc13ef0fe806c268e64a3de5e4c42d846889aca978352b12f9'
+2024-05-16 17:44:10 | SELECT user.id, user.name, user.birth_date, user.username, role.name AS role FROM user JOIN role ON user.role_id = role.id WHERE user.id = 10003
+2024-05-16 17:44:14 | UPDATE user SET name = 'Trần Văn Dũng', birth_date = '1999-12-04' WHERE id = 10003
+2024-05-16 17:44:15 | SELECT user.id, user.name, user.birth_date, user.username, role.name AS role FROM user JOIN role ON user.role_id = role.id WHERE user.id = 10003
+2024-05-16 17:46:49 | SELECT user.id, user.name, user.birth_date, user.username, role.name AS role FROM user JOIN role ON user.role_id = role.id WHERE username = 'manager002' AND password = '02e705f03ca721dc13ef0fe806c268e64a3de5e4c42d846889aca978352b12f9'
+2024-05-16 17:46:54 | SELECT user.id, user.name, user.birth_date, user.username, role.name AS role FROM user JOIN role ON user.role_id = role.id WHERE user.id = 10003
+2024-05-16 17:46:58 | UPDATE user SET name = 'Trần Văn D', birth_date = '1999-12-04' WHERE id = 10003
+2024-05-16 17:46:59 | SELECT user.id, user.name, user.birth_date, user.username, role.name AS role FROM user JOIN role ON user.role_id = role.id WHERE user.id = 10003
+2024-05-16 17:47:13 | SELECT user.id, user.name, user.birth_date, user.username, role.name AS role FROM user JOIN role ON user.role_id = role.id WHERE username = 'manager002' AND password = '02e705f03ca721dc13ef0fe806c268e64a3de5e4c42d846889aca978352b12f9'
+2024-05-16 17:47:15 | SELECT user.id, user.name, user.birth_date, user.username, role.name AS role FROM user JOIN role ON user.role_id = role.id WHERE user.id = 10003
+2024-05-16 17:47:19 | UPDATE user SET name = 'Trần Văn Dũng', birth_date = '1999-12-04' WHERE id = 10003
+2024-05-16 17:47:20 | SELECT user.id, user.name, user.birth_date, user.username, role.name AS role FROM user JOIN role ON user.role_id = role.id WHERE user.id = 10003
+2024-05-16 17:59:14 | SELECT user.id, user.name, user.birth_date, user.username, role.name AS role FROM user JOIN role ON user.role_id = role.id WHERE username = 'dev01d' AND password = 'de161615655a53e80ebddade12e43b3b5f44229cca48c7a41942cacc2866aae4'
+2024-05-16 17:59:16 | SELECT pet.id, pet.name, breed.name AS breed, pet.born_year, pet.weight, pet.price, pet.is_sold FROM pet JOIN breed ON pet.breed_id = breed.id
+2024-05-16 17:59:19 | SELECT pet.id, pet.name, breed.name AS breed, pet.born_year, pet.weight, pet.price, pet.is_sold FROM pet JOIN breed ON pet.breed_id = breed.id
+2024-05-16 17:59:20 | SELECT pet.id, pet.name, breed_id, species.name AS species, breed.name AS breed, pet.born_year, pet.weight, pet.description, pet.image, pet.price, pet.is_sold FROM pet JOIN breed ON pet.breed_id = breed.id JOIN species ON breed.species_id = species.id WHERE pet.id = 20002
+2024-05-16 17:59:20 | SELECT id, name FROM breed
+2024-05-16 17:59:24 | SELECT * FROM species
+2024-05-16 17:59:24 | SELECT * FROM breed
+2024-05-16 17:59:26 | SELECT * FROM species
+2024-05-16 17:59:28 | SELECT user.id, user.name, user.birth_date, user.username, role.name AS role FROM user JOIN role ON user.role_id = role.id WHERE user.id = 10001
+2024-05-16 17:59:30 | SELECT user.id, user.name, user.birth_date, user.username, role.name AS role FROM user JOIN role ON user.role_id = role.id WHERE user.id = 10001
+2024-05-16 17:59:32 | SELECT * FROM species
+2024-05-16 17:59:35 | SELECT * FROM species
+2024-05-16 17:59:35 | SELECT * FROM breed
+2024-05-16 17:59:37 | SELECT user.id, user.name, user.birth_date, user.username, role.name AS role FROM user JOIN role ON user.role_id = role.id
+2024-05-16 17:59:37 | SELECT * FROM role
+2024-05-16 17:59:40 | SELECT user.id, user.name, user.birth_date, user.username, role.name AS role FROM user JOIN role ON user.role_id = role.id WHERE user.id = 10001
+2024-05-16 17:59:42 | SELECT user.id, user.name, user.birth_date, user.username, role.name AS role FROM user JOIN role ON user.role_id = role.id
+2024-05-16 17:59:42 | SELECT * FROM role
+2024-05-16 17:59:45 | SELECT user.id, user.name, user.birth_date, user.username, role.name AS role FROM user JOIN role ON user.role_id = role.id WHERE user.id = 10001
+2024-05-16 18:01:30 | SELECT user.id, user.name, user.birth_date, user.username, role.name AS role FROM user JOIN role ON user.role_id = role.id WHERE username = 'dev01d' AND password = 'de161615655a53e80ebddade12e43b3b5f44229cca48c7a41942cacc2866aae4'
+2024-05-16 18:01:31 | SELECT user.id, user.name, user.birth_date, user.username, role.name AS role FROM user JOIN role ON user.role_id = role.id
+2024-05-16 18:01:31 | SELECT * FROM role
+2024-05-16 18:01:33 | SELECT user.id, user.name, user.birth_date, user.username, role.name AS role FROM user JOIN role ON user.role_id = role.id WHERE user.id = 10001
+2024-05-16 18:01:35 | SELECT * FROM species
+2024-05-16 18:01:36 | SELECT * FROM species
+2024-05-16 18:01:36 | SELECT * FROM breed
+2024-05-16 18:01:38 | SELECT pet.id, pet.name, breed.name AS breed, pet.born_year, pet.weight, pet.price, pet.is_sold FROM pet JOIN breed ON pet.breed_id = breed.id
+2024-05-16 18:01:39 | SELECT pet.id, pet.name, breed_id, species.name AS species, breed.name AS breed, pet.born_year, pet.weight, pet.description, pet.image, pet.price, pet.is_sold FROM pet JOIN breed ON pet.breed_id = breed.id JOIN species ON breed.species_id = species.id WHERE pet.id = 20002
+2024-05-16 18:01:39 | SELECT id, name FROM breed
+2024-05-16 18:01:43 | SELECT user.id, user.name, user.birth_date, user.username, role.name AS role FROM user JOIN role ON user.role_id = role.id
+2024-05-16 18:01:43 | SELECT * FROM role
+2024-05-16 18:03:51 | SELECT user.id, user.name, user.birth_date, user.username, role.name AS role FROM user JOIN role ON user.role_id = role.id WHERE username = 'employee001' AND password = '8d969eef6ecad3c29a3a629280e686cf0c3f5d5a86aff3ca12020c923adc6c92'
+2024-05-16 18:03:53 | SELECT * FROM species
+2024-05-16 18:03:54 | SELECT user.id, user.name, user.birth_date, user.username, role.name AS role FROM user JOIN role ON user.role_id = role.id WHERE user.id = 10004
+2024-05-16 18:03:56 | SELECT * FROM species
+2024-05-16 18:03:56 | SELECT * FROM breed
+2024-05-16 18:03:58 | SELECT pet.id, pet.name, breed.name AS breed, pet.born_year, pet.weight, pet.price, pet.is_sold FROM pet JOIN breed ON pet.breed_id = breed.id
+2024-05-16 18:04:02 | SELECT * FROM species
+2024-05-16 18:04:02 | SELECT * FROM breed
+2024-05-16 18:04:05 | SELECT * FROM species
+2024-05-16 18:04:08 | SELECT user.id, user.name, user.birth_date, user.username, role.name AS role FROM user JOIN role ON user.role_id = role.id WHERE user.id = 10004
+2024-05-17 10:39:41 | SELECT user.id, user.name, user.birth_date, user.username, role.name AS role FROM user JOIN role ON user.role_id = role.id WHERE username = 'dev01d' AND password = 'de161615655a53e80ebddade12e43b3b5f44229cca48c7a41942cacc2866aae4'
+2024-05-17 10:39:43 | SELECT user.id, user.name, user.birth_date, user.username, role.name AS role FROM user JOIN role ON user.role_id = role.id
+2024-05-17 10:39:43 | SELECT * FROM role
+2024-05-17 10:39:54 | SELECT user.id, user.name, user.birth_date, user.username, role.name AS role FROM user JOIN role ON user.role_id = role.id WHERE user.id = 10001
+2024-05-17 10:40:00 | SELECT * FROM species
+2024-05-17 10:40:13 | SELECT * FROM species
+2024-05-17 10:40:13 | SELECT * FROM breed
+2024-05-17 10:40:23 | SELECT pet.id, pet.name, breed.name AS breed, pet.born_year, pet.weight, pet.price, pet.is_sold FROM pet JOIN breed ON pet.breed_id = breed.id
+2024-05-17 10:40:34 | SELECT pet.id, pet.name, breed_id, species.name AS species, breed.name AS breed, pet.born_year, pet.weight, pet.description, pet.image, pet.price, pet.is_sold FROM pet JOIN breed ON pet.breed_id = breed.id JOIN species ON breed.species_id = species.id WHERE pet.id = 20003
+2024-05-17 10:40:34 | SELECT id, name FROM breed
+2024-05-17 11:20:09 | SELECT user.id, user.name, user.birth_date, user.username, role.name AS role FROM user JOIN role ON user.role_id = role.id WHERE username = 'employee002' AND password = '4847eff10102bb6c01f5566d9363de7fbb325017bc7a86d7a988f3b442a18b4d'
+2024-05-17 11:20:12 | SELECT pet.id, pet.name, breed.name AS breed, pet.born_year, pet.weight, pet.price, pet.is_sold FROM pet JOIN breed ON pet.breed_id = breed.id
+2024-05-17 11:20:18 | SELECT pet.id, pet.name, breed.name AS breed, pet.born_year, pet.weight, pet.price, pet.is_sold FROM pet JOIN breed ON pet.breed_id = breed.id WHERE pet.name LIKE '%ma%' OR breed.name LIKE '%ma%'
+2024-05-17 11:20:22 | SELECT pet.id, pet.name, breed.name AS breed, pet.born_year, pet.weight, pet.price, pet.is_sold FROM pet JOIN breed ON pet.breed_id = breed.id
+2024-05-17 11:20:23 | SELECT pet.id, pet.name, breed.name AS breed, pet.born_year, pet.weight, pet.price, pet.is_sold FROM pet JOIN breed ON pet.breed_id = breed.id WHERE pet.name LIKE '%ma%' OR breed.name LIKE '%ma%' WHERE pet.is_sold = true
+2024-05-17 11:20:23 | You have an error in your SQL syntax; check the manual that corresponds to your MariaDB server version for the right syntax to use near 'WHERE pet.is_sold = true' at line 1
+2024-05-17 11:20:24 | SELECT pet.id, pet.name, breed.name AS breed, pet.born_year, pet.weight, pet.price, pet.is_sold FROM pet JOIN breed ON pet.breed_id = breed.id WHERE pet.name LIKE '%ma%' OR breed.name LIKE '%ma%' WHERE pet.is_sold = false
+2024-05-17 11:20:24 | You have an error in your SQL syntax; check the manual that corresponds to your MariaDB server version for the right syntax to use near 'WHERE pet.is_sold = false' at line 1
+2024-05-17 11:20:26 | SELECT pet.id, pet.name, breed.name AS breed, pet.born_year, pet.weight, pet.price, pet.is_sold FROM pet JOIN breed ON pet.breed_id = breed.id WHERE pet.name LIKE '%ma%' OR breed.name LIKE '%ma%' WHERE pet.is_sold = true
+2024-05-17 11:20:26 | You have an error in your SQL syntax; check the manual that corresponds to your MariaDB server version for the right syntax to use near 'WHERE pet.is_sold = true' at line 1
+2024-05-17 11:20:31 | SELECT pet.id, pet.name, breed.name AS breed, pet.born_year, pet.weight, pet.price, pet.is_sold FROM pet JOIN breed ON pet.breed_id = breed.id WHERE pet.is_sold = true
+2024-05-17 11:20:32 | SELECT pet.id, pet.name, breed.name AS breed, pet.born_year, pet.weight, pet.price, pet.is_sold FROM pet JOIN breed ON pet.breed_id = breed.id WHERE pet.is_sold = false
+2024-05-17 11:20:33 | SELECT pet.id, pet.name, breed.name AS breed, pet.born_year, pet.weight, pet.price, pet.is_sold FROM pet JOIN breed ON pet.breed_id = breed.id WHERE pet.is_sold = true
+2024-05-17 11:20:34 | SELECT pet.id, pet.name, breed.name AS breed, pet.born_year, pet.weight, pet.price, pet.is_sold FROM pet JOIN breed ON pet.breed_id = breed.id WHERE pet.is_sold = false
+2024-05-17 11:20:35 | SELECT pet.id, pet.name, breed.name AS breed, pet.born_year, pet.weight, pet.price, pet.is_sold FROM pet JOIN breed ON pet.breed_id = breed.id WHERE pet.is_sold = true
+2024-05-17 11:20:45 | SELECT pet.id, pet.name, breed.name AS breed, pet.born_year, pet.weight, pet.price, pet.is_sold FROM pet JOIN breed ON pet.breed_id = breed.id WHERE pet.is_sold = true
+2024-05-17 11:20:46 | SELECT pet.id, pet.name, breed.name AS breed, pet.born_year, pet.weight, pet.price, pet.is_sold FROM pet JOIN breed ON pet.breed_id = breed.id
+2024-05-17 11:20:49 | SELECT pet.id, pet.name, breed.name AS breed, pet.born_year, pet.weight, pet.price, pet.is_sold FROM pet JOIN breed ON pet.breed_id = breed.id WHERE pet.is_sold = false
+2024-05-17 11:20:50 | SELECT pet.id, pet.name, breed.name AS breed, pet.born_year, pet.weight, pet.price, pet.is_sold FROM pet JOIN breed ON pet.breed_id = breed.id WHERE pet.is_sold = true
+2024-05-17 11:20:51 | SELECT pet.id, pet.name, breed.name AS breed, pet.born_year, pet.weight, pet.price, pet.is_sold FROM pet JOIN breed ON pet.breed_id = breed.id
+2024-05-17 11:20:52 | SELECT pet.id, pet.name, breed.name AS breed, pet.born_year, pet.weight, pet.price, pet.is_sold FROM pet JOIN breed ON pet.breed_id = breed.id WHERE pet.is_sold = true
+2024-05-17 11:20:54 | SELECT pet.id, pet.name, breed.name AS breed, pet.born_year, pet.weight, pet.price, pet.is_sold FROM pet JOIN breed ON pet.breed_id = breed.id WHERE pet.is_sold = false
+2024-05-17 11:20:57 | SELECT pet.id, pet.name, breed.name AS breed, pet.born_year, pet.weight, pet.price, pet.is_sold FROM pet JOIN breed ON pet.breed_id = breed.id WHERE pet.name LIKE '%lu%' OR breed.name LIKE '%lu%' WHERE pet.is_sold = false
+2024-05-17 11:20:57 | You have an error in your SQL syntax; check the manual that corresponds to your MariaDB server version for the right syntax to use near 'WHERE pet.is_sold = false' at line 1
+2024-05-17 11:21:00 | SELECT pet.id, pet.name, breed.name AS breed, pet.born_year, pet.weight, pet.price, pet.is_sold FROM pet JOIN breed ON pet.breed_id = breed.id WHERE pet.name LIKE '%lu%' OR breed.name LIKE '%lu%'
+2024-05-17 11:21:05 | SELECT pet.id, pet.name, breed_id, species.name AS species, breed.name AS breed, pet.born_year, pet.weight, pet.description, pet.image, pet.price, pet.is_sold FROM pet JOIN breed ON pet.breed_id = breed.id JOIN species ON breed.species_id = species.id WHERE pet.id = 20002
+2024-05-17 11:21:05 | SELECT id, name FROM breed
+2024-05-17 11:21:12 | SELECT * FROM species
+2024-05-17 11:21:12 | SELECT * FROM breed
+2024-05-17 11:21:18 | SELECT * FROM species
+2024-05-17 11:21:23 | SELECT user.id, user.name, user.birth_date, user.username, role.name AS role FROM user JOIN role ON user.role_id = role.id WHERE user.id = 10005
+2024-05-17 11:21:38 | SELECT user.id, user.name, user.birth_date, user.username, role.name AS role FROM user JOIN role ON user.role_id = role.id WHERE username = 'manager002' AND password = '02e705f03ca721dc13ef0fe806c268e64a3de5e4c42d846889aca978352b12f9'
+2024-05-17 11:21:43 | SELECT user.id, user.name, user.birth_date, user.username, role.name AS role FROM user JOIN role ON user.role_id = role.id WHERE user.id = 10003
+2024-05-17 11:21:46 | SELECT user.id, user.name, user.birth_date, user.username, role.name AS role FROM user JOIN role ON user.role_id = role.id WHERE role.name = 'Nhân viên'
+2024-05-17 11:21:46 | SELECT * FROM role
+2024-05-17 11:21:52 | UPDATE user SET name = 'Phan Thị E', birth_date = '2004-11-02', role_id = 90001 WHERE id = 10006
+2024-05-17 11:21:55 | SELECT user.id, user.name, user.birth_date, user.username, role.name AS role FROM user JOIN role ON user.role_id = role.id WHERE role.name = 'Nhân viên'
+2024-05-17 11:22:20 | SELECT * FROM species
+2024-05-17 11:22:23 | UPDATE species SET name = 'Chim' WHERE id = 40003
+2024-05-17 11:22:24 | SELECT * FROM species
+2024-05-17 11:22:29 | UPDATE species SET name = 'Cá' WHERE id = 40006
+2024-05-17 11:22:30 | SELECT * FROM species
+2024-05-17 11:22:32 | SELECT * FROM species
+2024-05-17 11:22:34 | SELECT * FROM species
+2024-05-17 11:22:34 | SELECT * FROM breed
+2024-05-17 11:22:41 | UPDATE breed SET name = 'Beagle', species_id = 40006, description = 'Beagle là một giống chó săn có nguồn gốc từ Anh. Chúng nổi tiếng với bộ lông ba màu (đen, trắng, nâu), chiếc mũi dài và đôi tai cụp. Beagle là những chú chó vui vẻ, năng động và thích hợp cho các gia đình có trẻ em.' WHERE id = 30005
+2024-05-17 11:22:42 | SELECT * FROM breed
+2024-05-17 11:22:49 | UPDATE breed SET name = 'Beagle', species_id = 40002, description = 'Beagle là một giống chó săn có nguồn gốc từ Anh. Chúng nổi tiếng với bộ lông ba màu (đen, trắng, nâu), chiếc mũi dài và đôi tai cụp. Beagle là những chú chó vui vẻ, năng động và thích hợp cho các gia đình có trẻ em.' WHERE id = 30005
+2024-05-17 11:22:50 | SELECT * FROM breed
+2024-05-17 11:22:53 | SELECT pet.id, pet.name, breed.name AS breed, pet.born_year, pet.weight, pet.price, pet.is_sold FROM pet JOIN breed ON pet.breed_id = breed.id
+2024-05-17 11:22:54 | SELECT pet.id, pet.name, breed_id, species.name AS species, breed.name AS breed, pet.born_year, pet.weight, pet.description, pet.image, pet.price, pet.is_sold FROM pet JOIN breed ON pet.breed_id = breed.id JOIN species ON breed.species_id = species.id WHERE pet.id = 20002
+2024-05-17 11:22:54 | SELECT id, name FROM breed
+2024-05-17 11:23:04 | SELECT * FROM species
+2024-05-17 11:23:08 | DELETE FROM species WHERE id = 40003
+2024-05-17 11:23:08 | Cannot delete or update a parent row: a foreign key constraint fails (`netproject`.`breed`, CONSTRAINT `species_of_breed` FOREIGN KEY (`species_id`) REFERENCES `species` (`id`))
+2024-05-17 11:23:10 | DELETE FROM species WHERE id = 40003
+2024-05-17 11:23:10 | Cannot delete or update a parent row: a foreign key constraint fails (`netproject`.`breed`, CONSTRAINT `species_of_breed` FOREIGN KEY (`species_id`) REFERENCES `species` (`id`))
+2024-05-17 11:23:15 | SELECT * FROM species
+2024-05-17 11:23:15 | SELECT * FROM breed
+2024-05-17 11:23:18 | SELECT pet.id, pet.name, breed.name AS breed, pet.born_year, pet.weight, pet.price, pet.is_sold FROM pet JOIN breed ON pet.breed_id = breed.id
+2024-05-17 11:23:21 | SELECT * FROM species
+2024-05-17 11:23:21 | SELECT * FROM breed
+2024-05-17 11:23:26 | DELETE FROM breed WHERE id = 30001
+2024-05-17 11:23:26 | Cannot delete or update a parent row: a foreign key constraint fails (`netproject`.`pet`, CONSTRAINT `breed_of_pet` FOREIGN KEY (`breed_id`) REFERENCES `breed` (`id`))
+2024-05-17 11:23:31 | SELECT user.id, user.name, user.birth_date, user.username, role.name AS role FROM user JOIN role ON user.role_id = role.id WHERE user.id = 10003
+2024-05-17 11:23:34 | SELECT user.id, user.name, user.birth_date, user.username, role.name AS role FROM user JOIN role ON user.role_id = role.id WHERE user.id = 10003
+2024-05-17 11:23:35 | UPDATE user SET name = 'Trần Văn Dũng', birth_date = '1999-12-04' WHERE id = 10003
+2024-05-17 11:23:36 | SELECT user.id, user.name, user.birth_date, user.username, role.name AS role FROM user JOIN role ON user.role_id = role.id WHERE user.id = 10003
+2024-05-17 11:23:38 | SELECT user.id, user.name, user.birth_date, user.username, role.name AS role FROM user JOIN role ON user.role_id = role.id WHERE role.name = 'Nhân viên'
+2024-05-17 11:23:38 | SELECT * FROM role
+2024-05-17 11:23:41 | UPDATE user SET name = 'Phan Thị E', birth_date = '2004-11-02', role_id = 90001 WHERE id = 10006
+2024-05-17 11:23:42 | SELECT user.id, user.name, user.birth_date, user.username, role.name AS role FROM user JOIN role ON user.role_id = role.id WHERE role.name = 'Nhân viên'
+2024-05-17 11:23:45 | SELECT pet.id, pet.name, breed.name AS breed, pet.born_year, pet.weight, pet.price, pet.is_sold FROM pet JOIN breed ON pet.breed_id = breed.id
+2024-05-17 11:28:53 | SELECT user.id, user.name, user.birth_date, user.username, role.name AS role FROM user JOIN role ON user.role_id = role.id WHERE username = 'dev01d' AND password = 'de161615655a53e80ebddade12e43b3b5f44229cca48c7a41942cacc2866aae4'
+2024-05-17 11:28:57 | SELECT pet.id, pet.name, breed.name AS breed, pet.born_year, pet.weight, pet.price, pet.is_sold FROM pet JOIN breed ON pet.breed_id = breed.id WHERE pet.name LIKE '%%' OR breed.name LIKE '%%'
+2024-05-17 11:29:01 | SELECT pet.id, pet.name, breed.name AS breed, pet.born_year, pet.weight, pet.price, pet.is_sold FROM pet JOIN breed ON pet.breed_id = breed.id WHERE pet.name LIKE '%ma%' OR breed.name LIKE '%ma%'
+2024-05-17 11:29:04 | SELECT pet.id, pet.name, breed.name AS breed, pet.born_year, pet.weight, pet.price, pet.is_sold FROM pet JOIN breed ON pet.breed_id = breed.id WHERE pet.name LIKE '%%' OR breed.name LIKE '%%'
+2024-05-17 11:29:06 | SELECT pet.id, pet.name, breed.name AS breed, pet.born_year, pet.weight, pet.price, pet.is_sold FROM pet JOIN breed ON pet.breed_id = breed.id WHERE pet.name LIKE '%%' OR breed.name LIKE '%%' AND pet.is_sold = true
+2024-05-17 11:29:08 | SELECT pet.id, pet.name, breed.name AS breed, pet.born_year, pet.weight, pet.price, pet.is_sold FROM pet JOIN breed ON pet.breed_id = breed.id WHERE pet.name LIKE '%%' OR breed.name LIKE '%%' ANDE pet.is_sold = false
+2024-05-17 11:29:08 | You have an error in your SQL syntax; check the manual that corresponds to your MariaDB server version for the right syntax to use near 'ANDE pet.is_sold = false' at line 1
+2024-05-17 11:29:10 | SELECT pet.id, pet.name, breed.name AS breed, pet.born_year, pet.weight, pet.price, pet.is_sold FROM pet JOIN breed ON pet.breed_id = breed.id WHERE pet.name LIKE '%%' OR breed.name LIKE '%%' AND pet.is_sold = true
+2024-05-17 11:29:11 | SELECT pet.id, pet.name, breed.name AS breed, pet.born_year, pet.weight, pet.price, pet.is_sold FROM pet JOIN breed ON pet.breed_id = breed.id WHERE pet.name LIKE '%%' OR breed.name LIKE '%%' ANDE pet.is_sold = false
+2024-05-17 11:29:11 | You have an error in your SQL syntax; check the manual that corresponds to your MariaDB server version for the right syntax to use near 'ANDE pet.is_sold = false' at line 1
+2024-05-17 11:29:13 | SELECT pet.id, pet.name, breed.name AS breed, pet.born_year, pet.weight, pet.price, pet.is_sold FROM pet JOIN breed ON pet.breed_id = breed.id WHERE pet.name LIKE '%%' OR breed.name LIKE '%%' AND pet.is_sold = true
+2024-05-17 11:29:14 | SELECT pet.id, pet.name, breed.name AS breed, pet.born_year, pet.weight, pet.price, pet.is_sold FROM pet JOIN breed ON pet.breed_id = breed.id WHERE pet.name LIKE '%%' OR breed.name LIKE '%%' ANDE pet.is_sold = false
+2024-05-17 11:29:14 | You have an error in your SQL syntax; check the manual that corresponds to your MariaDB server version for the right syntax to use near 'ANDE pet.is_sold = false' at line 1
+2024-05-17 11:29:15 | SELECT pet.id, pet.name, breed.name AS breed, pet.born_year, pet.weight, pet.price, pet.is_sold FROM pet JOIN breed ON pet.breed_id = breed.id WHERE pet.name LIKE '%%' OR breed.name LIKE '%%' AND pet.is_sold = true
+2024-05-17 11:29:17 | SELECT pet.id, pet.name, breed.name AS breed, pet.born_year, pet.weight, pet.price, pet.is_sold FROM pet JOIN breed ON pet.breed_id = breed.id WHERE pet.name LIKE '%%' OR breed.name LIKE '%%' ANDE pet.is_sold = false
+2024-05-17 11:29:17 | You have an error in your SQL syntax; check the manual that corresponds to your MariaDB server version for the right syntax to use near 'ANDE pet.is_sold = false' at line 1
+2024-05-17 11:29:18 | SELECT pet.id, pet.name, breed.name AS breed, pet.born_year, pet.weight, pet.price, pet.is_sold FROM pet JOIN breed ON pet.breed_id = breed.id WHERE pet.name LIKE '%%' OR breed.name LIKE '%%'
+2024-05-17 11:29:20 | SELECT pet.id, pet.name, breed.name AS breed, pet.born_year, pet.weight, pet.price, pet.is_sold FROM pet JOIN breed ON pet.breed_id = breed.id WHERE pet.name LIKE '%s%' OR breed.name LIKE '%s%'
+2024-05-17 11:29:23 | SELECT pet.id, pet.name, breed.name AS breed, pet.born_year, pet.weight, pet.price, pet.is_sold FROM pet JOIN breed ON pet.breed_id = breed.id WHERE pet.name LIKE '%%' OR breed.name LIKE '%%'
+2024-05-17 11:29:26 | SELECT pet.id, pet.name, breed.name AS breed, pet.born_year, pet.weight, pet.price, pet.is_sold FROM pet JOIN breed ON pet.breed_id = breed.id WHERE pet.name LIKE '%%' OR breed.name LIKE '%%' AND pet.is_sold = true
+2024-05-17 11:29:28 | SELECT pet.id, pet.name, breed.name AS breed, pet.born_year, pet.weight, pet.price, pet.is_sold FROM pet JOIN breed ON pet.breed_id = breed.id WHERE pet.name LIKE '%%' OR breed.name LIKE '%%' ANDE pet.is_sold = false
+2024-05-17 11:29:28 | You have an error in your SQL syntax; check the manual that corresponds to your MariaDB server version for the right syntax to use near 'ANDE pet.is_sold = false' at line 1
+2024-05-17 11:31:11 | SELECT user.id, user.name, user.birth_date, user.username, role.name AS role FROM user JOIN role ON user.role_id = role.id WHERE username = 'dev01d' AND password = 'de161615655a53e80ebddade12e43b3b5f44229cca48c7a41942cacc2866aae4'
+2024-05-17 11:31:12 | SELECT pet.id, pet.name, breed.name AS breed, pet.born_year, pet.weight, pet.price, pet.is_sold FROM pet JOIN breed ON pet.breed_id = breed.id WHERE pet.name LIKE '%%'
+2024-05-17 11:31:14 | SELECT pet.id, pet.name, breed.name AS breed, pet.born_year, pet.weight, pet.price, pet.is_sold FROM pet JOIN breed ON pet.breed_id = breed.id WHERE pet.name LIKE '%%' AND pet.is_sold = true
+2024-05-17 11:31:15 | SELECT pet.id, pet.name, breed.name AS breed, pet.born_year, pet.weight, pet.price, pet.is_sold FROM pet JOIN breed ON pet.breed_id = breed.id WHERE pet.name LIKE '%%' AND pet.is_sold = false
+2024-05-17 11:31:16 | SELECT pet.id, pet.name, breed.name AS breed, pet.born_year, pet.weight, pet.price, pet.is_sold FROM pet JOIN breed ON pet.breed_id = breed.id WHERE pet.name LIKE '%%'
+2024-05-17 11:31:19 | SELECT pet.id, pet.name, breed.name AS breed, pet.born_year, pet.weight, pet.price, pet.is_sold FROM pet JOIN breed ON pet.breed_id = breed.id WHERE pet.name LIKE '%m%'
+2024-05-17 11:31:22 | SELECT pet.id, pet.name, breed.name AS breed, pet.born_year, pet.weight, pet.price, pet.is_sold FROM pet JOIN breed ON pet.breed_id = breed.id WHERE pet.name LIKE '%a%'
+2024-05-17 11:31:24 | SELECT pet.id, pet.name, breed.name AS breed, pet.born_year, pet.weight, pet.price, pet.is_sold FROM pet JOIN breed ON pet.breed_id = breed.id WHERE pet.name LIKE '%a%' AND pet.is_sold = true
+2024-05-17 11:31:25 | SELECT pet.id, pet.name, breed.name AS breed, pet.born_year, pet.weight, pet.price, pet.is_sold FROM pet JOIN breed ON pet.breed_id = breed.id WHERE pet.name LIKE '%a%' AND pet.is_sold = false
+2024-05-17 11:31:26 | SELECT pet.id, pet.name, breed.name AS breed, pet.born_year, pet.weight, pet.price, pet.is_sold FROM pet JOIN breed ON pet.breed_id = breed.id WHERE pet.name LIKE '%a%'
+2024-05-17 11:31:27 | SELECT pet.id, pet.name, breed.name AS breed, pet.born_year, pet.weight, pet.price, pet.is_sold FROM pet JOIN breed ON pet.breed_id = breed.id WHERE pet.name LIKE '%a%' AND pet.is_sold = true
+2024-05-17 11:31:28 | SELECT pet.id, pet.name, breed.name AS breed, pet.born_year, pet.weight, pet.price, pet.is_sold FROM pet JOIN breed ON pet.breed_id = breed.id WHERE pet.name LIKE '%a%' AND pet.is_sold = false
+2024-05-17 11:31:31 | SELECT pet.id, pet.name, breed.name AS breed, pet.born_year, pet.weight, pet.price, pet.is_sold FROM pet JOIN breed ON pet.breed_id = breed.id WHERE pet.name LIKE '%%' AND pet.is_sold = false
+2024-05-17 11:31:35 | SELECT pet.id, pet.name, breed.name AS breed, pet.born_year, pet.weight, pet.price, pet.is_sold FROM pet JOIN breed ON pet.breed_id = breed.id WHERE pet.name LIKE '%aa%' AND pet.is_sold = false
+2024-05-17 11:31:36 | SELECT pet.id, pet.name, breed.name AS breed, pet.born_year, pet.weight, pet.price, pet.is_sold FROM pet JOIN breed ON pet.breed_id = breed.id WHERE pet.name LIKE '%%'
+2024-05-17 11:32:30 | SELECT user.id, user.name, user.birth_date, user.username, role.name AS role FROM user JOIN role ON user.role_id = role.id WHERE username = 'dev01d' AND password = 'de161615655a53e80ebddade12e43b3b5f44229cca48c7a41942cacc2866aae4'
+2024-05-17 11:32:31 | SELECT pet.id, pet.name, breed.name AS breed, pet.born_year, pet.weight, pet.price, pet.is_sold FROM pet JOIN breed ON pet.breed_id = breed.id WHERE pet.name LIKE '%%'
+2024-05-17 11:32:33 | SELECT pet.id, pet.name, breed.name AS breed, pet.born_year, pet.weight, pet.price, pet.is_sold FROM pet JOIN breed ON pet.breed_id = breed.id WHERE pet.name LIKE '%aa%'
+2024-05-17 11:32:34 | SELECT pet.id, pet.name, breed.name AS breed, pet.born_year, pet.weight, pet.price, pet.is_sold FROM pet JOIN breed ON pet.breed_id = breed.id WHERE pet.name LIKE '%%'
+2024-05-17 11:32:36 | SELECT pet.id, pet.name, breed.name AS breed, pet.born_year, pet.weight, pet.price, pet.is_sold FROM pet JOIN breed ON pet.breed_id = breed.id WHERE pet.name LIKE '%a%'
+2024-05-17 11:32:36 | SELECT pet.id, pet.name, breed.name AS breed, pet.born_year, pet.weight, pet.price, pet.is_sold FROM pet JOIN breed ON pet.breed_id = breed.id WHERE pet.name LIKE '%%'
+2024-05-17 11:32:37 | SELECT pet.id, pet.name, breed.name AS breed, pet.born_year, pet.weight, pet.price, pet.is_sold FROM pet JOIN breed ON pet.breed_id = breed.id WHERE pet.name LIKE '%a%'
+2024-05-17 11:32:38 | SELECT pet.id, pet.name, breed.name AS breed, pet.born_year, pet.weight, pet.price, pet.is_sold FROM pet JOIN breed ON pet.breed_id = breed.id WHERE pet.name LIKE '%a%' AND pet.is_sold = false
+2024-05-17 11:32:39 | SELECT pet.id, pet.name, breed.name AS breed, pet.born_year, pet.weight, pet.price, pet.is_sold FROM pet JOIN breed ON pet.breed_id = breed.id WHERE pet.name LIKE '%%'
+2024-05-17 11:32:39 | SELECT pet.id, pet.name, breed.name AS breed, pet.born_year, pet.weight, pet.price, pet.is_sold FROM pet JOIN breed ON pet.breed_id = breed.id WHERE pet.name LIKE '%%'
+2024-05-17 12:47:23 | SELECT user.id, user.name, user.birth_date, user.username, role.name AS role FROM user JOIN role ON user.role_id = role.id WHERE username = 'dev01d' AND password = 'de161615655a53e80ebddade12e43b3b5f44229cca48c7a41942cacc2866aae4'
+2024-05-17 12:47:26 | SELECT pet.id, pet.name, breed.name AS breed, pet.born_year, pet.weight, pet.price, pet.is_sold FROM pet JOIN breed ON pet.breed_id = breed.id WHERE pet.name LIKE '%%'
+2024-05-17 12:47:30 | SELECT pet.id, pet.name, breed.name AS breed, pet.born_year, pet.weight, pet.price, pet.is_sold FROM pet JOIN breed ON pet.breed_id = breed.id WHERE pet.name LIKE '%a%'
+2024-05-17 12:47:31 | SELECT pet.id, pet.name, breed.name AS breed, pet.born_year, pet.weight, pet.price, pet.is_sold FROM pet JOIN breed ON pet.breed_id = breed.id WHERE pet.name LIKE '%a%' AND pet.is_sold = true
+2024-05-17 12:47:32 | SELECT pet.id, pet.name, breed.name AS breed, pet.born_year, pet.weight, pet.price, pet.is_sold FROM pet JOIN breed ON pet.breed_id = breed.id WHERE pet.name LIKE '%a%' AND pet.is_sold = false
+2024-05-17 12:47:33 | SELECT pet.id, pet.name, breed.name AS breed, pet.born_year, pet.weight, pet.price, pet.is_sold FROM pet JOIN breed ON pet.breed_id = breed.id WHERE pet.name LIKE '%%'
+2024-05-17 12:47:33 | SELECT pet.id, pet.name, breed.name AS breed, pet.born_year, pet.weight, pet.price, pet.is_sold FROM pet JOIN breed ON pet.breed_id = breed.id WHERE pet.name LIKE '%%'
+2024-05-17 12:47:34 | SELECT pet.id, pet.name, breed_id, species.name AS species, breed.name AS breed, pet.born_year, pet.weight, pet.description, pet.image, pet.price, pet.is_sold FROM pet JOIN breed ON pet.breed_id = breed.id JOIN species ON breed.species_id = species.id WHERE pet.id = 20004
+2024-05-17 12:47:34 | SELECT id, name FROM breed
+2024-05-17 12:47:45 | UPDATE pet SET name = 'Bellaa', is_male = 'True', born_year = '2024', breed_id = '30006', weight = '1.53', description = 'Thích phơi nắng và nằm im. Ghét dưa chuột.', image = 'https://res.cloudinary.com/dxhuysuy5/image/upload/v1715620238/netproject/20004.jpg', price = '3249000' WHERE id = 20004
+2024-05-17 12:47:48 | SELECT pet.id, pet.name, breed.name AS breed, pet.born_year, pet.weight, pet.price, pet.is_sold FROM pet JOIN breed ON pet.breed_id = breed.id WHERE pet.name LIKE '%%'
+2024-05-17 12:47:49 | SELECT pet.id, pet.name, breed_id, species.name AS species, breed.name AS breed, pet.born_year, pet.weight, pet.description, pet.image, pet.price, pet.is_sold FROM pet JOIN breed ON pet.breed_id = breed.id JOIN species ON breed.species_id = species.id WHERE pet.id = 20004
+2024-05-17 12:47:49 | SELECT id, name FROM breed
+2024-05-17 12:47:56 | UPDATE pet SET name = 'Bellaa', is_male = 'True', born_year = '2024', breed_id = '30006', weight = '1.53', description = 'Thích phơi nắng và nằm im. Ghét dưa chuột.', image = 'https://res.cloudinary.com/dxhuysuy5/image/upload/v1715620238/netproject/20004.jpg', price = '3249000' WHERE id = 20004
+2024-05-17 12:47:59 | SELECT pet.id, pet.name, breed_id, species.name AS species, breed.name AS breed, pet.born_year, pet.weight, pet.description, pet.image, pet.price, pet.is_sold FROM pet JOIN breed ON pet.breed_id = breed.id JOIN species ON breed.species_id = species.id WHERE pet.id = 20004
+2024-05-17 12:47:59 | SELECT id, name FROM breed
+2024-05-17 12:48:03 | UPDATE pet SET name = 'Bella', is_male = 'False', born_year = '2024', breed_id = '30006', weight = '1.53', description = 'Thích phơi nắng và nằm im. Ghét dưa chuột.', image = 'https://res.cloudinary.com/dxhuysuy5/image/upload/v1715620238/netproject/20004.jpg', price = '3249000' WHERE id = 20004
+2024-05-17 12:48:05 | SELECT pet.id, pet.name, breed_id, species.name AS species, breed.name AS breed, pet.born_year, pet.weight, pet.description, pet.image, pet.price, pet.is_sold FROM pet JOIN breed ON pet.breed_id = breed.id JOIN species ON breed.species_id = species.id WHERE pet.id = 20004
+2024-05-17 12:48:05 | SELECT id, name FROM breed
+2024-05-17 12:48:09 | SELECT pet.id, pet.name, breed.name AS breed, pet.born_year, pet.weight, pet.price, pet.is_sold FROM pet JOIN breed ON pet.breed_id = breed.id WHERE pet.name LIKE '%%'
+2024-05-17 12:48:10 | SELECT pet.id, pet.name, breed_id, species.name AS species, breed.name AS breed, pet.born_year, pet.weight, pet.description, pet.image, pet.price, pet.is_sold FROM pet JOIN breed ON pet.breed_id = breed.id JOIN species ON breed.species_id = species.id WHERE pet.id = 20004
+2024-05-17 12:48:11 | SELECT id, name FROM breed
+2024-05-17 12:48:18 | UPDATE pet SET name = 'Bella', is_male = 'True', born_year = '2024', breed_id = '30005', weight = '1.53', description = 'Thích phơi nắng và nằm im. Ghét dưa chuột.', image = 'https://res.cloudinary.com/dxhuysuy5/image/upload/v1715620238/netproject/20004.jpg', price = '3249000' WHERE id = 20004
+2024-05-17 12:48:20 | SELECT pet.id, pet.name, breed.name AS breed, pet.born_year, pet.weight, pet.price, pet.is_sold FROM pet JOIN breed ON pet.breed_id = breed.id WHERE pet.name LIKE '%%'
+2024-05-17 12:48:21 | SELECT pet.id, pet.name, breed_id, species.name AS species, breed.name AS breed, pet.born_year, pet.weight, pet.description, pet.image, pet.price, pet.is_sold FROM pet JOIN breed ON pet.breed_id = breed.id JOIN species ON breed.species_id = species.id WHERE pet.id = 20004
+2024-05-17 12:48:21 | SELECT id, name FROM breed
+2024-05-17 12:48:29 | UPDATE pet SET name = 'Bella', is_male = 'True', born_year = '2024', breed_id = '30006', weight = '1.53', description = 'Thích phơi nắng và nằm im. Ghét dưa chuột.', image = 'https://res.cloudinary.com/dxhuysuy5/image/upload/v1715620238/netproject/20004.jpg', price = '3249000' WHERE id = 20004
+2024-05-17 12:48:32 | SELECT pet.id, pet.name, breed_id, species.name AS species, breed.name AS breed, pet.born_year, pet.weight, pet.description, pet.image, pet.price, pet.is_sold FROM pet JOIN breed ON pet.breed_id = breed.id JOIN species ON breed.species_id = species.id WHERE pet.id = 20004
+2024-05-17 12:48:32 | SELECT id, name FROM breed
+2024-05-17 12:48:36 | SELECT * FROM species
+2024-05-17 12:48:36 | SELECT * FROM breed
+2024-05-17 12:48:47 | UPDATE breed SET name = 'Beaglee', species_id = 40001, description = 'Beagle là một giống chó săn có nguồn gốc từ Anh. Chúng nổi tiếng với bộ lông ba màu (đen, trắng, nâu), chiếc mũi dài và đôi tai cụp. Beagle là những chú chó vui vẻ, năng động và thích hợp cho các gia đình có trẻ em.' WHERE id = 30005
+2024-05-17 12:48:48 | SELECT * FROM breed
+2024-05-17 12:48:53 | UPDATE breed SET name = 'Beagle', species_id = 40002, description = 'Beagle là một giống chó săn có nguồn gốc từ Anh. Chúng nổi tiếng với bộ lông ba màu (đen, trắng, nâu), chiếc mũi dài và đôi tai cụp. Beagle là những chú chó vui vẻ, năng động và thích hợp cho các gia đình có trẻ em.' WHERE id = 30005
+2024-05-17 12:48:54 | SELECT * FROM breed
+2024-05-17 12:48:56 | SELECT * FROM species
+2024-05-17 12:49:12 | UPDATE species SET name = 'Cá cảnh' WHERE id = 40006
+2024-05-17 12:49:13 | SELECT * FROM species
+2024-05-17 12:49:20 | SELECT user.id, user.name, user.birth_date, user.username, role.name AS role FROM user JOIN role ON user.role_id = role.id WHERE user.id = 10001
+2024-05-17 12:49:35 | UPDATE user SET name = 'Lê Đức Bảo', birth_date = '2004-08-25' WHERE id = 10001
+2024-05-17 12:49:36 | SELECT user.id, user.name, user.birth_date, user.username, role.name AS role FROM user JOIN role ON user.role_id = role.id WHERE user.id = 10001
+2024-05-17 12:49:39 | SELECT user.id, user.name, user.birth_date, user.username, role.name AS role FROM user JOIN role ON user.role_id = role.id
+2024-05-17 12:49:39 | SELECT * FROM role
+2024-05-17 12:49:43 | UPDATE user SET name = 'Phạm Thị B', birth_date = '2003-07-12', role_id = 90001 WHERE id = 10005
+2024-05-17 12:49:44 | SELECT user.id, user.name, user.birth_date, user.username, role.name AS role FROM user JOIN role ON user.role_id = role.id
+2024-05-17 12:49:49 | UPDATE user SET name = 'Phạm Thị Bình', birth_date = '2003-07-12', role_id = 90001 WHERE id = 10005
+2024-05-17 12:49:50 | SELECT user.id, user.name, user.birth_date, user.username, role.name AS role FROM user JOIN role ON user.role_id = role.id
+2024-05-17 12:49:54 | UPDATE user SET name = 'Phạm Thị Bình', birth_date = '2003-07-12', role_id = 90002 WHERE id = 10005
+2024-05-17 12:49:55 | SELECT user.id, user.name, user.birth_date, user.username, role.name AS role FROM user JOIN role ON user.role_id = role.id
+2024-05-17 12:49:58 | UPDATE user SET name = 'Phạm Thị Bình', birth_date = '2003-07-12', role_id = 90001 WHERE id = 10005
+2024-05-17 12:49:59 | SELECT user.id, user.name, user.birth_date, user.username, role.name AS role FROM user JOIN role ON user.role_id = role.id
+2024-05-17 12:50:33 | INSERT INTO user (name, birth_date, username, password, role_id) VALUES ('Trần Hoàng Đức', '2002-03-05', 'employee', '8d969eef6ecad3c29a3a629280e686cf0c3f5d5a86aff3ca12020c923adc6c92', 90001)
+2024-05-17 12:50:35 | SELECT user.id, user.name, user.birth_date, user.username, role.name AS role FROM user JOIN role ON user.role_id = role.id
+2024-05-17 12:53:03 | SELECT user.id, user.name, user.birth_date, user.username, role.name AS role FROM user JOIN role ON user.role_id = role.id WHERE username = 'dev01d' AND password = 'de161615655a53e80ebddade12e43b3b5f44229cca48c7a41942cacc2866aae4'
+2024-05-17 12:53:04 | SELECT user.id, user.name, user.birth_date, user.username, role.name AS role FROM user JOIN role ON user.role_id = role.id
+2024-05-17 12:53:04 | SELECT * FROM role
+2024-05-17 12:55:15 | SELECT user.id, user.name, user.birth_date, user.username, role.name AS role FROM user JOIN role ON user.role_id = role.id WHERE username = 'dev01d' AND password = 'de161615655a53e80ebddade12e43b3b5f44229cca48c7a41942cacc2866aae4'
+2024-05-17 12:55:16 | SELECT user.id, user.name, user.birth_date, user.username, role.name AS role FROM user JOIN role ON user.role_id = role.id
+2024-05-17 12:55:16 | SELECT * FROM role
+2024-05-17 12:56:19 | SELECT user.id, user.name, user.birth_date, user.username, role.name AS role FROM user JOIN role ON user.role_id = role.id WHERE user.id = 10001
+2024-05-17 12:56:21 | SELECT user.id, user.name, user.birth_date, user.username, role.name AS role FROM user JOIN role ON user.role_id = role.id
+2024-05-17 12:56:21 | SELECT * FROM role
+2024-05-17 12:56:51 | INSERT INTO user (name, birth_date, username, password, role_id) VALUES ('Trần Nguyễn Đức', '2024-05-17', 'employee', '8d969eef6ecad3c29a3a629280e686cf0c3f5d5a86aff3ca12020c923adc6c92', 90001)
+2024-05-17 12:56:52 | SELECT user.id, user.name, user.birth_date, user.username, role.name AS role FROM user JOIN role ON user.role_id = role.id
+2024-05-17 12:57:25 | INSERT INTO user (name, birth_date, username, password, role_id) VALUES ('Không biết', '3123-11-11', '123456', '8d969eef6ecad3c29a3a629280e686cf0c3f5d5a86aff3ca12020c923adc6c92', 90002)
+2024-05-17 12:57:26 | SELECT user.id, user.name, user.birth_date, user.username, role.name AS role FROM user JOIN role ON user.role_id = role.id
+2024-05-17 12:57:30 | DELETE FROM user WHERE username = '123456' AND id = '10011'
+2024-05-17 12:57:31 | SELECT user.id, user.name, user.birth_date, user.username, role.name AS role FROM user JOIN role ON user.role_id = role.id
+2024-05-17 12:57:38 | SELECT pet.id, pet.name, breed.name AS breed, pet.born_year, pet.weight, pet.price, pet.is_sold FROM pet JOIN breed ON pet.breed_id = breed.id WHERE pet.name LIKE '%%'
+2024-05-17 12:57:43 | SELECT user.id, user.name, user.birth_date, user.username, role.name AS role FROM user JOIN role ON user.role_id = role.id WHERE user.id = 10001
+2024-05-17 12:58:09 | SELECT user.id, user.name, user.birth_date, user.username, role.name AS role FROM user JOIN role ON user.role_id = role.id WHERE user.id = 10001
+2024-05-17 12:58:16 | UPDATE user SET name = 'Lê Đức Bảo', birth_date = '2004-08-25' WHERE id = 10001
+2024-05-17 12:58:17 | SELECT user.id, user.name, user.birth_date, user.username, role.name AS role FROM user JOIN role ON user.role_id = role.id WHERE user.id = 10001
+2024-05-17 12:58:19 | UPDATE user SET name = 'Lê Đức Bảo', birth_date = '2004-08-25' WHERE id = 10001
+2024-05-17 12:58:20 | SELECT user.id, user.name, user.birth_date, user.username, role.name AS role FROM user JOIN role ON user.role_id = role.id WHERE user.id = 10001
+2024-05-17 13:00:03 | SELECT user.id, user.name, user.birth_date, user.username, role.name AS role FROM user JOIN role ON user.role_id = role.id WHERE user.id = 10001
+2024-05-17 13:00:05 | SELECT user.id, user.name, user.birth_date, user.username, role.name AS role FROM user JOIN role ON user.role_id = role.id WHERE user.id = 10001
+2024-05-17 13:00:14 | UPDATE user SET name = 'Lê Đức Bảo', birth_date = '2004-08-25' WHERE id = 10001
+2024-05-17 13:00:15 | SELECT user.id, user.name, user.birth_date, user.username, role.name AS role FROM user JOIN role ON user.role_id = role.id WHERE user.id = 10001
+2024-05-17 13:01:54 | SELECT user.id, user.name, user.birth_date, user.username, role.name AS role FROM user JOIN role ON user.role_id = role.id WHERE user.id = 10001
+2024-05-17 13:01:55 | SELECT user.id, user.name, user.birth_date, user.username, role.name AS role FROM user JOIN role ON user.role_id = role.id WHERE user.id = 10001
+2024-05-17 13:02:22 | UPDATE user SET name = 'Lê Đức Bảo', birth_date = '2004-08-25' WHERE id = 10001
+2024-05-17 13:02:24 | SELECT user.id, user.name, user.birth_date, user.username, role.name AS role FROM user JOIN role ON user.role_id = role.id WHERE user.id = 10001
+2024-05-17 13:04:16 | SELECT user.id, user.name, user.birth_date, user.username, role.name AS role FROM user JOIN role ON user.role_id = role.id WHERE user.id = 10001
+2024-05-17 13:04:18 | SELECT user.id, user.name, user.birth_date, user.username, role.name AS role FROM user JOIN role ON user.role_id = role.id WHERE user.id = 10001
+2024-05-17 13:04:35 | UPDATE user SET name = 'Lê Đức Bảo', birth_date = '2004-08-25' WHERE id = 10001
+2024-05-17 13:04:36 | SELECT user.id, user.name, user.birth_date, user.username, role.name AS role FROM user JOIN role ON user.role_id = role.id WHERE user.id = 10001
+2024-05-17 13:04:55 | SELECT user.id, user.name, user.birth_date, user.username, role.name AS role FROM user JOIN role ON user.role_id = role.id WHERE user.id = 10001
+2024-05-17 13:04:57 | SELECT user.id, user.name, user.birth_date, user.username, role.name AS role FROM user JOIN role ON user.role_id = role.id WHERE user.id = 10001
+2024-05-17 13:05:02 | UPDATE user SET name = 'Lê Đức Bảo', birth_date = '8/25/2004 12:00:00 AM' WHERE id = 10001
+2024-05-17 13:05:03 | SELECT user.id, user.name, user.birth_date, user.username, role.name AS role FROM user JOIN role ON user.role_id = role.id WHERE user.id = 10001
+2024-05-17 13:06:25 | SELECT user.id, user.name, user.birth_date, user.username, role.name AS role FROM user JOIN role ON user.role_id = role.id WHERE user.id = 10001
+2024-05-17 13:06:34 | SELECT user.id, user.name, user.birth_date, user.username, role.name AS role FROM user JOIN role ON user.role_id = role.id WHERE user.id = 10001
+2024-05-17 13:08:00 | SELECT user.id, user.name, user.birth_date, user.username, role.name AS role FROM user JOIN role ON user.role_id = role.id WHERE user.id = 10001
+2024-05-17 13:09:28 | SELECT user.id, user.name, user.birth_date, user.username, role.name AS role FROM user JOIN role ON user.role_id = role.id WHERE user.id = 10001
+2024-05-17 13:09:32 | SELECT user.id, user.name, user.birth_date, user.username, role.name AS role FROM user JOIN role ON user.role_id = role.id WHERE user.id = 10001
+2024-05-17 13:09:37 | UPDATE user SET name = 'Lê Đức Bảo', birth_date = '8/25/2004' WHERE id = 10001
+2024-05-17 13:09:38 | SELECT user.id, user.name, user.birth_date, user.username, role.name AS role FROM user JOIN role ON user.role_id = role.id WHERE user.id = 10001
+2024-05-17 13:12:55 | SELECT user.id, user.name, user.birth_date, user.username, role.name AS role FROM user JOIN role ON user.role_id = role.id WHERE user.id = 10001
+2024-05-17 13:12:57 | SELECT user.id, user.name, user.birth_date, user.username, role.name AS role FROM user JOIN role ON user.role_id = role.id WHERE user.id = 10001
+2024-05-17 13:13:05 | UPDATE user SET name = 'Lê Đức Bảo', birth_date = '2004-08-25' WHERE id = 10001
+2024-05-17 13:13:06 | SELECT user.id, user.name, user.birth_date, user.username, role.name AS role FROM user JOIN role ON user.role_id = role.id WHERE user.id = 10001
+2024-05-17 13:13:08 | UPDATE user SET name = 'Lê Đức Bảo', birth_date = '2004-08-25' WHERE id = 10001
+2024-05-17 13:13:09 | SELECT user.id, user.name, user.birth_date, user.username, role.name AS role FROM user JOIN role ON user.role_id = role.id WHERE user.id = 10001
+2024-05-17 13:13:12 | SELECT user.id, user.name, user.birth_date, user.username, role.name AS role FROM user JOIN role ON user.role_id = role.id WHERE user.id = 10001
+2024-05-17 13:13:16 | UPDATE user SET name = 'Lê Đức Bảo', birth_date = '2004-08-25' WHERE id = 10001
+2024-05-17 13:13:17 | SELECT user.id, user.name, user.birth_date, user.username, role.name AS role FROM user JOIN role ON user.role_id = role.id WHERE user.id = 10001
+2024-05-17 13:15:27 | SELECT user.id, user.name, user.birth_date, user.username, role.name AS role FROM user JOIN role ON user.role_id = role.id WHERE user.id = 10001
+2024-05-17 13:15:29 | SELECT user.id, user.name, user.birth_date, user.username, role.name AS role FROM user JOIN role ON user.role_id = role.id WHERE user.id = 10001
+2024-05-17 13:15:52 | UPDATE user SET name = 'Lê Đức Bảo', birth_date = '2004-08-25' WHERE id = 10001
+2024-05-17 13:15:53 | SELECT user.id, user.name, user.birth_date, user.username, role.name AS role FROM user JOIN role ON user.role_id = role.id WHERE user.id = 10001
+2024-05-17 13:16:43 | SELECT user.id, user.name, user.birth_date, user.username, role.name AS role FROM user JOIN role ON user.role_id = role.id WHERE user.id = 10001
+2024-05-17 13:16:45 | SELECT user.id, user.name, user.birth_date, user.username, role.name AS role FROM user JOIN role ON user.role_id = role.id WHERE user.id = 10001
+2024-05-17 13:16:48 | UPDATE user SET name = 'Lê Đức Bảo', birth_date = '2004-08-25' WHERE id = 10001
+2024-05-17 13:16:49 | SELECT user.id, user.name, user.birth_date, user.username, role.name AS role FROM user JOIN role ON user.role_id = role.id WHERE user.id = 10001
+2024-05-17 13:17:07 | SELECT user.id, user.name, user.birth_date, user.username, role.name AS role FROM user JOIN role ON user.role_id = role.id WHERE user.id = 10001
+2024-05-17 13:17:09 | SELECT user.id, user.name, user.birth_date, user.username, role.name AS role FROM user JOIN role ON user.role_id = role.id WHERE user.id = 10001
+2024-05-17 13:17:11 | UPDATE user SET name = 'Lê Đức Bảo', birth_date = '2004-08-25' WHERE id = 10001
+2024-05-17 13:17:12 | SELECT user.id, user.name, user.birth_date, user.username, role.name AS role FROM user JOIN role ON user.role_id = role.id WHERE user.id = 10001
+2024-05-17 13:17:55 | SELECT user.id, user.name, user.birth_date, user.username, role.name AS role FROM user JOIN role ON user.role_id = role.id WHERE user.id = 10001
+2024-05-17 13:17:56 | SELECT user.id, user.name, user.birth_date, user.username, role.name AS role FROM user JOIN role ON user.role_id = role.id WHERE user.id = 10001
+2024-05-17 13:18:04 | UPDATE user SET name = 'Lê Đức Bảo', birth_date = '2004-08-25' WHERE id = 10001
+2024-05-17 13:18:05 | SELECT user.id, user.name, user.birth_date, user.username, role.name AS role FROM user JOIN role ON user.role_id = role.id WHERE user.id = 10001
+2024-05-17 13:20:44 | SELECT user.id, user.name, user.birth_date, user.username, role.name AS role FROM user JOIN role ON user.role_id = role.id WHERE user.id = 10001
+2024-05-17 13:20:47 | SELECT user.id, user.name, user.birth_date, user.username, role.name AS role FROM user JOIN role ON user.role_id = role.id WHERE user.id = 10001
+2024-05-17 13:20:49 | UPDATE user SET name = 'Lê Đức Bảo', birth_date = '2004-08-25' WHERE id = 10001
+2024-05-17 13:20:51 | SELECT user.id, user.name, user.birth_date, user.username, role.name AS role FROM user JOIN role ON user.role_id = role.id WHERE user.id = 10001
+2024-05-17 13:24:21 | SELECT user.id, user.name, user.birth_date, user.username, role.name AS role FROM user JOIN role ON user.role_id = role.id WHERE user.id = 10001
+2024-05-17 13:24:23 | SELECT user.id, user.name, user.birth_date, user.username, role.name AS role FROM user JOIN role ON user.role_id = role.id WHERE user.id = 10001
+2024-05-17 13:24:31 | UPDATE user SET name = 'Lê Đức Bảo', birth_date = '2004-07-25' WHERE id = 10001
+2024-05-17 13:24:32 | SELECT user.id, user.name, user.birth_date, user.username, role.name AS role FROM user JOIN role ON user.role_id = role.id WHERE user.id = 10001
+2024-05-17 13:24:33 | SELECT user.id, user.name, user.birth_date, user.username, role.name AS role FROM user JOIN role ON user.role_id = role.id WHERE user.id = 10001
+2024-05-17 13:24:35 | SELECT user.id, user.name, user.birth_date, user.username, role.name AS role FROM user JOIN role ON user.role_id = role.id WHERE user.id = 10001
+2024-05-17 13:24:38 | UPDATE user SET name = 'Lê Đức Bảo', birth_date = '2004-08-25' WHERE id = 10001
+2024-05-17 13:24:38 | SELECT user.id, user.name, user.birth_date, user.username, role.name AS role FROM user JOIN role ON user.role_id = role.id WHERE user.id = 10001
+2024-05-17 13:24:43 | SELECT user.id, user.name, user.birth_date, user.username, role.name AS role FROM user JOIN role ON user.role_id = role.id
+2024-05-17 13:24:43 | SELECT * FROM role
+2024-05-17 13:24:51 | UPDATE user SET name = 'Nguyễn Hoàng Dũng', birth_date = '2002-05-12', role_id = 90001 WHERE id = 10008
+2024-05-17 13:24:52 | SELECT user.id, user.name, user.birth_date, user.username, role.name AS role FROM user JOIN role ON user.role_id = role.id
+2024-05-17 13:25:36 | INSERT INTO user (name, birth_date, username, password, role_id) VALUES ('Nguyễn Thị Thanh', '2024-05-17', 'ntthanh123', '8d969eef6ecad3c29a3a629280e686cf0c3f5d5a86aff3ca12020c923adc6c92', 90001)
+2024-05-17 13:25:38 | SELECT user.id, user.name, user.birth_date, user.username, role.name AS role FROM user JOIN role ON user.role_id = role.id
+2024-05-17 13:25:48 | UPDATE user SET name = 'Nguyễn Thị Thanh', birth_date = '2001-05-17', role_id = 90001 WHERE id = 10012
+2024-05-17 13:25:49 | SELECT user.id, user.name, user.birth_date, user.username, role.name AS role FROM user JOIN role ON user.role_id = role.id
+2024-05-17 13:26:05 | UPDATE user SET name = 'Trần Nguyễn Đức', birth_date = '1999-03-12', role_id = 90002 WHERE id = 10010
+2024-05-17 13:26:06 | SELECT user.id, user.name, user.birth_date, user.username, role.name AS role FROM user JOIN role ON user.role_id = role.id
+2024-05-17 13:26:12 | SELECT * FROM species
+2024-05-17 13:26:16 | DELETE FROM species WHERE id = 40003
+2024-05-17 13:26:16 | Cannot delete or update a parent row: a foreign key constraint fails (`netproject`.`breed`, CONSTRAINT `species_of_breed` FOREIGN KEY (`species_id`) REFERENCES `species` (`id`))
+2024-05-17 13:26:36 | INSERT INTO species (name) VALUES ('Thỏ')
+2024-05-17 13:26:36 | SELECT * FROM species
+2024-05-17 13:26:43 | UPDATE species SET name = 'Thỏ trắng' WHERE id = 40007
+2024-05-17 13:26:44 | SELECT * FROM species
+2024-05-17 13:26:49 | UPDATE species SET name = 'Thỏ' WHERE id = 40007
+2024-05-17 13:26:50 | SELECT * FROM species
+2024-05-17 13:26:55 | SELECT * FROM species
+2024-05-17 13:26:55 | SELECT * FROM breed
+2024-05-17 13:29:57 | SELECT user.id, user.name, user.birth_date, user.username, role.name AS role FROM user JOIN role ON user.role_id = role.id WHERE user.id = 10001
+2024-05-17 13:29:59 | SELECT * FROM species
+2024-05-17 13:29:59 | SELECT * FROM breed
+2024-05-17 13:30:11 | INSERT INTO breed (name, species_id, description) VALUES ('Thỏ lông nhung', 40007, 'Thỏ tai cụp lông nhung (Plush Lop) là một giống thỏ có nguồn gốc từ Hoa Kỳ và được phát triển tại Úc. Giống này có hai kích cỡ gồm dòng thỏ cỡ nhỏ (Miniature) và dòng thỏ tiêu chuẩn (Standard).')
+2024-05-17 13:30:12 | SELECT * FROM breed
+2024-05-17 13:30:19 | SELECT * FROM species
+2024-05-17 13:30:19 | SELECT * FROM breed
+2024-05-17 13:30:28 | UPDATE breed SET name = 'Thỏ lông nhung', species_id = 40007, description = 'Thỏ lông nhung là một giống thỏ có nguồn gốc từ Hoa Kỳ và được phát triển tại Úc. Giống này có hai kích cỡ gồm dòng thỏ cỡ nhỏ (Miniature) và dòng thỏ tiêu chuẩn (Standard).' WHERE id = 30021
+2024-05-17 13:30:29 | SELECT * FROM breed
+2024-05-17 13:30:54 | INSERT INTO breed (name, species_id, description) VALUES ('Mèo Robot', 40002, 'Doraemonnnn')
+2024-05-17 13:30:55 | SELECT * FROM breed
+2024-05-17 13:30:59 | DELETE FROM breed WHERE id = 30022
+2024-05-17 13:31:00 | SELECT * FROM breed
+2024-05-17 13:31:03 | SELECT pet.id, pet.name, breed.name AS breed, pet.born_year, pet.weight, pet.price, pet.is_sold FROM pet JOIN breed ON pet.breed_id = breed.id WHERE pet.name LIKE '%%'
+2024-05-17 13:31:05 | SELECT id, name FROM breed
+2024-05-17 13:32:14 | SELECT species.name FROM breed JOIN species ON breed.species_id = species.id WHERE breed.id = 30021
+2024-05-17 13:32:18 | INSERT INTO pet(name, is_male, born_year, breed_id, weight, description, image, price, is_sold) VALUES('Winddie', True, 2022, 30021, 2.31, 'Lông đẹp, mượt. Tai cụp. Thích ăn cà rốt', 'https://upload.wikimedia.org/wikipedia/commons/8/88/Fluffy_white_bunny_rabbit.jpg', 4900000, False)
+2024-05-17 13:32:20 | SELECT pet.id, pet.name, breed.name AS breed, pet.born_year, pet.weight, pet.price, pet.is_sold FROM pet JOIN breed ON pet.breed_id = breed.id WHERE pet.name LIKE '%%'
+2024-05-17 13:32:40 | SELECT pet.id, pet.name, breed.name AS breed, pet.born_year, pet.weight, pet.price, pet.is_sold FROM pet JOIN breed ON pet.breed_id = breed.id WHERE pet.name LIKE '%%' AND pet.is_sold = true
+2024-05-17 13:32:41 | SELECT pet.id, pet.name, breed.name AS breed, pet.born_year, pet.weight, pet.price, pet.is_sold FROM pet JOIN breed ON pet.breed_id = breed.id WHERE pet.name LIKE '%%' AND pet.is_sold = false
+2024-05-17 13:32:43 | SELECT pet.id, pet.name, breed.name AS breed, pet.born_year, pet.weight, pet.price, pet.is_sold FROM pet JOIN breed ON pet.breed_id = breed.id WHERE pet.name LIKE '%%'
+2024-05-17 13:32:44 | SELECT pet.id, pet.name, breed.name AS breed, pet.born_year, pet.weight, pet.price, pet.is_sold FROM pet JOIN breed ON pet.breed_id = breed.id WHERE pet.name LIKE '%%' AND pet.is_sold = true
+2024-05-17 13:32:44 | SELECT pet.id, pet.name, breed.name AS breed, pet.born_year, pet.weight, pet.price, pet.is_sold FROM pet JOIN breed ON pet.breed_id = breed.id WHERE pet.name LIKE '%%' AND pet.is_sold = false
+2024-05-17 13:32:45 | SELECT pet.id, pet.name, breed.name AS breed, pet.born_year, pet.weight, pet.price, pet.is_sold FROM pet JOIN breed ON pet.breed_id = breed.id WHERE pet.name LIKE '%%'
+2024-05-17 13:32:51 | SELECT pet.id, pet.name, breed.name AS breed, pet.born_year, pet.weight, pet.price, pet.is_sold FROM pet JOIN breed ON pet.breed_id = breed.id WHERE pet.name LIKE '%win%'
+2024-05-17 13:32:54 | SELECT pet.id, pet.name, breed.name AS breed, pet.born_year, pet.weight, pet.price, pet.is_sold FROM pet JOIN breed ON pet.breed_id = breed.id WHERE pet.name LIKE '%%'
+2024-05-17 13:37:54 | SELECT user.id, user.name, user.birth_date, user.username, role.name AS role FROM user JOIN role ON user.role_id = role.id WHERE user.id = 10001
+2024-05-17 13:37:56 | SELECT * FROM species
+2024-05-17 13:37:56 | SELECT * FROM breed
+2024-05-17 13:38:06 | SELECT * FROM species
+2024-05-17 13:38:06 | SELECT * FROM breed
+2024-05-17 13:38:20 | SELECT * FROM species
+2024-05-17 13:38:20 | SELECT * FROM breed
+2024-05-17 13:38:24 | SELECT * FROM species
+2024-05-17 13:39:41 | SELECT user.id, user.name, user.birth_date, user.username, role.name AS role FROM user JOIN role ON user.role_id = role.id WHERE user.id = 10001
+2024-05-17 13:44:05 | SELECT user.id, user.name, user.birth_date, user.username, role.name AS role FROM user JOIN role ON user.role_id = role.id WHERE user.id = 10001
+2024-05-17 13:44:11 | SELECT pet.id, pet.name, breed.name AS breed, pet.born_year, pet.weight, pet.price, pet.is_sold FROM pet JOIN breed ON pet.breed_id = breed.id WHERE pet.name LIKE '%%'
+2024-05-17 13:44:57 | SELECT user.id, user.name, user.birth_date, user.username, role.name AS role FROM user JOIN role ON user.role_id = role.id WHERE user.id = 10001
+2024-05-17 13:45:00 | SELECT pet.id, pet.name, breed.name AS breed, pet.born_year, pet.weight, pet.price, pet.is_sold FROM pet JOIN breed ON pet.breed_id = breed.id WHERE pet.name LIKE '%%'
+2024-05-17 13:45:42 | SELECT user.id, user.name, user.birth_date, user.username, role.name AS role FROM user JOIN role ON user.role_id = role.id WHERE user.id = 10001
+2024-05-17 13:45:43 | SELECT pet.id, pet.name, breed.name AS breed, pet.born_year, pet.weight, pet.price, pet.is_sold FROM pet JOIN breed ON pet.breed_id = breed.id WHERE pet.name LIKE '%%'
+2024-05-17 13:46:34 | SELECT user.id, user.name, user.birth_date, user.username, role.name AS role FROM user JOIN role ON user.role_id = role.id WHERE user.id = 10001
+2024-05-17 13:46:35 | SELECT pet.id, pet.name, breed.name AS breed, pet.born_year, pet.weight, pet.price, pet.is_sold FROM pet JOIN breed ON pet.breed_id = breed.id WHERE pet.name LIKE '%%'
+2024-05-17 13:47:30 | SELECT user.id, user.name, user.birth_date, user.username, role.name AS role FROM user JOIN role ON user.role_id = role.id WHERE user.id = 10001
+2024-05-17 13:47:35 | SELECT pet.id, pet.name, breed.name AS breed, pet.born_year, pet.weight, pet.price, pet.is_sold FROM pet JOIN breed ON pet.breed_id = breed.id WHERE pet.name LIKE '%%'
+2024-05-17 13:47:37 | SELECT pet.id, pet.name, breed.name AS breed, pet.born_year, pet.weight, pet.price, pet.is_sold FROM pet JOIN breed ON pet.breed_id = breed.id WHERE pet.name LIKE '%%'
+2024-05-17 13:47:37 | SELECT pet.id, pet.name, breed.name AS breed, pet.born_year, pet.weight, pet.price, pet.is_sold FROM pet JOIN breed ON pet.breed_id = breed.id WHERE pet.name LIKE '%h%'
+2024-05-17 13:47:38 | SELECT pet.id, pet.name, breed.name AS breed, pet.born_year, pet.weight, pet.price, pet.is_sold FROM pet JOIN breed ON pet.breed_id = breed.id WHERE pet.name LIKE '%he%'
+2024-05-17 13:47:39 | SELECT pet.id, pet.name, breed.name AS breed, pet.born_year, pet.weight, pet.price, pet.is_sold FROM pet JOIN breed ON pet.breed_id = breed.id WHERE pet.name LIKE '%he%'
+2024-05-17 13:47:39 | SELECT pet.id, pet.name, breed.name AS breed, pet.born_year, pet.weight, pet.price, pet.is_sold FROM pet JOIN breed ON pet.breed_id = breed.id WHERE pet.name LIKE '%h%'
+2024-05-17 13:47:39 | SELECT pet.id, pet.name, breed.name AS breed, pet.born_year, pet.weight, pet.price, pet.is_sold FROM pet JOIN breed ON pet.breed_id = breed.id WHERE pet.name LIKE '%%'
+2024-05-17 13:47:40 | SELECT pet.id, pet.name, breed.name AS breed, pet.born_year, pet.weight, pet.price, pet.is_sold FROM pet JOIN breed ON pet.breed_id = breed.id WHERE pet.name LIKE '%a%'
+2024-05-17 13:47:40 | SELECT pet.id, pet.name, breed.name AS breed, pet.born_year, pet.weight, pet.price, pet.is_sold FROM pet JOIN breed ON pet.breed_id = breed.id WHERE pet.name LIKE '%%'
+2024-05-17 13:47:41 | SELECT pet.id, pet.name, breed.name AS breed, pet.born_year, pet.weight, pet.price, pet.is_sold FROM pet JOIN breed ON pet.breed_id = breed.id WHERE pet.name LIKE '%s%'
+2024-05-17 13:47:41 | SELECT pet.id, pet.name, breed.name AS breed, pet.born_year, pet.weight, pet.price, pet.is_sold FROM pet JOIN breed ON pet.breed_id = breed.id WHERE pet.name LIKE '%%'
+2024-05-17 13:47:42 | SELECT pet.id, pet.name, breed.name AS breed, pet.born_year, pet.weight, pet.price, pet.is_sold FROM pet JOIN breed ON pet.breed_id = breed.id WHERE pet.name LIKE '%ư%'
+2024-05-17 13:47:42 | SELECT pet.id, pet.name, breed.name AS breed, pet.born_year, pet.weight, pet.price, pet.is_sold FROM pet JOIN breed ON pet.breed_id = breed.id WHERE pet.name LIKE '%%'
+2024-05-17 13:47:43 | SELECT pet.id, pet.name, breed.name AS breed, pet.born_year, pet.weight, pet.price, pet.is_sold FROM pet JOIN breed ON pet.breed_id = breed.id WHERE pet.name LIKE '%a%'
+2024-05-17 13:47:44 | SELECT pet.id, pet.name, breed.name AS breed, pet.born_year, pet.weight, pet.price, pet.is_sold FROM pet JOIN breed ON pet.breed_id = breed.id WHERE pet.name LIKE '%%'
+2024-05-17 13:47:44 | SELECT pet.id, pet.name, breed.name AS breed, pet.born_year, pet.weight, pet.price, pet.is_sold FROM pet JOIN breed ON pet.breed_id = breed.id WHERE pet.name LIKE '%m%'
+2024-05-17 13:47:45 | SELECT pet.id, pet.name, breed.name AS breed, pet.born_year, pet.weight, pet.price, pet.is_sold FROM pet JOIN breed ON pet.breed_id = breed.id WHERE pet.name LIKE '%ma%'
+2024-05-17 13:47:45 | SELECT pet.id, pet.name, breed.name AS breed, pet.born_year, pet.weight, pet.price, pet.is_sold FROM pet JOIN breed ON pet.breed_id = breed.id WHERE pet.name LIKE '%m%'
+2024-05-17 13:47:46 | SELECT pet.id, pet.name, breed.name AS breed, pet.born_year, pet.weight, pet.price, pet.is_sold FROM pet JOIN breed ON pet.breed_id = breed.id WHERE pet.name LIKE '%mã%'
+2024-05-17 13:47:46 | SELECT pet.id, pet.name, breed.name AS breed, pet.born_year, pet.weight, pet.price, pet.is_sold FROM pet JOIN breed ON pet.breed_id = breed.id WHERE pet.name LIKE '%m%'
+2024-05-17 13:47:46 | SELECT pet.id, pet.name, breed.name AS breed, pet.born_year, pet.weight, pet.price, pet.is_sold FROM pet JOIN breed ON pet.breed_id = breed.id WHERE pet.name LIKE '%ma%'
+2024-05-17 13:47:47 | SELECT pet.id, pet.name, breed.name AS breed, pet.born_year, pet.weight, pet.price, pet.is_sold FROM pet JOIN breed ON pet.breed_id = breed.id WHERE pet.name LIKE '%max%'
+2024-05-17 13:47:47 | SELECT pet.id, pet.name, breed.name AS breed, pet.born_year, pet.weight, pet.price, pet.is_sold FROM pet JOIN breed ON pet.breed_id = breed.id WHERE pet.name LIKE '%max%'
+2024-05-17 13:47:47 | SELECT pet.id, pet.name, breed.name AS breed, pet.born_year, pet.weight, pet.price, pet.is_sold FROM pet JOIN breed ON pet.breed_id = breed.id WHERE pet.name LIKE '%max%'
+2024-05-17 13:47:47 | SELECT pet.id, pet.name, breed.name AS breed, pet.born_year, pet.weight, pet.price, pet.is_sold FROM pet JOIN breed ON pet.breed_id = breed.id WHERE pet.name LIKE '%ma%'
+2024-05-17 13:47:48 | SELECT pet.id, pet.name, breed.name AS breed, pet.born_year, pet.weight, pet.price, pet.is_sold FROM pet JOIN breed ON pet.breed_id = breed.id WHERE pet.name LIKE '%m%'
+2024-05-17 13:47:49 | SELECT pet.id, pet.name, breed.name AS breed, pet.born_year, pet.weight, pet.price, pet.is_sold FROM pet JOIN breed ON pet.breed_id = breed.id WHERE pet.name LIKE '%%'
+2024-05-17 13:47:49 | SELECT pet.id, pet.name, breed.name AS breed, pet.born_year, pet.weight, pet.price, pet.is_sold FROM pet JOIN breed ON pet.breed_id = breed.id WHERE pet.name LIKE '%s%'
+2024-05-17 13:47:50 | SELECT pet.id, pet.name, breed.name AS breed, pet.born_year, pet.weight, pet.price, pet.is_sold FROM pet JOIN breed ON pet.breed_id = breed.id WHERE pet.name LIKE '%%'
+2024-05-17 13:47:50 | SELECT pet.id, pet.name, breed.name AS breed, pet.born_year, pet.weight, pet.price, pet.is_sold FROM pet JOIN breed ON pet.breed_id = breed.id WHERE pet.name LIKE '%%'
+2024-05-17 13:47:51 | SELECT pet.id, pet.name, breed.name AS breed, pet.born_year, pet.weight, pet.price, pet.is_sold FROM pet JOIN breed ON pet.breed_id = breed.id WHERE pet.name LIKE '%%'
+2024-05-17 13:47:52 | SELECT pet.id, pet.name, breed.name AS breed, pet.born_year, pet.weight, pet.price, pet.is_sold FROM pet JOIN breed ON pet.breed_id = breed.id WHERE pet.name LIKE '%a%'
+2024-05-17 13:47:52 | SELECT pet.id, pet.name, breed.name AS breed, pet.born_year, pet.weight, pet.price, pet.is_sold FROM pet JOIN breed ON pet.breed_id = breed.id WHERE pet.name LIKE '%%'
+2024-05-17 13:47:53 | SELECT pet.id, pet.name, breed.name AS breed, pet.born_year, pet.weight, pet.price, pet.is_sold FROM pet JOIN breed ON pet.breed_id = breed.id WHERE pet.name LIKE '%s%'
+2024-05-17 13:47:53 | SELECT pet.id, pet.name, breed.name AS breed, pet.born_year, pet.weight, pet.price, pet.is_sold FROM pet JOIN breed ON pet.breed_id = breed.id WHERE pet.name LIKE '%%'
+2024-05-17 13:47:53 | SELECT pet.id, pet.name, breed.name AS breed, pet.born_year, pet.weight, pet.price, pet.is_sold FROM pet JOIN breed ON pet.breed_id = breed.id WHERE pet.name LIKE '%e%'
+2024-05-17 13:47:54 | SELECT pet.id, pet.name, breed.name AS breed, pet.born_year, pet.weight, pet.price, pet.is_sold FROM pet JOIN breed ON pet.breed_id = breed.id WHERE pet.name LIKE '%%'
+2024-05-17 13:47:54 | SELECT pet.id, pet.name, breed.name AS breed, pet.born_year, pet.weight, pet.price, pet.is_sold FROM pet JOIN breed ON pet.breed_id = breed.id WHERE pet.name LIKE '%%'
+2024-05-17 13:47:54 | SELECT pet.id, pet.name, breed.name AS breed, pet.born_year, pet.weight, pet.price, pet.is_sold FROM pet JOIN breed ON pet.breed_id = breed.id WHERE pet.name LIKE '%%'
+2024-05-17 13:47:55 | SELECT pet.id, pet.name, breed.name AS breed, pet.born_year, pet.weight, pet.price, pet.is_sold FROM pet JOIN breed ON pet.breed_id = breed.id WHERE pet.name LIKE '%s%'
+2024-05-17 13:47:55 | SELECT pet.id, pet.name, breed.name AS breed, pet.born_year, pet.weight, pet.price, pet.is_sold FROM pet JOIN breed ON pet.breed_id = breed.id WHERE pet.name LIKE '%%'
+2024-05-17 13:47:55 | SELECT pet.id, pet.name, breed.name AS breed, pet.born_year, pet.weight, pet.price, pet.is_sold FROM pet JOIN breed ON pet.breed_id = breed.id WHERE pet.name LIKE '%%'
+2024-05-17 13:47:55 | SELECT pet.id, pet.name, breed.name AS breed, pet.born_year, pet.weight, pet.price, pet.is_sold FROM pet JOIN breed ON pet.breed_id = breed.id WHERE pet.name LIKE '%%'
+2024-05-17 13:47:56 | SELECT pet.id, pet.name, breed.name AS breed, pet.born_year, pet.weight, pet.price, pet.is_sold FROM pet JOIN breed ON pet.breed_id = breed.id WHERE pet.name LIKE '%e%'
+2024-05-17 13:47:56 | SELECT pet.id, pet.name, breed.name AS breed, pet.born_year, pet.weight, pet.price, pet.is_sold FROM pet JOIN breed ON pet.breed_id = breed.id WHERE pet.name LIKE '%%'
+2024-05-17 13:47:56 | SELECT pet.id, pet.name, breed.name AS breed, pet.born_year, pet.weight, pet.price, pet.is_sold FROM pet JOIN breed ON pet.breed_id = breed.id WHERE pet.name LIKE '%%'
+2024-05-17 13:47:57 | SELECT pet.id, pet.name, breed.name AS breed, pet.born_year, pet.weight, pet.price, pet.is_sold FROM pet JOIN breed ON pet.breed_id = breed.id WHERE pet.name LIKE '%%'
+2024-05-17 13:47:57 | SELECT pet.id, pet.name, breed.name AS breed, pet.born_year, pet.weight, pet.price, pet.is_sold FROM pet JOIN breed ON pet.breed_id = breed.id WHERE pet.name LIKE '%s%'
+2024-05-17 13:47:57 | SELECT pet.id, pet.name, breed.name AS breed, pet.born_year, pet.weight, pet.price, pet.is_sold FROM pet JOIN breed ON pet.breed_id = breed.id WHERE pet.name LIKE '%%'
+2024-05-17 13:47:57 | SELECT pet.id, pet.name, breed.name AS breed, pet.born_year, pet.weight, pet.price, pet.is_sold FROM pet JOIN breed ON pet.breed_id = breed.id WHERE pet.name LIKE '%%'
+2024-05-17 13:47:58 | SELECT pet.id, pet.name, breed.name AS breed, pet.born_year, pet.weight, pet.price, pet.is_sold FROM pet JOIN breed ON pet.breed_id = breed.id WHERE pet.name LIKE '%%'
+2024-05-17 13:47:58 | SELECT pet.id, pet.name, breed.name AS breed, pet.born_year, pet.weight, pet.price, pet.is_sold FROM pet JOIN breed ON pet.breed_id = breed.id WHERE pet.name LIKE '%s%'
+2024-05-17 13:47:58 | SELECT pet.id, pet.name, breed.name AS breed, pet.born_year, pet.weight, pet.price, pet.is_sold FROM pet JOIN breed ON pet.breed_id = breed.id WHERE pet.name LIKE '%%'
+2024-05-17 13:47:58 | SELECT pet.id, pet.name, breed.name AS breed, pet.born_year, pet.weight, pet.price, pet.is_sold FROM pet JOIN breed ON pet.breed_id = breed.id WHERE pet.name LIKE '%%'
+2024-05-17 13:47:58 | SELECT pet.id, pet.name, breed.name AS breed, pet.born_year, pet.weight, pet.price, pet.is_sold FROM pet JOIN breed ON pet.breed_id = breed.id WHERE pet.name LIKE '%%'
+2024-05-17 13:47:59 | SELECT pet.id, pet.name, breed.name AS breed, pet.born_year, pet.weight, pet.price, pet.is_sold FROM pet JOIN breed ON pet.breed_id = breed.id WHERE pet.name LIKE '%s%'
+2024-05-17 13:47:59 | SELECT pet.id, pet.name, breed.name AS breed, pet.born_year, pet.weight, pet.price, pet.is_sold FROM pet JOIN breed ON pet.breed_id = breed.id WHERE pet.name LIKE '%%'
+2024-05-17 13:47:59 | SELECT pet.id, pet.name, breed.name AS breed, pet.born_year, pet.weight, pet.price, pet.is_sold FROM pet JOIN breed ON pet.breed_id = breed.id WHERE pet.name LIKE '%%'
+2024-05-17 13:47:59 | SELECT pet.id, pet.name, breed.name AS breed, pet.born_year, pet.weight, pet.price, pet.is_sold FROM pet JOIN breed ON pet.breed_id = breed.id WHERE pet.name LIKE '%%'
+2024-05-17 13:47:59 | SELECT pet.id, pet.name, breed.name AS breed, pet.born_year, pet.weight, pet.price, pet.is_sold FROM pet JOIN breed ON pet.breed_id = breed.id WHERE pet.name LIKE '%s%'
+2024-05-17 13:48:00 | SELECT pet.id, pet.name, breed.name AS breed, pet.born_year, pet.weight, pet.price, pet.is_sold FROM pet JOIN breed ON pet.breed_id = breed.id WHERE pet.name LIKE '%%'
+2024-05-17 13:48:00 | SELECT pet.id, pet.name, breed.name AS breed, pet.born_year, pet.weight, pet.price, pet.is_sold FROM pet JOIN breed ON pet.breed_id = breed.id WHERE pet.name LIKE '%%'
+2024-05-17 13:48:00 | SELECT pet.id, pet.name, breed.name AS breed, pet.born_year, pet.weight, pet.price, pet.is_sold FROM pet JOIN breed ON pet.breed_id = breed.id WHERE pet.name LIKE '%%'
+2024-05-17 13:48:25 | SELECT user.id, user.name, user.birth_date, user.username, role.name AS role FROM user JOIN role ON user.role_id = role.id WHERE user.id = 10001
+2024-05-17 13:48:27 | SELECT pet.id, pet.name, breed.name AS breed, pet.born_year, pet.weight, pet.price, pet.is_sold FROM pet JOIN breed ON pet.breed_id = breed.id WHERE pet.name LIKE '%%'
+2024-05-17 13:48:29 | SELECT pet.id, pet.name, breed.name AS breed, pet.born_year, pet.weight, pet.price, pet.is_sold FROM pet JOIN breed ON pet.breed_id = breed.id WHERE pet.name LIKE '%ma%'
+2024-05-17 13:48:31 | SELECT pet.id, pet.name, breed.name AS breed, pet.born_year, pet.weight, pet.price, pet.is_sold FROM pet JOIN breed ON pet.breed_id = breed.id WHERE pet.name LIKE '%a%'
+2024-05-17 13:48:31 | SELECT pet.id, pet.name, breed.name AS breed, pet.born_year, pet.weight, pet.price, pet.is_sold FROM pet JOIN breed ON pet.breed_id = breed.id WHERE pet.name LIKE '%%'
+2024-05-17 13:48:33 | SELECT pet.id, pet.name, breed.name AS breed, pet.born_year, pet.weight, pet.price, pet.is_sold FROM pet JOIN breed ON pet.breed_id = breed.id WHERE pet.name LIKE '%ma%'
+2024-05-17 13:48:34 | SELECT pet.id, pet.name, breed.name AS breed, pet.born_year, pet.weight, pet.price, pet.is_sold FROM pet JOIN breed ON pet.breed_id = breed.id WHERE pet.name LIKE '%a%'
+2024-05-17 13:48:36 | SELECT pet.id, pet.name, breed.name AS breed, pet.born_year, pet.weight, pet.price, pet.is_sold FROM pet JOIN breed ON pet.breed_id = breed.id WHERE pet.name LIKE '%ha%'
+2024-05-17 13:48:37 | SELECT pet.id, pet.name, breed.name AS breed, pet.born_year, pet.weight, pet.price, pet.is_sold FROM pet JOIN breed ON pet.breed_id = breed.id WHERE pet.name LIKE '%ca%'
+2024-05-17 13:48:39 | SELECT pet.id, pet.name, breed.name AS breed, pet.born_year, pet.weight, pet.price, pet.is_sold FROM pet JOIN breed ON pet.breed_id = breed.id WHERE pet.name LIKE '%c%'
+2024-05-17 13:48:40 | SELECT pet.id, pet.name, breed.name AS breed, pet.born_year, pet.weight, pet.price, pet.is_sold FROM pet JOIN breed ON pet.breed_id = breed.id WHERE pet.name LIKE '%b%'
+2024-05-17 13:48:41 | SELECT pet.id, pet.name, breed.name AS breed, pet.born_year, pet.weight, pet.price, pet.is_sold FROM pet JOIN breed ON pet.breed_id = breed.id WHERE pet.name LIKE '%%'
+2024-05-17 13:48:43 | SELECT pet.id, pet.name, breed.name AS breed, pet.born_year, pet.weight, pet.price, pet.is_sold FROM pet JOIN breed ON pet.breed_id = breed.id WHERE pet.name LIKE '%%' AND pet.is_sold = false
+2024-05-17 13:48:44 | SELECT pet.id, pet.name, breed.name AS breed, pet.born_year, pet.weight, pet.price, pet.is_sold FROM pet JOIN breed ON pet.breed_id = breed.id WHERE pet.name LIKE '%%' AND pet.is_sold = true
+2024-05-17 13:48:45 | SELECT pet.id, pet.name, breed.name AS breed, pet.born_year, pet.weight, pet.price, pet.is_sold FROM pet JOIN breed ON pet.breed_id = breed.id WHERE pet.name LIKE '%%'
+2024-05-17 13:48:46 | SELECT pet.id, pet.name, breed.name AS breed, pet.born_year, pet.weight, pet.price, pet.is_sold FROM pet JOIN breed ON pet.breed_id = breed.id WHERE pet.name LIKE '%%'
+2024-05-17 13:48:48 | SELECT * FROM species
+2024-05-17 13:48:57 | SELECT * FROM species
+2024-05-17 13:48:59 | SELECT * FROM species
+2024-05-17 13:48:59 | SELECT * FROM breed
+2024-05-17 13:49:04 | SELECT * FROM species
+2024-05-17 13:49:06 | SELECT user.id, user.name, user.birth_date, user.username, role.name AS role FROM user JOIN role ON user.role_id = role.id WHERE user.id = 10001
+2024-05-17 13:50:39 | SELECT user.id, user.name, user.birth_date, user.username, role.name AS role FROM user JOIN role ON user.role_id = role.id WHERE user.id = 10001
+2024-05-17 13:50:40 | SELECT user.id, user.name, user.birth_date, user.username, role.name AS role FROM user JOIN role ON user.role_id = role.id WHERE user.id = 10001
+2024-05-17 13:52:37 | SELECT user.id, user.name, user.birth_date, user.username, role.name AS role FROM user JOIN role ON user.role_id = role.id WHERE user.id = 10001
+2024-05-17 13:52:38 | SELECT user.id, user.name, user.birth_date, user.username, role.name AS role FROM user JOIN role ON user.role_id = role.id WHERE user.id = 10001
+2024-05-17 13:54:22 | SELECT user.id, user.name, user.birth_date, user.username, role.name AS role FROM user JOIN role ON user.role_id = role.id WHERE user.id = 10001
+2024-05-17 13:54:29 | SELECT user.id, user.name, user.birth_date, user.username, role.name AS role FROM user JOIN role ON user.role_id = role.id WHERE username = 'employee' AND password = '8d969eef6ecad3c29a3a629280e686cf0c3f5d5a86aff3ca12020c923adc6c92'
+2024-05-17 13:54:36 | SELECT user.id, user.name, user.birth_date, user.username, role.name AS role FROM user JOIN role ON user.role_id = role.id WHERE role.name = 'Nhân viên'
+2024-05-17 13:54:36 | SELECT * FROM role
+2024-05-17 13:54:38 | SELECT user.id, user.name, user.birth_date, user.username, role.name AS role FROM user JOIN role ON user.role_id = role.id WHERE user.id = 10010
+2024-05-17 13:54:40 | SELECT user.id, user.name, user.birth_date, user.username, role.name AS role FROM user JOIN role ON user.role_id = role.id WHERE role.name = 'Nhân viên'
+2024-05-17 13:54:40 | SELECT * FROM role
+2024-05-17 13:54:45 | SELECT * FROM species
+2024-05-17 13:54:57 | SELECT user.id, user.name, user.birth_date, user.username, role.name AS role FROM user JOIN role ON user.role_id = role.id WHERE username = 'employee002' AND password = '4847eff10102bb6c01f5566d9363de7fbb325017bc7a86d7a988f3b442a18b4d'
+2024-05-17 13:54:59 | SELECT pet.id, pet.name, breed.name AS breed, pet.born_year, pet.weight, pet.price, pet.is_sold FROM pet JOIN breed ON pet.breed_id = breed.id WHERE pet.name LIKE '%%'
+2024-05-17 13:55:00 | SELECT pet.id, pet.name, breed_id, species.name AS species, breed.name AS breed, pet.born_year, pet.weight, pet.description, pet.image, pet.price, pet.is_sold FROM pet JOIN breed ON pet.breed_id = breed.id JOIN species ON breed.species_id = species.id WHERE pet.id = 20002
+2024-05-17 13:55:00 | SELECT id, name FROM breed
+2024-05-17 13:55:07 | SELECT * FROM species
+2024-05-17 13:55:07 | SELECT * FROM breed
+2024-05-17 14:07:42 | SELECT user.id, user.name, user.birth_date, user.username, role.name AS role FROM user JOIN role ON user.role_id = role.id WHERE username = 'dev01d' AND password = 'de161615655a53e80ebddade12e43b3b5f44229cca48c7a41942cacc2866aae4'
+2024-05-17 14:35:41 | SELECT user.id, user.name, user.birth_date, user.username, role.name AS role FROM user JOIN role ON user.role_id = role.id WHERE username = 'dev01d' AND password = 'f267f413ff1e3560f45729a886ef11ac7e19b9bc084f8aaee2cbc4d66bb7df71'
+2024-05-17 14:35:44 | SELECT user.id, user.name, user.birth_date, user.username, role.name AS role FROM user JOIN role ON user.role_id = role.id WHERE username = 'dev01d' AND password = 'f267f413ff1e3560f45729a886ef11ac7e19b9bc084f8aaee2cbc4d66bb7df71'
+2024-05-17 14:35:48 | SELECT user.id, user.name, user.birth_date, user.username, role.name AS role FROM user JOIN role ON user.role_id = role.id WHERE username = 'dev01d' AND password = 'de161615655a53e80ebddade12e43b3b5f44229cca48c7a41942cacc2866aae4'
+2024-05-17 14:35:50 | SELECT pet.id, pet.name, breed.name AS breed, pet.born_year, pet.weight, pet.price, pet.is_sold FROM pet JOIN breed ON pet.breed_id = breed.id WHERE pet.name LIKE '%%'
+2024-05-17 14:35:53 | SELECT pet.id, pet.name, breed.name AS breed, pet.born_year, pet.weight, pet.price, pet.is_sold FROM pet JOIN breed ON pet.breed_id = breed.id WHERE pet.name LIKE '%he%'
+2024-05-17 14:35:56 | SELECT pet.id, pet.name, breed.name AS breed, pet.born_year, pet.weight, pet.price, pet.is_sold FROM pet JOIN breed ON pet.breed_id = breed.id WHERE pet.name LIKE '%%'
+2024-05-17 14:35:57 | SELECT pet.id, pet.name, breed.name AS breed, pet.born_year, pet.weight, pet.price, pet.is_sold FROM pet JOIN breed ON pet.breed_id = breed.id WHERE pet.name LIKE '%%'
+2024-05-17 14:36:02 | SELECT id, name FROM breed
+2024-05-17 14:36:32 | INSERT INTO pet(name, is_male, born_year, breed_id, weight, description, image, price, is_sold) VALUES('dqwdw', False, 2011, 30003, 2, 'đwadw', '3213212321', 200000, False)
+2024-05-17 14:36:35 | SELECT pet.id, pet.name, breed.name AS breed, pet.born_year, pet.weight, pet.price, pet.is_sold FROM pet JOIN breed ON pet.breed_id = breed.id WHERE pet.name LIKE '%%'
+2024-05-17 14:36:37 | SELECT pet.id, pet.name, breed_id, species.name AS species, breed.name AS breed, pet.born_year, pet.weight, pet.description, pet.image, pet.price, pet.is_sold FROM pet JOIN breed ON pet.breed_id = breed.id JOIN species ON breed.species_id = species.id WHERE pet.id = 20011
+2024-05-17 14:36:37 | SELECT id, name FROM breed
+2024-05-17 14:37:53 | SELECT user.id, user.name, user.birth_date, user.username, role.name AS role FROM user JOIN role ON user.role_id = role.id WHERE username = 'dev01d' AND password = 'de161615655a53e80ebddade12e43b3b5f44229cca48c7a41942cacc2866aae4'
+2024-05-17 14:37:56 | SELECT pet.id, pet.name, breed.name AS breed, pet.born_year, pet.weight, pet.price, pet.is_sold FROM pet JOIN breed ON pet.breed_id = breed.id WHERE pet.name LIKE '%%'
+2024-05-17 14:37:57 | SELECT pet.id, pet.name, breed_id, species.name AS species, breed.name AS breed, pet.born_year, pet.weight, pet.description, pet.image, pet.price, pet.is_sold FROM pet JOIN breed ON pet.breed_id = breed.id JOIN species ON breed.species_id = species.id WHERE pet.id = 20011
+2024-05-17 14:37:57 | SELECT id, name FROM breed
+2024-05-17 14:38:54 | SELECT user.id, user.name, user.birth_date, user.username, role.name AS role FROM user JOIN role ON user.role_id = role.id WHERE username = 'dev01d' AND password = 'de161615655a53e80ebddade12e43b3b5f44229cca48c7a41942cacc2866aae4'
+2024-05-17 14:38:56 | SELECT pet.id, pet.name, breed.name AS breed, pet.born_year, pet.weight, pet.price, pet.is_sold FROM pet JOIN breed ON pet.breed_id = breed.id WHERE pet.name LIKE '%%'
+2024-05-17 14:38:57 | SELECT pet.id, pet.name, breed_id, species.name AS species, breed.name AS breed, pet.born_year, pet.weight, pet.description, pet.image, pet.price, pet.is_sold FROM pet JOIN breed ON pet.breed_id = breed.id JOIN species ON breed.species_id = species.id WHERE pet.id = 20011
+2024-05-17 14:38:57 | SELECT id, name FROM breed
+2024-05-17 14:39:00 | DELETE FROM pet WHERE id = 20011
+2024-05-17 14:39:04 | SELECT * FROM species
+2024-05-17 14:39:04 | SELECT * FROM breed
+2024-05-17 14:39:06 | SELECT * FROM species
+2024-05-17 14:39:54 | SELECT user.id, user.name, user.birth_date, user.username, role.name AS role FROM user JOIN role ON user.role_id = role.id WHERE username = 'dev01d' AND password = 'de161615655a53e80ebddade12e43b3b5f44229cca48c7a41942cacc2866aae4'
+2024-05-17 14:39:55 | SELECT * FROM species
+2024-05-17 14:39:55 | SELECT * FROM breed
+2024-05-17 14:39:57 | SELECT * FROM species
+2024-05-17 14:39:59 | INSERT INTO species (name) VALUES ('cds')
+2024-05-17 14:40:00 | SELECT * FROM species
+2024-05-17 14:40:07 | DELETE FROM species WHERE id = 40008
+2024-05-17 14:40:08 | SELECT * FROM species
+2024-05-17 14:40:11 | SELECT * FROM species
+2024-05-17 14:40:11 | SELECT * FROM breed
+2024-05-17 14:40:15 | INSERT INTO breed (name, species_id, description) VALUES ('đasds', 40002, 'dwdw')
+2024-05-17 14:40:16 | SELECT * FROM breed
+2024-05-17 14:40:20 | DELETE FROM breed WHERE id = 30023
+2024-05-17 14:40:20 | SELECT * FROM breed
+2024-05-17 14:40:38 | SELECT * FROM species
+2024-05-17 14:41:23 | SELECT user.id, user.name, user.birth_date, user.username, role.name AS role FROM user JOIN role ON user.role_id = role.id WHERE username = 'dev01d' AND password = 'de161615655a53e80ebddade12e43b3b5f44229cca48c7a41942cacc2866aae4'
+2024-05-17 14:41:29 | SELECT * FROM species
+2024-05-17 14:41:34 | INSERT INTO species (name) VALUES ('mèoo')
+2024-05-17 14:41:35 | SELECT * FROM species
+2024-05-17 14:41:38 | DELETE FROM species WHERE id = 40009
+2024-05-17 14:41:39 | SELECT * FROM species
+2024-05-17 14:41:47 | SELECT * FROM species
+2024-05-17 14:41:47 | SELECT * FROM breed
+2024-05-17 14:41:50 | SELECT pet.id, pet.name, breed.name AS breed, pet.born_year, pet.weight, pet.price, pet.is_sold FROM pet JOIN breed ON pet.breed_id = breed.id WHERE pet.name LIKE '%%'
+2024-05-17 14:41:51 | SELECT * FROM species
+2024-05-17 14:43:36 | SELECT user.id, user.name, user.birth_date, user.username, role.name AS role FROM user JOIN role ON user.role_id = role.id WHERE username = 'dev01d' AND password = 'de161615655a53e80ebddade12e43b3b5f44229cca48c7a41942cacc2866aae4'
+2024-05-17 14:43:57 | SELECT user.id, user.name, user.birth_date, user.username, role.name AS role FROM user JOIN role ON user.role_id = role.id WHERE user.id = 10001
+2024-05-17 14:44:03 | SELECT * FROM species
+2024-05-17 14:44:04 | SELECT pet.id, pet.name, breed.name AS breed, pet.born_year, pet.weight, pet.price, pet.is_sold FROM pet JOIN breed ON pet.breed_id = breed.id WHERE pet.name LIKE '%%'
+2024-05-17 14:44:08 | SELECT pet.id, pet.name, breed.name AS breed, pet.born_year, pet.weight, pet.price, pet.is_sold FROM pet JOIN breed ON pet.breed_id = breed.id WHERE pet.name LIKE '%%' AND pet.is_sold = true
+2024-05-17 14:44:09 | SELECT pet.id, pet.name, breed.name AS breed, pet.born_year, pet.weight, pet.price, pet.is_sold FROM pet JOIN breed ON pet.breed_id = breed.id WHERE pet.name LIKE '%%' AND pet.is_sold = false
+2024-05-17 14:44:10 | SELECT pet.id, pet.name, breed.name AS breed, pet.born_year, pet.weight, pet.price, pet.is_sold FROM pet JOIN breed ON pet.breed_id = breed.id WHERE pet.name LIKE '%%'
+2024-05-17 14:44:11 | SELECT pet.id, pet.name, breed_id, species.name AS species, breed.name AS breed, pet.born_year, pet.weight, pet.description, pet.image, pet.price, pet.is_sold FROM pet JOIN breed ON pet.breed_id = breed.id JOIN species ON breed.species_id = species.id WHERE pet.id = 20003
+2024-05-17 14:44:11 | SELECT id, name FROM breed
+2024-05-17 14:44:17 | SELECT pet.id, pet.name, breed_id, species.name AS species, breed.name AS breed, pet.born_year, pet.weight, pet.description, pet.image, pet.price, pet.is_sold FROM pet JOIN breed ON pet.breed_id = breed.id JOIN species ON breed.species_id = species.id WHERE pet.id = 20005
+2024-05-17 14:44:17 | SELECT id, name FROM breed
+2024-05-17 14:48:28 | SELECT user.id, user.name, user.birth_date, user.username, role.name AS role FROM user JOIN role ON user.role_id = role.id WHERE username = 'dev01d' AND password = 'de161615655a53e80ebddade12e43b3b5f44229cca48c7a41942cacc2866aae4'
+2024-05-17 14:48:29 | SELECT * FROM species
+2024-05-17 14:48:29 | SELECT * FROM breed
+2024-05-17 14:49:21 | SELECT user.id, user.name, user.birth_date, user.username, role.name AS role FROM user JOIN role ON user.role_id = role.id WHERE username = 'dev01d' AND password = 'de161615655a53e80ebddade12e43b3b5f44229cca48c7a41942cacc2866aae4'
+2024-05-17 14:49:23 | SELECT pet.id, pet.name, breed.name AS breed, pet.born_year, pet.weight, pet.price, pet.is_sold FROM pet JOIN breed ON pet.breed_id = breed.id WHERE pet.name LIKE '%%'
+2024-05-17 14:49:25 | SELECT pet.id, pet.name, breed_id, species.name AS species, breed.name AS breed, pet.born_year, pet.weight, pet.description, pet.image, pet.price, pet.is_sold FROM pet JOIN breed ON pet.breed_id = breed.id JOIN species ON breed.species_id = species.id WHERE pet.id = 20004
+2024-05-17 14:49:25 | SELECT id, name FROM breed
+2024-05-17 14:49:29 | SELECT pet.id, pet.name, breed_id, species.name AS species, breed.name AS breed, pet.born_year, pet.weight, pet.description, pet.image, pet.price, pet.is_sold FROM pet JOIN breed ON pet.breed_id = breed.id JOIN species ON breed.species_id = species.id WHERE pet.id = 20008
+2024-05-17 14:49:29 | SELECT id, name FROM breed
+2024-05-17 14:49:31 | SELECT pet.id, pet.name, breed_id, species.name AS species, breed.name AS breed, pet.born_year, pet.weight, pet.description, pet.image, pet.price, pet.is_sold FROM pet JOIN breed ON pet.breed_id = breed.id JOIN species ON breed.species_id = species.id WHERE pet.id = 20001
+2024-05-17 14:49:31 | SELECT id, name FROM breed
+2024-05-17 14:49:33 | SELECT pet.id, pet.name, breed_id, species.name AS species, breed.name AS breed, pet.born_year, pet.weight, pet.description, pet.image, pet.price, pet.is_sold FROM pet JOIN breed ON pet.breed_id = breed.id JOIN species ON breed.species_id = species.id WHERE pet.id = 20010
+2024-05-17 14:49:33 | SELECT id, name FROM breed
+2024-05-17 14:49:36 | SELECT pet.id, pet.name, breed_id, species.name AS species, breed.name AS breed, pet.born_year, pet.weight, pet.description, pet.image, pet.price, pet.is_sold FROM pet JOIN breed ON pet.breed_id = breed.id JOIN species ON breed.species_id = species.id WHERE pet.id = 20003
+2024-05-17 14:49:36 | SELECT id, name FROM breed
+2024-05-17 14:53:20 | SELECT user.id, user.name, user.birth_date, user.username, role.name AS role FROM user JOIN role ON user.role_id = role.id WHERE username = 'dev01d' AND password = 'de161615655a53e80ebddade12e43b3b5f44229cca48c7a41942cacc2866aae4'
+2024-05-17 14:53:22 | SELECT pet.id, pet.name, breed.name AS breed, pet.born_year, pet.weight, pet.price, pet.is_sold FROM pet JOIN breed ON pet.breed_id = breed.id WHERE pet.name LIKE '%%'
+2024-05-17 14:53:23 | SELECT pet.id, pet.name, breed_id, species.name AS species, breed.name AS breed, pet.born_year, pet.weight, pet.description, pet.image, pet.price, pet.is_sold FROM pet JOIN breed ON pet.breed_id = breed.id JOIN species ON breed.species_id = species.id WHERE pet.id = 20004
+2024-05-17 14:53:23 | SELECT id, name FROM breed
+2024-05-17 14:53:26 | SELECT pet.id, pet.name, breed_id, species.name AS species, breed.name AS breed, pet.born_year, pet.weight, pet.description, pet.image, pet.price, pet.is_sold FROM pet JOIN breed ON pet.breed_id = breed.id JOIN species ON breed.species_id = species.id WHERE pet.id = 20007
+2024-05-17 14:53:26 | SELECT id, name FROM breed
+2024-05-17 14:53:30 | SELECT id, name FROM breed
+2024-05-17 14:53:33 | SELECT * FROM species
+2024-05-17 14:53:33 | SELECT * FROM breed
+2024-05-17 14:53:36 | SELECT * FROM species
+2024-05-17 14:53:38 | SELECT user.id, user.name, user.birth_date, user.username, role.name AS role FROM user JOIN role ON user.role_id = role.id WHERE user.id = 10001
+2024-05-17 14:53:40 | SELECT user.id, user.name, user.birth_date, user.username, role.name AS role FROM user JOIN role ON user.role_id = role.id
+2024-05-17 14:53:40 | SELECT * FROM role
+2024-05-17 14:53:42 | SELECT user.id, user.name, user.birth_date, user.username, role.name AS role FROM user JOIN role ON user.role_id = role.id WHERE user.id = 10001
+2024-05-17 14:53:45 | SELECT user.id, user.name, user.birth_date, user.username, role.name AS role FROM user JOIN role ON user.role_id = role.id
+2024-05-17 14:53:45 | SELECT * FROM role
+2024-05-17 15:55:16 | SELECT user.id, user.name, user.birth_date, user.username, role.name AS role FROM user JOIN role ON user.role_id = role.id WHERE username = 'dev01d' AND password = 'de161615655a53e80ebddade12e43b3b5f44229cca48c7a41942cacc2866aae4'
+2024-05-17 15:55:21 | SELECT SUM(price) AS total_price FROM pet WHERE is_sold = true
+2024-05-17 15:55:21 | SELECT pet.id, pet.name, breed.name AS breed, pet.born_year, pet.weight, pet.price, pet.is_sold FROM pet JOIN breed ON pet.breed_id = breed.id WHERE pet.name LIKE '%%'
+2024-05-17 15:57:26 | SELECT user.id, user.name, user.birth_date, user.username, role.name AS role FROM user JOIN role ON user.role_id = role.id WHERE username = 'dev01d' AND password = 'de161615655a53e80ebddade12e43b3b5f44229cca48c7a41942cacc2866aae4'
+2024-05-17 15:57:28 | SELECT SUM(price) AS total_price FROM pet WHERE is_sold = true
+2024-05-17 15:57:28 | SELECT pet.id, pet.name, breed.name AS breed, pet.born_year, pet.weight, pet.price, pet.is_sold FROM pet JOIN breed ON pet.breed_id = breed.id WHERE pet.name LIKE '%%'
+2024-05-17 15:57:46 | SELECT user.id, user.name, user.birth_date, user.username, role.name AS role FROM user JOIN role ON user.role_id = role.id WHERE username = 'employee002' AND password = '4847eff10102bb6c01f5566d9363de7fbb325017bc7a86d7a988f3b442a18b4d'
+2024-05-17 15:57:47 | SELECT pet.id, pet.name, breed.name AS breed, pet.born_year, pet.weight, pet.price, pet.is_sold FROM pet JOIN breed ON pet.breed_id = breed.id WHERE pet.name LIKE '%%'
+2024-05-17 15:58:21 | SELECT user.id, user.name, user.birth_date, user.username, role.name AS role FROM user JOIN role ON user.role_id = role.id WHERE username = 'dev01d' AND password = 'de161615655a53e80ebddade12e43b3b5f44229cca48c7a41942cacc2866aae4'
+2024-05-17 15:58:22 | SELECT SUM(price) AS total_price FROM pet WHERE is_sold = true
+2024-05-17 15:58:22 | SELECT pet.id, pet.name, breed.name AS breed, pet.born_year, pet.weight, pet.price, pet.is_sold FROM pet JOIN breed ON pet.breed_id = breed.id WHERE pet.name LIKE '%%'
+2024-05-17 15:58:30 | SELECT pet.id, pet.name, breed.name AS breed, pet.born_year, pet.weight, pet.price, pet.is_sold FROM pet JOIN breed ON pet.breed_id = breed.id WHERE pet.name LIKE '%%' AND pet.is_sold = true
+2024-05-17 15:58:31 | SELECT pet.id, pet.name, breed.name AS breed, pet.born_year, pet.weight, pet.price, pet.is_sold FROM pet JOIN breed ON pet.breed_id = breed.id WHERE pet.name LIKE '%%'
+2024-05-17 15:58:41 | SELECT pet.id, pet.name, breed.name AS breed, pet.born_year, pet.weight, pet.price, pet.is_sold FROM pet JOIN breed ON pet.breed_id = breed.id WHERE pet.name LIKE '%a%'
+2024-05-17 15:58:42 | SELECT pet.id, pet.name, breed.name AS breed, pet.born_year, pet.weight, pet.price, pet.is_sold FROM pet JOIN breed ON pet.breed_id = breed.id WHERE pet.name LIKE '%ma%'
+2024-05-17 15:58:44 | SELECT pet.id, pet.name, breed.name AS breed, pet.born_year, pet.weight, pet.price, pet.is_sold FROM pet JOIN breed ON pet.breed_id = breed.id WHERE pet.name LIKE '%he%'
+2024-05-17 15:58:45 | SELECT pet.id, pet.name, breed.name AS breed, pet.born_year, pet.weight, pet.price, pet.is_sold FROM pet JOIN breed ON pet.breed_id = breed.id WHERE pet.name LIKE '%h%'
+2024-05-17 15:58:47 | SELECT pet.id, pet.name, breed.name AS breed, pet.born_year, pet.weight, pet.price, pet.is_sold FROM pet JOIN breed ON pet.breed_id = breed.id WHERE pet.name LIKE '%%'
+2024-05-17 15:58:49 | SELECT pet.id, pet.name, breed.name AS breed, pet.born_year, pet.weight, pet.price, pet.is_sold FROM pet JOIN breed ON pet.breed_id = breed.id WHERE pet.name LIKE '%%' AND pet.is_sold = true
+2024-05-17 15:58:51 | SELECT pet.id, pet.name, breed.name AS breed, pet.born_year, pet.weight, pet.price, pet.is_sold FROM pet JOIN breed ON pet.breed_id = breed.id WHERE pet.name LIKE '%%' AND pet.is_sold = false
+2024-05-17 15:58:52 | SELECT pet.id, pet.name, breed.name AS breed, pet.born_year, pet.weight, pet.price, pet.is_sold FROM pet JOIN breed ON pet.breed_id = breed.id WHERE pet.name LIKE '%%'
+2024-05-17 15:58:57 | SELECT id, name FROM breed
+2024-05-17 16:12:21 | SELECT user.id, user.name, user.birth_date, user.username, role.name AS role FROM user JOIN role ON user.role_id = role.id WHERE username = 'dev01d' AND password = 'de161615655a53e80ebddade12e43b3b5f44229cca48c7a41942cacc2866aae4'
+2024-05-17 16:12:25 | SELECT SUM(price) AS total_price FROM pet WHERE is_sold = true
+2024-05-17 16:12:25 | SELECT pet.id, pet.name, breed.name AS breed, pet.born_year, pet.weight, pet.price, pet.is_sold FROM pet JOIN breed ON pet.breed_id = breed.id WHERE pet.name LIKE '%%'
+2024-05-17 16:12:27 | SELECT pet.id, pet.name, breed_id, species.name AS species, breed.name AS breed, pet.born_year, pet.weight, pet.description, pet.image, pet.price, pet.is_sold FROM pet JOIN breed ON pet.breed_id = breed.id JOIN species ON breed.species_id = species.id WHERE pet.id = 20002
+2024-05-17 16:12:27 | SELECT id, name FROM breed
+2024-05-17 16:12:40 | SELECT * FROM species
+2024-05-17 16:12:40 | SELECT * FROM breed
+2024-05-17 16:12:44 | SELECT user.id, user.name, user.birth_date, user.username, role.name AS role FROM user JOIN role ON user.role_id = role.id WHERE user.id = 10001
+2024-05-17 16:12:46 | SELECT user.id, user.name, user.birth_date, user.username, role.name AS role FROM user JOIN role ON user.role_id = role.id
+2024-05-17 16:12:46 | SELECT * FROM role
+2024-05-17 16:12:56 | SELECT * FROM species
+2024-05-17 16:13:01 | SELECT * FROM species
+2024-05-17 16:13:01 | SELECT * FROM breed
+2024-05-17 16:13:10 | SELECT SUM(price) AS total_price FROM pet WHERE is_sold = true
+2024-05-17 16:13:10 | SELECT pet.id, pet.name, breed.name AS breed, pet.born_year, pet.weight, pet.price, pet.is_sold FROM pet JOIN breed ON pet.breed_id = breed.id WHERE pet.name LIKE '%%'
+2024-05-17 16:13:20 | SELECT user.id, user.name, user.birth_date, user.username, role.name AS role FROM user JOIN role ON user.role_id = role.id WHERE user.id = 10001
+2024-05-17 16:13:22 | SELECT * FROM species
+2024-05-17 16:13:22 | SELECT * FROM breed
+2024-05-17 16:13:24 | SELECT SUM(price) AS total_price FROM pet WHERE is_sold = true
+2024-05-17 16:13:24 | SELECT pet.id, pet.name, breed.name AS breed, pet.born_year, pet.weight, pet.price, pet.is_sold FROM pet JOIN breed ON pet.breed_id = breed.id WHERE pet.name LIKE '%%'
+2024-05-17 16:13:26 | SELECT * FROM species
+2024-05-17 16:14:47 | SELECT user.id, user.name, user.birth_date, user.username, role.name AS role FROM user JOIN role ON user.role_id = role.id WHERE user.id = 10001
+2024-05-17 16:17:58 | SELECT user.id, user.name, user.birth_date, user.username, role.name AS role FROM user JOIN role ON user.role_id = role.id WHERE username = 'dev01d' AND password = 'de161615655a53e80ebddade12e43b3b5f44229cca48c7a41942cacc2866aae4'
+2024-05-17 16:18:04 | SELECT SUM(price) AS total_price FROM pet WHERE is_sold = true
+2024-05-17 16:18:04 | SELECT pet.id, pet.name, breed.name AS breed, pet.born_year, pet.weight, pet.price, pet.is_sold FROM pet JOIN breed ON pet.breed_id = breed.id WHERE pet.name LIKE '%%'
+2024-05-17 16:18:09 | SELECT pet.id, pet.name, breed.name AS breed, pet.born_year, pet.weight, pet.price, pet.is_sold FROM pet JOIN breed ON pet.breed_id = breed.id WHERE pet.name LIKE '%ma%'
+2024-05-17 16:18:11 | SELECT pet.id, pet.name, breed.name AS breed, pet.born_year, pet.weight, pet.price, pet.is_sold FROM pet JOIN breed ON pet.breed_id = breed.id WHERE pet.name LIKE '%%'
+2024-05-17 16:18:13 | SELECT pet.id, pet.name, breed.name AS breed, pet.born_year, pet.weight, pet.price, pet.is_sold FROM pet JOIN breed ON pet.breed_id = breed.id WHERE pet.name LIKE '%%' AND pet.is_sold = true
+2024-05-17 16:18:14 | SELECT pet.id, pet.name, breed.name AS breed, pet.born_year, pet.weight, pet.price, pet.is_sold FROM pet JOIN breed ON pet.breed_id = breed.id WHERE pet.name LIKE '%%' AND pet.is_sold = false
+2024-05-17 16:18:15 | SELECT pet.id, pet.name, breed.name AS breed, pet.born_year, pet.weight, pet.price, pet.is_sold FROM pet JOIN breed ON pet.breed_id = breed.id WHERE pet.name LIKE '%%'
+2024-05-17 16:18:18 | SELECT pet.id, pet.name, breed_id, species.name AS species, breed.name AS breed, pet.born_year, pet.weight, pet.description, pet.image, pet.price, pet.is_sold FROM pet JOIN breed ON pet.breed_id = breed.id JOIN species ON breed.species_id = species.id WHERE pet.id = 20002
+2024-05-17 16:18:18 | SELECT id, name FROM breed
+2024-05-17 16:18:53 | UPDATE pet SET name = 'Lunaa', is_male = 'True', born_year = '2021', breed_id = '30007', weight = '1.23', description = 'Bộ lông bóng mượt. Thích vờn đồ vật và chơi ngoài trời.', image = 'https://res.cloudinary.com/dxhuysuy5/image/upload/v1715619893/netproject/20002.jpg', price = '22499000' WHERE id = 20002
+2024-05-17 16:18:56 | SELECT pet.id, pet.name, breed.name AS breed, pet.born_year, pet.weight, pet.price, pet.is_sold FROM pet JOIN breed ON pet.breed_id = breed.id WHERE pet.name LIKE '%%'
+2024-05-17 16:18:57 | SELECT id, name FROM breed
+2024-05-17 16:19:25 | SELECT user.id, user.name, user.birth_date, user.username, role.name AS role FROM user JOIN role ON user.role_id = role.id WHERE username = 'employee002' AND password = '4847eff10102bb6c01f5566d9363de7fbb325017bc7a86d7a988f3b442a18b4d'
+2024-05-17 16:19:27 | SELECT pet.id, pet.name, breed.name AS breed, pet.born_year, pet.weight, pet.price, pet.is_sold FROM pet JOIN breed ON pet.breed_id = breed.id WHERE pet.name LIKE '%%'
+2024-05-17 16:19:30 | SELECT pet.id, pet.name, breed_id, species.name AS species, breed.name AS breed, pet.born_year, pet.weight, pet.description, pet.image, pet.price, pet.is_sold FROM pet JOIN breed ON pet.breed_id = breed.id JOIN species ON breed.species_id = species.id WHERE pet.id = 20003
+2024-05-17 16:19:30 | SELECT id, name FROM breed
+2024-05-17 16:19:36 | SELECT * FROM species
+2024-05-17 16:19:36 | SELECT * FROM breed
+2024-05-17 16:19:40 | SELECT * FROM species
+2024-05-17 16:19:42 | SELECT user.id, user.name, user.birth_date, user.username, role.name AS role FROM user JOIN role ON user.role_id = role.id WHERE user.id = 10005
+2024-05-17 16:19:51 | UPDATE user SET name = 'Phạm Thị B', birth_date = '2003-07-12' WHERE id = 10005
+2024-05-17 16:19:52 | SELECT user.id, user.name, user.birth_date, user.username, role.name AS role FROM user JOIN role ON user.role_id = role.id WHERE user.id = 10005

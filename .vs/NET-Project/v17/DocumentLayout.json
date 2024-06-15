@@ -1,0 +1,406 @@
+{
+  "Version": 1,
+  "WorkspaceRootPath": "E:\\New Course\\.NET\\NET-Project\\",
+  "Documents": [
+    {
+      "AbsoluteMoniker": "D:0:0:{A280D8B9-86C3-4003-B567-6A49A08C2D3F}|Connector_Tier\\Connector_Tier.csproj|e:\\new course\\.net\\net-project\\connector_tier\\connectorfactory.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{A280D8B9-86C3-4003-B567-6A49A08C2D3F}|Connector_Tier\\Connector_Tier.csproj|solutionrelative:connector_tier\\connectorfactory.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{F2577AAE-DA46-4DD6-82B0-C88FB12A2D8C}|UI_Tier\\UI_Tier.csproj|e:\\new course\\.net\\net-project\\ui_tier\\program.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{F2577AAE-DA46-4DD6-82B0-C88FB12A2D8C}|UI_Tier\\UI_Tier.csproj|solutionrelative:ui_tier\\program.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{F2577AAE-DA46-4DD6-82B0-C88FB12A2D8C}|UI_Tier\\UI_Tier.csproj|E:\\New Course\\.NET\\NET-Project\\ui_tier\\mainform.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{F2577AAE-DA46-4DD6-82B0-C88FB12A2D8C}|UI_Tier\\UI_Tier.csproj|solutionrelative:ui_tier\\mainform.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{F2577AAE-DA46-4DD6-82B0-C88FB12A2D8C}|UI_Tier\\UI_Tier.csproj|e:\\new course\\.net\\net-project\\ui_tier\\mainform.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form",
+      "RelativeMoniker": "D:0:0:{F2577AAE-DA46-4DD6-82B0-C88FB12A2D8C}|UI_Tier\\UI_Tier.csproj|solutionrelative:ui_tier\\mainform.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{F2577AAE-DA46-4DD6-82B0-C88FB12A2D8C}|UI_Tier\\UI_Tier.csproj|e:\\new course\\.net\\net-project\\ui_tier\\petform.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{F2577AAE-DA46-4DD6-82B0-C88FB12A2D8C}|UI_Tier\\UI_Tier.csproj|solutionrelative:ui_tier\\petform.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{F2577AAE-DA46-4DD6-82B0-C88FB12A2D8C}|UI_Tier\\UI_Tier.csproj|e:\\new course\\.net\\net-project\\ui_tier\\petlistform.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form",
+      "RelativeMoniker": "D:0:0:{F2577AAE-DA46-4DD6-82B0-C88FB12A2D8C}|UI_Tier\\UI_Tier.csproj|solutionrelative:ui_tier\\petlistform.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{F2577AAE-DA46-4DD6-82B0-C88FB12A2D8C}|UI_Tier\\UI_Tier.csproj|e:\\new course\\.net\\net-project\\ui_tier\\petlistform.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{F2577AAE-DA46-4DD6-82B0-C88FB12A2D8C}|UI_Tier\\UI_Tier.csproj|solutionrelative:ui_tier\\petlistform.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{DE632634-D63F-47D5-83BD-CA7EBC8A84FC}|Bus_Tier\\Bus_Tier.csproj|e:\\new course\\.net\\net-project\\bus_tier\\bspet.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{DE632634-D63F-47D5-83BD-CA7EBC8A84FC}|Bus_Tier\\Bus_Tier.csproj|solutionrelative:bus_tier\\bspet.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{F2577AAE-DA46-4DD6-82B0-C88FB12A2D8C}|UI_Tier\\UI_Tier.csproj|e:\\new course\\.net\\net-project\\ui_tier\\petform.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form",
+      "RelativeMoniker": "D:0:0:{F2577AAE-DA46-4DD6-82B0-C88FB12A2D8C}|UI_Tier\\UI_Tier.csproj|solutionrelative:ui_tier\\petform.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{DE632634-D63F-47D5-83BD-CA7EBC8A84FC}|Bus_Tier\\Bus_Tier.csproj|e:\\new course\\.net\\net-project\\bus_tier\\bsbreed.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{DE632634-D63F-47D5-83BD-CA7EBC8A84FC}|Bus_Tier\\Bus_Tier.csproj|solutionrelative:bus_tier\\bsbreed.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{A280D8B9-86C3-4003-B567-6A49A08C2D3F}|Connector_Tier\\Connector_Tier.csproj|e:\\new course\\.net\\net-project\\connector_tier\\connector_tier.csproj||{FA3CD31E-987B-443A-9B81-186104E8DAC1}|",
+      "RelativeMoniker": "D:0:0:{A280D8B9-86C3-4003-B567-6A49A08C2D3F}|Connector_Tier\\Connector_Tier.csproj|solutionrelative:connector_tier\\connector_tier.csproj||{FA3CD31E-987B-443A-9B81-186104E8DAC1}|"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{F2577AAE-DA46-4DD6-82B0-C88FB12A2D8C}|UI_Tier\\UI_Tier.csproj|e:\\new course\\.net\\net-project\\ui_tier\\breedlistform.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form",
+      "RelativeMoniker": "D:0:0:{F2577AAE-DA46-4DD6-82B0-C88FB12A2D8C}|UI_Tier\\UI_Tier.csproj|solutionrelative:ui_tier\\breedlistform.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{F2577AAE-DA46-4DD6-82B0-C88FB12A2D8C}|UI_Tier\\UI_Tier.csproj|e:\\new course\\.net\\net-project\\ui_tier\\specieslistform.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form",
+      "RelativeMoniker": "D:0:0:{F2577AAE-DA46-4DD6-82B0-C88FB12A2D8C}|UI_Tier\\UI_Tier.csproj|solutionrelative:ui_tier\\specieslistform.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{F2577AAE-DA46-4DD6-82B0-C88FB12A2D8C}|UI_Tier\\UI_Tier.csproj|e:\\new course\\.net\\net-project\\ui_tier\\userslistform.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form",
+      "RelativeMoniker": "D:0:0:{F2577AAE-DA46-4DD6-82B0-C88FB12A2D8C}|UI_Tier\\UI_Tier.csproj|solutionrelative:ui_tier\\userslistform.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{F2577AAE-DA46-4DD6-82B0-C88FB12A2D8C}|UI_Tier\\UI_Tier.csproj|e:\\new course\\.net\\net-project\\ui_tier\\specieslistform.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{F2577AAE-DA46-4DD6-82B0-C88FB12A2D8C}|UI_Tier\\UI_Tier.csproj|solutionrelative:ui_tier\\specieslistform.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{F2577AAE-DA46-4DD6-82B0-C88FB12A2D8C}|UI_Tier\\UI_Tier.csproj|e:\\new course\\.net\\net-project\\ui_tier\\breedlistform.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{F2577AAE-DA46-4DD6-82B0-C88FB12A2D8C}|UI_Tier\\UI_Tier.csproj|solutionrelative:ui_tier\\breedlistform.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{F2577AAE-DA46-4DD6-82B0-C88FB12A2D8C}|UI_Tier\\UI_Tier.csproj|e:\\new course\\.net\\net-project\\ui_tier\\loginform.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form",
+      "RelativeMoniker": "D:0:0:{F2577AAE-DA46-4DD6-82B0-C88FB12A2D8C}|UI_Tier\\UI_Tier.csproj|solutionrelative:ui_tier\\loginform.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{F2577AAE-DA46-4DD6-82B0-C88FB12A2D8C}|UI_Tier\\UI_Tier.csproj|e:\\new course\\.net\\net-project\\ui_tier\\myaccountform.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form",
+      "RelativeMoniker": "D:0:0:{F2577AAE-DA46-4DD6-82B0-C88FB12A2D8C}|UI_Tier\\UI_Tier.csproj|solutionrelative:ui_tier\\myaccountform.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{F2577AAE-DA46-4DD6-82B0-C88FB12A2D8C}|UI_Tier\\UI_Tier.csproj|e:\\new course\\.net\\net-project\\ui_tier\\userslistform.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{F2577AAE-DA46-4DD6-82B0-C88FB12A2D8C}|UI_Tier\\UI_Tier.csproj|solutionrelative:ui_tier\\userslistform.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{F2577AAE-DA46-4DD6-82B0-C88FB12A2D8C}|UI_Tier\\UI_Tier.csproj|e:\\new course\\.net\\net-project\\ui_tier\\loginform.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{F2577AAE-DA46-4DD6-82B0-C88FB12A2D8C}|UI_Tier\\UI_Tier.csproj|solutionrelative:ui_tier\\loginform.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{F2577AAE-DA46-4DD6-82B0-C88FB12A2D8C}|UI_Tier\\UI_Tier.csproj|e:\\new course\\.net\\net-project\\ui_tier\\myaccountform.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{F2577AAE-DA46-4DD6-82B0-C88FB12A2D8C}|UI_Tier\\UI_Tier.csproj|solutionrelative:ui_tier\\myaccountform.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{F2577AAE-DA46-4DD6-82B0-C88FB12A2D8C}|UI_Tier\\UI_Tier.csproj|e:\\new course\\.net\\net-project\\ui_tier\\mainform.designer.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{F2577AAE-DA46-4DD6-82B0-C88FB12A2D8C}|UI_Tier\\UI_Tier.csproj|solutionrelative:ui_tier\\mainform.designer.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    }
+  ],
+  "DocumentGroupContainers": [
+    {
+      "Orientation": 0,
+      "VerticalTabListWidth": 256,
+      "DocumentGroups": [
+        {
+          "DockedWidth": 1852,
+          "SelectedChildIndex": 1,
+          "Children": [
+            {
+              "$type": "Document",
+              "DocumentIndex": 1,
+              "Title": "Program.cs",
+              "DocumentMoniker": "E:\\New Course\\.NET\\NET-Project\\UI_Tier\\Program.cs",
+              "RelativeDocumentMoniker": "UI_Tier\\Program.cs",
+              "ToolTip": "E:\\New Course\\.NET\\NET-Project\\UI_Tier\\Program.cs",
+              "RelativeToolTip": "UI_Tier\\Program.cs",
+              "ViewState": "AQIAAAsAAAAAAAAAAAAgwBkAAAAIAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-05-17T06:55:47.847Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 0,
+              "Title": "ConnectorFactory.cs",
+              "DocumentMoniker": "E:\\New Course\\.NET\\NET-Project\\Connector_Tier\\ConnectorFactory.cs",
+              "RelativeDocumentMoniker": "Connector_Tier\\ConnectorFactory.cs",
+              "ToolTip": "E:\\New Course\\.NET\\NET-Project\\Connector_Tier\\ConnectorFactory.cs",
+              "RelativeToolTip": "Connector_Tier\\ConnectorFactory.cs",
+              "ViewState": "AQIAAC0AAAAAAAAAAAAiwAwAAAAnAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-05-17T08:10:33.823Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 4,
+              "Title": "PetForm.cs",
+              "DocumentMoniker": "E:\\New Course\\.NET\\NET-Project\\UI_Tier\\PetForm.cs",
+              "RelativeDocumentMoniker": "UI_Tier\\PetForm.cs",
+              "ToolTip": "E:\\New Course\\.NET\\NET-Project\\UI_Tier\\PetForm.cs",
+              "RelativeToolTip": "UI_Tier\\PetForm.cs",
+              "ViewState": "AQIAACgBAAAAAAAAAIA2wEEBAAAyAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-05-17T07:10:51.742Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 3,
+              "Title": "MainForm.cs [Design]",
+              "DocumentMoniker": "E:\\New Course\\.NET\\NET-Project\\UI_Tier\\MainForm.cs",
+              "RelativeDocumentMoniker": "UI_Tier\\MainForm.cs",
+              "ToolTip": "E:\\New Course\\.NET\\NET-Project\\UI_Tier\\MainForm.cs [Design]",
+              "RelativeToolTip": "UI_Tier\\MainForm.cs [Design]",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-05-17T07:23:49.243Z",
+              "EditorCaption": " [Design]"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 2,
+              "Title": "MainForm.cs",
+              "DocumentMoniker": "E:\\New Course\\.NET\\NET-Project\\UI_Tier\\MainForm.cs",
+              "RelativeDocumentMoniker": "UI_Tier\\MainForm.cs",
+              "ToolTip": "E:\\New Course\\.NET\\NET-Project\\UI_Tier\\MainForm.cs",
+              "RelativeToolTip": "UI_Tier\\MainForm.cs",
+              "ViewState": "AQIAADoAAAAAAAAAAAAkwEsAAAAQAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-05-17T04:14:01.064Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 6,
+              "Title": "PetListForm.cs",
+              "DocumentMoniker": "E:\\New Course\\.NET\\NET-Project\\UI_Tier\\PetListForm.cs",
+              "RelativeDocumentMoniker": "UI_Tier\\PetListForm.cs",
+              "ToolTip": "E:\\New Course\\.NET\\NET-Project\\UI_Tier\\PetListForm.cs",
+              "RelativeToolTip": "UI_Tier\\PetListForm.cs",
+              "ViewState": "AQIAABYAAAAAAAAAAADwvyoAAAAPAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-05-17T07:16:41.792Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 5,
+              "Title": "PetListForm.cs [Design]",
+              "DocumentMoniker": "E:\\New Course\\.NET\\NET-Project\\UI_Tier\\PetListForm.cs",
+              "RelativeDocumentMoniker": "UI_Tier\\PetListForm.cs",
+              "ToolTip": "E:\\New Course\\.NET\\NET-Project\\UI_Tier\\PetListForm.cs [Design]",
+              "RelativeToolTip": "UI_Tier\\PetListForm.cs [Design]",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-05-17T07:22:40.498Z",
+              "EditorCaption": " [Design]"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 8,
+              "Title": "PetForm.cs [Design]",
+              "DocumentMoniker": "E:\\New Course\\.NET\\NET-Project\\UI_Tier\\PetForm.cs",
+              "RelativeDocumentMoniker": "UI_Tier\\PetForm.cs",
+              "ToolTip": "E:\\New Course\\.NET\\NET-Project\\UI_Tier\\PetForm.cs [Design]",
+              "RelativeToolTip": "UI_Tier\\PetForm.cs [Design]",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-05-17T07:22:57.157Z",
+              "EditorCaption": " [Design]"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 7,
+              "Title": "BSPet.cs",
+              "DocumentMoniker": "E:\\New Course\\.NET\\NET-Project\\Bus_Tier\\BSPet.cs",
+              "RelativeDocumentMoniker": "Bus_Tier\\BSPet.cs",
+              "ToolTip": "E:\\New Course\\.NET\\NET-Project\\Bus_Tier\\BSPet.cs",
+              "RelativeToolTip": "Bus_Tier\\BSPet.cs",
+              "ViewState": "AQIAAIAAAAAAAAAAAAAiwJUAAAAQAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-05-17T08:31:47.817Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 9,
+              "Title": "BSBreed.cs",
+              "DocumentMoniker": "E:\\New Course\\.NET\\NET-Project\\Bus_Tier\\BSBreed.cs",
+              "RelativeDocumentMoniker": "Bus_Tier\\BSBreed.cs",
+              "ToolTip": "E:\\New Course\\.NET\\NET-Project\\Bus_Tier\\BSBreed.cs",
+              "RelativeToolTip": "Bus_Tier\\BSBreed.cs",
+              "ViewState": "AQIAABAAAAAAAAAAAADwvwgAAAAkAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-05-17T08:10:14.049Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 10,
+              "Title": "Connector_Tier",
+              "DocumentMoniker": "E:\\New Course\\.NET\\NET-Project\\Connector_Tier\\Connector_Tier.csproj",
+              "RelativeDocumentMoniker": "Connector_Tier\\Connector_Tier.csproj",
+              "ToolTip": "E:\\New Course\\.NET\\NET-Project\\Connector_Tier\\Connector_Tier.csproj",
+              "RelativeToolTip": "Connector_Tier\\Connector_Tier.csproj",
+              "ViewState": "AQIAAAAAAAAAAAAAAADwvwAAAAAAAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000758|",
+              "WhenOpened": "2024-05-17T08:10:30.072Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 12,
+              "Title": "SpeciesListForm.cs [Design]",
+              "DocumentMoniker": "E:\\New Course\\.NET\\NET-Project\\UI_Tier\\SpeciesListForm.cs",
+              "RelativeDocumentMoniker": "UI_Tier\\SpeciesListForm.cs",
+              "ToolTip": "E:\\New Course\\.NET\\NET-Project\\UI_Tier\\SpeciesListForm.cs [Design]",
+              "RelativeToolTip": "UI_Tier\\SpeciesListForm.cs [Design]",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-05-17T07:21:30Z",
+              "EditorCaption": " [Design]"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 11,
+              "Title": "BreedListForm.cs [Design]",
+              "DocumentMoniker": "E:\\New Course\\.NET\\NET-Project\\UI_Tier\\BreedListForm.cs",
+              "RelativeDocumentMoniker": "UI_Tier\\BreedListForm.cs",
+              "ToolTip": "E:\\New Course\\.NET\\NET-Project\\UI_Tier\\BreedListForm.cs [Design]",
+              "RelativeToolTip": "UI_Tier\\BreedListForm.cs [Design]",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-05-17T07:24:16.141Z",
+              "EditorCaption": " [Design]"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 13,
+              "Title": "UsersListForm.cs [Design]",
+              "DocumentMoniker": "E:\\New Course\\.NET\\NET-Project\\UI_Tier\\UsersListForm.cs",
+              "RelativeDocumentMoniker": "UI_Tier\\UsersListForm.cs",
+              "ToolTip": "E:\\New Course\\.NET\\NET-Project\\UI_Tier\\UsersListForm.cs [Design]",
+              "RelativeToolTip": "UI_Tier\\UsersListForm.cs [Design]",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-05-17T07:20:39.556Z",
+              "EditorCaption": " [Design]"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 14,
+              "Title": "SpeciesListForm.cs",
+              "DocumentMoniker": "E:\\New Course\\.NET\\NET-Project\\UI_Tier\\SpeciesListForm.cs",
+              "RelativeDocumentMoniker": "UI_Tier\\SpeciesListForm.cs",
+              "ToolTip": "E:\\New Course\\.NET\\NET-Project\\UI_Tier\\SpeciesListForm.cs",
+              "RelativeToolTip": "UI_Tier\\SpeciesListForm.cs",
+              "ViewState": "AQIAAF4AAAAAAAAAAIAzwHAAAAAFAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-05-17T07:17:09.016Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 15,
+              "Title": "BreedListForm.cs",
+              "DocumentMoniker": "E:\\New Course\\.NET\\NET-Project\\UI_Tier\\BreedListForm.cs",
+              "RelativeDocumentMoniker": "UI_Tier\\BreedListForm.cs",
+              "ToolTip": "E:\\New Course\\.NET\\NET-Project\\UI_Tier\\BreedListForm.cs",
+              "RelativeToolTip": "UI_Tier\\BreedListForm.cs",
+              "ViewState": "AQIAAAAAAAAAAAAAAAAAAAwAAAAAAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-05-17T07:01:40.313Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 16,
+              "Title": "LoginForm.cs [Design]",
+              "DocumentMoniker": "E:\\New Course\\.NET\\NET-Project\\UI_Tier\\LoginForm.cs",
+              "RelativeDocumentMoniker": "UI_Tier\\LoginForm.cs",
+              "ToolTip": "E:\\New Course\\.NET\\NET-Project\\UI_Tier\\LoginForm.cs [Design]",
+              "RelativeToolTip": "UI_Tier\\LoginForm.cs [Design]",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-05-17T07:23:52.696Z",
+              "EditorCaption": " [Design]"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 17,
+              "Title": "MyAccountForm.cs [Design]",
+              "DocumentMoniker": "E:\\New Course\\.NET\\NET-Project\\UI_Tier\\MyAccountForm.cs",
+              "RelativeDocumentMoniker": "UI_Tier\\MyAccountForm.cs",
+              "ToolTip": "E:\\New Course\\.NET\\NET-Project\\UI_Tier\\MyAccountForm.cs [Design]",
+              "RelativeToolTip": "UI_Tier\\MyAccountForm.cs [Design]",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-05-17T07:23:18.945Z",
+              "EditorCaption": " [Design]"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 18,
+              "Title": "UsersListForm.cs",
+              "DocumentMoniker": "E:\\New Course\\.NET\\NET-Project\\UI_Tier\\UsersListForm.cs",
+              "RelativeDocumentMoniker": "UI_Tier\\UsersListForm.cs",
+              "ToolTip": "E:\\New Course\\.NET\\NET-Project\\UI_Tier\\UsersListForm.cs",
+              "RelativeToolTip": "UI_Tier\\UsersListForm.cs",
+              "ViewState": "AQIAAGQAAAAAAAAAAAAmwHsAAAAuAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-05-17T07:19:24.22Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 20,
+              "Title": "MyAccountForm.cs",
+              "DocumentMoniker": "E:\\New Course\\.NET\\NET-Project\\UI_Tier\\MyAccountForm.cs",
+              "RelativeDocumentMoniker": "UI_Tier\\MyAccountForm.cs",
+              "ToolTip": "E:\\New Course\\.NET\\NET-Project\\UI_Tier\\MyAccountForm.cs",
+              "RelativeToolTip": "UI_Tier\\MyAccountForm.cs",
+              "ViewState": "AQIAAAAAAAAAAAAAAAAAAGgAAABEAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-05-17T07:07:57.18Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 21,
+              "Title": "MainForm.Designer.cs",
+              "DocumentMoniker": "E:\\New Course\\.NET\\NET-Project\\UI_Tier\\MainForm.Designer.cs",
+              "RelativeDocumentMoniker": "UI_Tier\\MainForm.Designer.cs",
+              "ToolTip": "E:\\New Course\\.NET\\NET-Project\\UI_Tier\\MainForm.Designer.cs",
+              "RelativeToolTip": "UI_Tier\\MainForm.Designer.cs",
+              "ViewState": "AQIAABMAAAAAAAAAAAAuwB4AAAAsAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-05-17T07:06:41.1Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 19,
+              "Title": "LoginForm.cs",
+              "DocumentMoniker": "E:\\New Course\\.NET\\NET-Project\\UI_Tier\\LoginForm.cs",
+              "RelativeDocumentMoniker": "UI_Tier\\LoginForm.cs",
+              "ToolTip": "E:\\New Course\\.NET\\NET-Project\\UI_Tier\\LoginForm.cs",
+              "RelativeToolTip": "UI_Tier\\LoginForm.cs",
+              "ViewState": "AQIAAAAAAAAAAAAAAAAAADkAAAAEAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-05-17T07:05:00.048Z",
+              "EditorCaption": ""
+            }
+          ]
+        },
+        {
+          "DockedWidth": 533,
+          "SelectedChildIndex": -1,
+          "Children": [
+            {
+              "$type": "Bookmark",
+              "Name": "ST:0:0:{eefa5220-e298-11d0-8f78-00a0c9110057}"
+            }
+          ]
+        },
+        {
+          "DockedWidth": 396,
+          "SelectedChildIndex": -1,
+          "Children": [
+            {
+              "$type": "Bookmark",
+              "Name": "ST:0:0:{b1e99781-ab81-11d0-b683-00aa00a3ee26}"
+            }
+          ]
+        }
+      ]
+    }
+  ]
+}
